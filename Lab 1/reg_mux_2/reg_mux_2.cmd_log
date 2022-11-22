@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.xst" -ofn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.xst" -ofn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.xst" -ofn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.xst" -ofn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 reg_mux_2.ngc reg_mux_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o reg_mux_2_map.ncd reg_mux_2.ngd reg_mux_2.pcf 
+par -w -intstyle ise -ol high -t 1 reg_mux_2_map.ncd reg_mux_2.ncd reg_mux_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml reg_mux_2.twx reg_mux_2.ncd -o reg_mux_2.twr reg_mux_2.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.xst" -ofn "/home/pedrot/Desktop/Micro/reg_mux_2/reg_mux_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 reg_mux_2.ngc reg_mux_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o reg_mux_2_map.ncd reg_mux_2.ngd reg_mux_2.pcf 
+par -w -intstyle ise -ol high -t 1 reg_mux_2_map.ncd reg_mux_2.ncd reg_mux_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml reg_mux_2.twx reg_mux_2.ncd -o reg_mux_2.twr reg_mux_2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 reg_mux_2.ngc reg_mux_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o reg_mux_2_map.ncd reg_mux_2.ngd reg_mux_2.pcf 
+par -w -intstyle ise -ol high -t 1 reg_mux_2_map.ncd reg_mux_2.ncd reg_mux_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml reg_mux_2.twx reg_mux_2.ncd -o reg_mux_2.twr reg_mux_2.pcf 
+bitgen -intstyle ise -f reg_mux_2.ut reg_mux_2.ncd 
+bitgen -intstyle ise -f reg_mux_2.ut reg_mux_2.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Lab/reg_mux_2/reg_mux_2.xst" -ofn "/home/pedrot/Desktop/Lab/reg_mux_2/reg_mux_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 reg_mux_2.ngc reg_mux_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o reg_mux_2_map.ncd reg_mux_2.ngd reg_mux_2.pcf 
+par -w -intstyle ise -ol high -t 1 reg_mux_2_map.ncd reg_mux_2.ncd reg_mux_2.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml reg_mux_2.twx reg_mux_2.ncd -o reg_mux_2.twr reg_mux_2.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f reg_mux_2.ut reg_mux_2.ncd 

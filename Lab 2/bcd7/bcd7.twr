@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
+3 -s 5 -n 3 -fastpaths -xml bcd7.twx bcd7.ncd -o bcd7.twr bcd7.pcf
+
+Design file:              bcd7.ncd
+Physical constraint file: bcd7.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a              |O0             |    5.667|
+a              |O3             |    5.819|
+a              |O5             |    5.449|
+a              |O6             |    5.266|
+b              |O0             |    6.448|
+b              |O1             |    5.711|
+b              |O2             |    5.460|
+b              |O3             |    6.571|
+b              |O5             |    5.683|
+b              |O6             |    6.085|
+c              |O0             |    5.668|
+c              |O1             |    6.043|
+c              |O2             |    5.815|
+c              |O3             |    5.769|
+c              |O4             |    5.582|
+c              |O5             |    6.110|
+c              |O6             |    5.448|
+d              |O0             |    5.501|
+d              |O1             |    5.964|
+d              |O2             |    5.686|
+d              |O3             |    5.658|
+d              |O4             |    5.283|
+d              |O5             |    5.458|
+d              |O6             |    5.233|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Nov 22 12:01:45 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 347 MB
+
+
+

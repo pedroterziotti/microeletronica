@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedrot/Desktop/Lab/bcd7/bcd7_tb_isim_beh.exe" -prj "/home/pedrot/Desktop/Lab/bcd7/bcd7_tb_beh.prj" "work.bcd7_tb" 

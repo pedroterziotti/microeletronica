@@ -1,0 +1,6 @@
+V3 3
+FL /home/pedrot/Desktop/Lab/bcd7E/bcd7E.vhd 2022/11/22.12:05:47 P.20131013
+EN work/bcd7E 1669129549 FL /home/pedrot/Desktop/Lab/bcd7E/bcd7E.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/bcd7E/Behavioral 1669129550 \
+      FL /home/pedrot/Desktop/Lab/bcd7E/bcd7E.vhd EN work/bcd7E 1669129549

@@ -1,0 +1,7 @@
+V3 4
+FL /home/pedrot/Desktop/Lab/reg_mux/reg_mux.vhd 2022/11/17.14:11:17 P.20131013
+EN work/reg_mux 1669118335 FL /home/pedrot/Desktop/Lab/reg_mux/reg_mux.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/reg_mux/Behavioral 1669118336 \
+      FL /home/pedrot/Desktop/Lab/reg_mux/reg_mux.vhd EN work/reg_mux 1669118335
+FL /home/pedrot/Desktop/Micro/reg_mux/reg_mux.vhd 2022/11/17.14:11:17 P.20131013

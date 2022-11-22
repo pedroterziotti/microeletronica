@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedrot/Desktop/Micro/proj1/and_tb_isim_beh.exe" -prj "/home/pedrot/Desktop/Micro/proj1/and_tb_beh.prj" "work.and_tb" 

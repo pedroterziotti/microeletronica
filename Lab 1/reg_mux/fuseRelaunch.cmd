@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedrot/Desktop/Lab/reg_mux/reg_mux_tb_isim_beh.exe" -prj "/home/pedrot/Desktop/Lab/reg_mux/reg_mux_tb_beh.prj" "work.reg_mux_tb" 

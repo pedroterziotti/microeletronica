@@ -1,0 +1,22 @@
+Running: /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/pedrot/Desktop/Micro/proj1/and_tb_isim_beh.exe -prj /home/pedrot/Desktop/Micro/proj1/and_tb_beh.prj work.and_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/pedrot/Desktop/Micro/proj1/proj1.vhd" into library work
+Parsing VHDL file "/home/pedrot/Desktop/Micro/proj1/and_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95808 KB
+Fuse CPU Usage: 970 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity proj1 [proj1_default]
+Compiling architecture behavior of entity and_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/pedrot/Desktop/Micro/proj1/and_tb_isim_beh.exe
+Fuse Memory Usage: 661564 KB
+Fuse CPU Usage: 1200 ms
+GCC CPU Usage: 640 ms

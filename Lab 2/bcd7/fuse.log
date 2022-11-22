@@ -1,0 +1,22 @@
+Running: /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/pedrot/Desktop/Lab/bcd7/bcd7_tb_isim_beh.exe -prj /home/pedrot/Desktop/Lab/bcd7/bcd7_tb_beh.prj work.bcd7_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/pedrot/Desktop/Lab/bcd7/bcd7.vhd" into library work
+Parsing VHDL file "/home/pedrot/Desktop/Lab/bcd7/bcd7_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95872 KB
+Fuse CPU Usage: 920 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity bcd7 [bcd7_default]
+Compiling architecture behavior of entity bcd7_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/pedrot/Desktop/Lab/bcd7/bcd7_tb_isim_beh.exe
+Fuse Memory Usage: 661612 KB
+Fuse CPU Usage: 1030 ms
+GCC CPU Usage: 170 ms

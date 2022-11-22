@@ -1,0 +1,2 @@
+vhdl work "demux2bits.vhd"
+vhdl work "demux2bits_tb.vhd"
