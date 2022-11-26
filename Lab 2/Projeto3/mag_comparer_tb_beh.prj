@@ -1,0 +1,2 @@
+vhdl work "mag_comparer.vhd"
+vhdl work "mag_comparer_tb.vhd"

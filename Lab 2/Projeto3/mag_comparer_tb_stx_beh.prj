@@ -1,0 +1,2 @@
+vhdl isim_temp "mag_comparer.vhd"
+vhdl isim_temp "mag_comparer_tb.vhd"
