@@ -79,7 +79,7 @@ BEGIN
           a_larger_b => a_larger_b,
           b_larger_a => b_larger_a
         );
-	B0<= NOT A1 AFTER 10ns;
+	B0<= NOT B0 AFTER 10ns;
 	B1<= not B1 after 20ns;
 	A0 <= not A0 after 40ns;
 	A1 <= not A1 after 80ns;

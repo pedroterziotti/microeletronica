@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
 3 -s 5 -n 3 -fastpaths -xml mag_comparer.twx mag_comparer.ncd -o
-mag_comparer.twr mag_comparer.pcf
+mag_comparer.twr mag_comparer.pcf -ucf pins.ucf
 
 Design file:              mag_comparer.ncd
 Physical constraint file: mag_comparer.pcf
@@ -44,22 +44,22 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A0             |a_larger_b     |    5.743|
-A0             |b_larger_a     |    5.415|
-A0             |equals         |    5.635|
-A1             |a_larger_b     |    5.995|
-A1             |b_larger_a     |    5.666|
-A1             |equals         |    5.934|
-B0             |a_larger_b     |    6.194|
-B0             |b_larger_a     |    5.246|
-B0             |equals         |    6.035|
-B1             |a_larger_b     |    5.996|
-B1             |b_larger_a     |    5.263|
-B1             |equals         |    5.895|
+A0             |a_larger_b     |    6.302|
+A0             |b_larger_a     |    6.097|
+A0             |equals         |    6.243|
+A1             |a_larger_b     |    6.548|
+A1             |b_larger_a     |    6.488|
+A1             |equals         |    6.539|
+B0             |a_larger_b     |    5.883|
+B0             |b_larger_a     |    5.834|
+B0             |equals         |    5.847|
+B1             |a_larger_b     |    6.351|
+B1             |b_larger_a     |    6.154|
+B1             |equals         |    6.348|
 ---------------+---------------+---------+
 
 
-Analysis completed Sat Nov 26 16:03:33 2022 
+Analysis completed Sun Nov 27 09:18:20 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

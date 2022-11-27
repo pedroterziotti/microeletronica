@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: mag_comparer.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -108,19 +108,18 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Lab 2/Projeto3/mag_comparer.vhd" in Library work.
-Entity <mag_comparer> compiled.
-Entity <mag_comparer> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity mag_comparer is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <mag_comparer> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <mag_comparer> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <mag_comparer> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <mag_comparer> in library <work> (Architecture <behavioral>).
 Entity <mag_comparer> analyzed. Unit <mag_comparer> generated.
 
 
@@ -271,13 +270,13 @@ Delay:               5.847ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.71 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 3.98 secs
  
 --> 
 
 
-Total memory usage is 512528 kilobytes
+Total memory usage is 512524 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

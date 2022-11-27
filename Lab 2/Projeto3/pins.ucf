@@ -1,8 +1,8 @@
-net "B0" loc "G18";
-net "B1" loc "H18";
-net "A0" loc "K18";
-net "A1" loc "K17";
+net "B0" loc="G18";
+net "B1" loc="H18";
+net "A0" loc="K18";
+net "B1" loc="K17";
 
-net "equals" loc "J14";
-net "a_larger_b" loc "J15";
-net "b_larger_a" loc "K15";
+net "equals" loc="J14";
+net "a_larger_b" loc="J15";
+net "b_larger_a" loc="K15";

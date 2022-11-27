@@ -44,7 +44,7 @@ static void work_a_1516467531_2372691052_p_0(char *t0)
 LAB0:    xsi_set_current_line(82, ng0);
 
 LAB3:    t1 = (10 * 1000LL);
-    t2 = (t0 + 1032U);
+    t2 = (t0 + 1512U);
     t3 = *((char **)t2);
     t4 = *((unsigned char *)t3);
     t5 = ieee_p_2592010699_sub_374109322130769762_503743352(IEEE_P_2592010699, t4);

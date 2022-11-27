@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-ubuntu18::  Sat Nov 26 16:03:25 2022
+ubuntu18::  Sun Nov 27 09:18:13 2022
 
 par -w -intstyle ise -ol high -t 1 mag_comparer_map.ncd mag_comparer.ncd
 mag_comparer.pcf 
@@ -30,10 +30,14 @@ Design Summary Report:
    Number of External Input IOBs                  4
 
       Number of External Input IBUFs              4
+        Number of LOCed External Input IBUFs      3 out of 4      75%
+
 
    Number of External Output IOBs                 3
 
       Number of External Output IOBs              3
+        Number of LOCed External Output IOBs      3 out of 3     100%
+
 
    Number of External Bidir IOBs                  0
 
@@ -48,8 +52,8 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 0 secs 
+Finished initial Timing Analysis.  REAL time: 0 secs 
 
 
 Starting Placer
@@ -57,43 +61,43 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:29) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:43bede4b) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:29) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:43bede4b) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:29) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:43bede4b) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
-..........
-Phase 4.2  Initial Clock and IO Placement (Checksum:29) REAL time: 1 secs 
+......
+Phase 4.2  Initial Clock and IO Placement (Checksum:43bede4b) REAL time: 1 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:29) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:43bede4b) REAL time: 1 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:29) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:43bede4b) REAL time: 1 secs 
 
 Phase 7.3  Local Placement Optimization
-..........
-Phase 7.3  Local Placement Optimization (Checksum:526e2617) REAL time: 1 secs 
+......
+Phase 7.3  Local Placement Optimization (Checksum:524e8b0b) REAL time: 1 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:526e2617) REAL time: 1 secs 
+Phase 8.5  Local Placement Optimization (Checksum:524e8b0b) REAL time: 1 secs 
 
 Phase 9.8  Global Placement
 ..
-Phase 9.8  Global Placement (Checksum:8a6f82ff) REAL time: 1 secs 
+Phase 9.8  Global Placement (Checksum:8b01411b) REAL time: 1 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:8a6f82ff) REAL time: 1 secs 
+Phase 10.5  Local Placement Optimization (Checksum:8b01411b) REAL time: 1 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:89d83daf) REAL time: 1 secs 
+Phase 11.18  Placement Optimization (Checksum:8a516003) REAL time: 1 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:89d83daf) REAL time: 1 secs 
+Phase 12.5  Local Placement Optimization (Checksum:8a516003) REAL time: 1 secs 
 
 Total REAL time to Placer completion: 1 secs 
 Total CPU  time to Placer completion: 1 secs 
@@ -104,11 +108,11 @@ Writing design to file mag_comparer.ncd
 Starting Router
 
 
-Phase  1  : 15 unrouted;      REAL time: 4 secs 
+Phase  1  : 15 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 15 unrouted;      REAL time: 4 secs 
+Phase  2  : 15 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 0 unrouted;      REAL time: 4 secs 
+Phase  3  : 0 unrouted;      REAL time: 3 secs 
 
 Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
