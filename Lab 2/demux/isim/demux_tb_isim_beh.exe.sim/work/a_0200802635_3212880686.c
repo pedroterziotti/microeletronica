@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/pedrot/Desktop/Lab/demux/demux.vhd";
+static const char *ng0 = "/home/pedrot/Desktop/microeletronica/Lab 2/demux/demux.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_3488768496604610246_503743352(char *, unsigned char , unsigned char );

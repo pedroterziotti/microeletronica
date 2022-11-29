@@ -2,14 +2,14 @@ Command line:
    demux_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58751
+     -socket  54051
 
-Tue Nov 22 10:19:58 2022
+Sun Nov 27 09:42:25 2022
 
 
- Elaboration Time: 0.13 sec
+ Elaboration Time: 0.12 sec
 
- Current Memory Usage: 229.45 Meg
+ Current Memory Usage: 229.454 Meg
 
  Total Signals          : 22
  Total Nets             : 11
@@ -21,9 +21,9 @@ Tue Nov 22 10:19:58 2022
  Total Scalar Nets and Variables : 371
 Total Line Count : 11
 
- Total Simulation Time: 0.17 sec
+ Total Simulation Time: 0.16 sec
 
- Current Memory Usage: 304.951 Meg
+ Current Memory Usage: 304.955 Meg
 
-Tue Nov 22 10:20:13 2022
+Sun Nov 27 09:42:39 2022
 

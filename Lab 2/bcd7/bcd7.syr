@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: bcd7.prj
@@ -107,8 +107,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/pedrot/Desktop/Lab/bcd7/bcd7.vhd" in Library work.
-Architecture behavioral of Entity bcd7 is up to date.
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7.vhd" in Library work.
+Entity <bcd7> compiled.
+Entity <bcd7> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -130,7 +131,7 @@ Entity <bcd7> analyzed. Unit <bcd7> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <bcd7>.
-    Related source file is "/home/pedrot/Desktop/Lab/bcd7/bcd7.vhd".
+    Related source file is "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7.vhd".
 Unit <bcd7> synthesized.
 
 
@@ -191,16 +192,15 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 11
+# IOs                              : 12
 
 Cell Usage :
-# BELS                             : 7
-#      LUT2                        : 1
-#      LUT3                        : 2
-#      LUT4                        : 4
-# IO Buffers                       : 11
+# BELS                             : 8
+#      GND                         : 1
+#      LUT4                        : 7
+# IO Buffers                       : 12
 #      IBUF                        : 4
-#      OBUF                        : 7
+#      OBUF                        : 8
 =========================================================================
 
 Device utilization summary:
@@ -210,8 +210,8 @@ Selected Device : 3s500efg320-5
 
  Number of Slices:                        4  out of   4656     0%  
  Number of 4 input LUTs:                  7  out of   9312     0%  
- Number of IOs:                          11
- Number of bonded IOBs:                  11  out of    232     4%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
 
 ---------------------------
 Partition Resource Summary:
@@ -252,19 +252,19 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 24 / 7
+  Total number of paths / destination ports: 28 / 7
 -------------------------------------------------------------------------
 Delay:               5.998ns (Levels of Logic = 3)
-  Source:            d (PAD)
-  Destination:       O2 (PAD)
+  Source:            D1 (PAD)
+  Destination:       A (PAD)
 
-  Data Path: d to O2
+  Data Path: D1 to A
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             7   1.106   0.754  d_IBUF (d_IBUF)
-     LUT2:I0->O            1   0.612   0.357  O41 (O4_OBUF)
-     OBUF:I->O                 3.169          O4_OBUF (O4)
+     IBUF:I->O             7   1.106   0.754  D1_IBUF (D1_IBUF)
+     LUT4:I0->O            1   0.612   0.357  A1 (A_OBUF)
+     OBUF:I->O                 3.169          A_OBUF (A)
     ----------------------------------------
     Total                      5.998ns (4.887ns logic, 1.111ns route)
                                        (81.5% logic, 18.5% route)
@@ -272,13 +272,13 @@ Delay:               5.998ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.72 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.16 secs
  
 --> 
 
 
-Total memory usage is 512264 kilobytes
+Total memory usage is 512536 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

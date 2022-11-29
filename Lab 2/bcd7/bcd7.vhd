@@ -30,31 +30,38 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity bcd7 is
-Port ( a : in  STD_LOGIC;
-           b : in  STD_LOGIC;
-           c : in  STD_LOGIC;
-           d : in  STD_LOGIC;
+Port ( D3 : in  STD_LOGIC;
+           D2 : in  STD_LOGIC;
+           D1 : in  STD_LOGIC;
+           D0 : in  STD_LOGIC;
 			  
-           O0 : out  STD_LOGIC;
-           O1 : out  STD_LOGIC;
-           O2 : out  STD_LOGIC;
-           O3 : out  STD_LOGIC;
-           O4 : out  STD_LOGIC;
-           O5 : out  STD_LOGIC;
-           O6 : out  STD_LOGIC);
+           ANODO : out  STD_LOGIC;
+			  
+           A : out  STD_LOGIC;
+           B : out  STD_LOGIC;
+           C : out  STD_LOGIC;
+           D : out  STD_LOGIC;
+			  E: out  STD_LOGIC;
+           F : out  STD_LOGIC;
+           G : out  STD_LOGIC);
+
 
 end bcd7;
 
 architecture Behavioral of bcd7 is
 
 begin
-	O0<= a or c or (b and d) or ( (not b) and (not d));
-	O1<= (not b) or ((not c) and (not d)) or (c and d);
-	O2 <= b or (not c) or d;
-	O3 <= a or ((not b) and ( not d)) or ((not b) and c) or (c and (not d)) or (b and (not c) and d);
-	O4 <= ((not b) and (not d)) or (c or (not d));
-	O5 <= a or (b and (not c)) or (b and (not D)) or ((not c) and (not d));
-	O6 <= a or (b and (not c)) or ((not b) and c) or (c and (not d));
+		ANODO <='0';
+		A<=((NOT D3) AND (NOT D2) AND (NOT D1) AND D0) OR ((NOT D3) AND D2 AND (NOT D1) AND (NOT D0));
+		B<=((NOT D3) AND (D2) AND (NOT D1) AND D0) OR ((NOT D3) AND D2 AND D1 AND (NOT D0));
+		C<=((NOT D3) AND (NOT D2) AND D1 AND (NOT D0));
+		D<= ((NOT D3) AND (NOT D2) AND (NOT D1) AND D0) OR ((NOT D3) AND D2 AND (NOT D1) AND (NOT D0)) OR ((NOT D3) AND D2 AND D1 AND (D0));
+		E<= ((NOT D3) AND (NOT D2) AND (NOT D1) AND D0) OR ((NOT D3)AND (NOT D2) AND D1 AND D0) OR 
+					((NOT D3) AND D2 AND( NOT D1) AND (NOT D0)) OR ((NOT D3) AND D2 AND (NOT D1) AND (D0)) OR
+					((NOT D3) AND D2 AND D1 AND D0) OR (D3 AND (NOT D2) AND (NOT D1) AND D0);
+		F<= 	((NOT D3) AND (NOT D2) AND (NOT D1) AND D0) OR ((NOT D3) AND (NOT D2) AND D1 AND (NOT D0)) OR 
+				((NOT D3) AND (NOT D2) AND D1 AND D0) OR ((NOT D3) AND D2 AND D1 AND (D0));
+		G<= ((NOT D3) AND (NOT D2) AND (NOT D1) AND (nOT D0))OR ((NOT D3) AND (NOT D2) AND (NOT D1) AND D0) OR ((NOT D3) AND D2 AND D1 AND (D0));
 
 end Behavioral;
 

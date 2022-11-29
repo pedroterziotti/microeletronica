@@ -1,6 +1,15 @@
-V3 3
+V3 7
 FL /home/pedrot/Desktop/Lab/bcd7/bcd7.vhd 2022/11/22.11:34:34 P.20131013
-EN work/bcd7 1669129288 FL /home/pedrot/Desktop/Lab/bcd7/bcd7.vhd \
+FL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7.vhd" 2022/11/27.12:08:36 P.20131013
+EN work/bcd7 1669574907 \
+      FL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/bcd7/Behavioral 1669129289 \
-      FL /home/pedrot/Desktop/Lab/bcd7/bcd7.vhd EN work/bcd7 1669129288
+AR work/bcd7/Behavioral 1669574908 \
+      FL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7.vhd" EN work/bcd7 1669574907
+FL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.vhd" 2022/11/29.17:04:06 P.20131013
+EN work/bcd7E 1669752249 \
+      FL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/bcd7E/Behavioral 1669752250 \
+      FL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.vhd" \
+      EN work/bcd7E 1669752249

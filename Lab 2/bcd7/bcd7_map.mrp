@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Nov 22 12:01:35 2022
+Mapped Date    : Sun Nov 27 15:48:39 2022
 
 Design Summary
 --------------
@@ -23,13 +23,13 @@ Logic Distribution:
     Number of Slices containing unrelated logic:          0 out of       4   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:           7 out of   9,312    1%
-  Number of bonded IOBs:                 11 out of     232    4%
+  Number of bonded IOBs:                 12 out of     232    5%
 
-Average Fanout of Non-Clock Nets:                2.82
+Average Fanout of Non-Clock Nets:                3.18
 
 Peak Memory Usage:  609 MB
-Total REAL time to MAP completion:  1 secs 
-Total CPU time to MAP completion:   1 secs 
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 
@@ -80,9 +80,14 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
+   1 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
 
 Section 6 - IOB Properties
 --------------------------
@@ -91,17 +96,18 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| O0                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| O1                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| O2                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| O3                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| O4                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| O5                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| O6                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
-| a                                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| b                                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| c                                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| d                                  | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| A                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| ANODO                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| B                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| C                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| D                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| D0                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| D1                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| D2                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| D3                                 | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| E                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| F                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| G                                  | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

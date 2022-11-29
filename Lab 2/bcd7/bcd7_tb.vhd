@@ -41,35 +41,35 @@ ARCHITECTURE behavior OF bcd7_tb IS
  
     COMPONENT bcd7
     PORT(
-         a : IN  std_logic;
-         b : IN  std_logic;
-         c : IN  std_logic;
-         d : IN  std_logic;
-         O0 : OUT  std_logic;
-         O1 : OUT  std_logic;
-         O2 : OUT  std_logic;
-         O3 : OUT  std_logic;
-         O4 : OUT  std_logic;
-         O5 : OUT  std_logic;
-         O6 : OUT  std_logic
+         D3 : IN  std_logic;
+         D2 : IN  std_logic;
+         D1 : IN  std_logic;
+         D0 : IN  std_logic;
+         A : OUT  std_logic;
+         B : OUT  std_logic;
+         C : OUT  std_logic;
+         D : OUT  std_logic;
+         E : OUT  std_logic;
+         F : OUT  std_logic;
+         G : OUT  std_logic
         );
     END COMPONENT;
     
 
    --Inputs
-   signal a : std_logic := '0';
-   signal b : std_logic := '0';
-   signal c : std_logic := '0';
-   signal d : std_logic := '0';
+   signal D3 : std_logic := '0';
+   signal D2 : std_logic := '0';
+   signal D1 : std_logic := '0';
+   signal D0 : std_logic := '0';
 
  	--Outputs
-   signal O0 : std_logic;
-   signal O1 : std_logic;
-   signal O2 : std_logic;
-   signal O3 : std_logic;
-   signal O4 : std_logic;
-   signal O5 : std_logic;
-   signal O6 : std_logic;
+   signal A : std_logic;
+   signal B : std_logic;
+   signal C : std_logic;
+   signal D : std_logic;
+   signal E : std_logic;
+   signal F : std_logic;
+   signal G : std_logic;
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -79,22 +79,22 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: bcd7 PORT MAP (
-          a => a,
-          b => b,
-          c => c,
-          d => d,
-          O0 => O0,
-          O1 => O1,
-          O2 => O2,
-          O3 => O3,
-          O4 => O4,
-          O5 => O5,
-          O6 => O6
+          D3 => D3,
+          D2 => D2,
+          D1 => D1,
+          D0 => D0,
+          A => A,
+          B => B,
+				C	=> C,
+          D => D,
+          E => E,
+          F => F,
+          G => G
         );
-	d <= not d after 10ns;
-	c <= not c after 20ns;
-	b <= not b after 40ns;
-	a <= not a after 80ns;
+	D0 <= not D0 after 10ns;
+	D1 <= not D1 after 20ns;
+	D2 <= not D2 after 40ns;
+	D3 <= not D3 after 80ns;
 
 
 		

@@ -1,2 +1,4 @@
-EN bcd7 NULL /home/pedrot/Desktop/Lab/bcd7/bcd7.vhd sub00/vhpl00 1669129288
-AR bcd7 behavioral /home/pedrot/Desktop/Lab/bcd7/bcd7.vhd sub00/vhpl01 1669129289
+EN bcd7 NULL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7.vhd" sub00/vhpl00 1669574907
+EN bcd7e NULL "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.vhd" sub00/vhpl02 1669752249
+AR bcd7e behavioral "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.vhd" sub00/vhpl03 1669752250
+AR bcd7 behavioral "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7.vhd" sub00/vhpl01 1669574908

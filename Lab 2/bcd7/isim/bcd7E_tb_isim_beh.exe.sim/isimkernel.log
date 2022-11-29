@@ -1,0 +1,29 @@
+Command line:
+   bcd7E_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57849
+
+Tue Nov 29 17:07:25 2022
+
+
+ Elaboration Time: 0.05 sec
+
+ Current Memory Usage: 229.462 Meg
+
+ Total Signals          : 26
+ Total Nets             : 13
+ Total Signal Drivers   : 13
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 373
+Total Line Count : 13
+
+ Total Simulation Time: 0.09 sec
+
+ Current Memory Usage: 304.964 Meg
+
+Tue Nov 29 17:08:46 2022
+
