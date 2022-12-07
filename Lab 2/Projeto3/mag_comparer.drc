@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Dec  7 13:59:13 2022
+
+drc -z mag_comparer.ncd mag_comparer.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -16,3 +16,14 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o mag_comparer_map.ncd mag_comparer.ngd mag_comparer.pcf 
 par -w -intstyle ise -ol high -t 1 mag_comparer_map.ncd mag_comparer.ncd mag_comparer.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mag_comparer.twx mag_comparer.ncd -o mag_comparer.twr mag_comparer.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 2/Projeto3/mag_comparer.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 2/Projeto3/mag_comparer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "mag_comparer.ngc" mag_comparer.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o mag_comparer_map.ncd mag_comparer.ngd mag_comparer.pcf 
+par -w -intstyle ise -ol high -t 1 mag_comparer_map.ncd mag_comparer.ncd mag_comparer.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mag_comparer.twx mag_comparer.ncd -o mag_comparer.twr mag_comparer.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f mag_comparer.ut mag_comparer.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "mag_comparer.ngc" mag_comparer.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o mag_comparer_map.ncd mag_comparer.ngd mag_comparer.pcf 
+par -w -intstyle ise -ol high -t 1 mag_comparer_map.ncd mag_comparer.ncd mag_comparer.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mag_comparer.twx mag_comparer.ncd -o mag_comparer.twr mag_comparer.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f mag_comparer.ut mag_comparer.ncd 

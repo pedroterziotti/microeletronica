@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.ncd
+OUTFILE=/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/pedrot/Desktop/microeletronica/Lab 2/bcd7
+LICENSE=WebPack
+USER_INFO=212588854_0_0_637

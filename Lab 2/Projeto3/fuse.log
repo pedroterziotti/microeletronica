@@ -8,15 +8,14 @@ Parsing VHDL file "/home/pedrot/Desktop/microeletronica/Lab 2/Projeto3/mag_compa
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 95876 KB
-Fuse CPU Usage: 1170 ms
+Fuse CPU Usage: 940 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling architecture behavioral of entity mag_comparer [mag_comparer_default]
 Compiling architecture behavior of entity mag_comparer_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 5 VHDL Units
 Built simulation executable /home/pedrot/Desktop/microeletronica/Lab 2/Projeto3/mag_comparer_tb_isim_beh.exe
 Fuse Memory Usage: 661608 KB
-Fuse CPU Usage: 1290 ms
-GCC CPU Usage: 510 ms
+Fuse CPU Usage: 1120 ms
+GCC CPU Usage: 380 ms

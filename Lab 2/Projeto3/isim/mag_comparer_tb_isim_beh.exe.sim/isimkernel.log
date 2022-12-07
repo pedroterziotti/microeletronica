@@ -2,12 +2,12 @@ Command line:
    mag_comparer_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  34253
+     -socket  44221
 
-Sun Nov 27 09:14:44 2022
+Wed Dec  7 13:54:24 2022
 
 
- Elaboration Time: 0.02 sec
+ Elaboration Time: 0.05 sec
 
  Current Memory Usage: 229.462 Meg
 
@@ -21,9 +21,9 @@ Sun Nov 27 09:14:44 2022
  Total Scalar Nets and Variables : 367
 Total Line Count : 7
 
- Total Simulation Time: 0.04 sec
+ Total Simulation Time: 0.29 sec
 
  Current Memory Usage: 304.964 Meg
 
-Sun Nov 27 09:15:20 2022
+Wed Dec  7 13:57:36 2022
 

@@ -29,6 +29,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+
 entity mag_comparer is
     Port ( A1 : in  STD_LOGIC;
            A0 : in  STD_LOGIC;

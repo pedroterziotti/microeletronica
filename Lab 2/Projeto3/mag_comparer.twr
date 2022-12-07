@@ -44,22 +44,22 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A0             |a_larger_b     |    6.302|
-A0             |b_larger_a     |    6.097|
-A0             |equals         |    6.243|
-A1             |a_larger_b     |    6.548|
-A1             |b_larger_a     |    6.488|
-A1             |equals         |    6.539|
-B0             |a_larger_b     |    5.883|
-B0             |b_larger_a     |    5.834|
-B0             |equals         |    5.847|
-B1             |a_larger_b     |    6.351|
-B1             |b_larger_a     |    6.154|
-B1             |equals         |    6.348|
+A0             |a_larger_b     |    5.604|
+A0             |b_larger_a     |    6.219|
+A0             |equals         |    5.425|
+A1             |a_larger_b     |    5.725|
+A1             |b_larger_a     |    6.351|
+A1             |equals         |    5.519|
+B0             |a_larger_b     |    5.779|
+B0             |b_larger_a     |    6.249|
+B0             |equals         |    5.550|
+B1             |a_larger_b     |    6.280|
+B1             |b_larger_a     |    6.758|
+B1             |equals         |    6.107|
 ---------------+---------------+---------+
 
 
-Analysis completed Sun Nov 27 09:18:20 2022 
+Analysis completed Wed Dec  7 13:58:58 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

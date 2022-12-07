@@ -2,12 +2,14 @@ Release 14.7 ngdbuild P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild
--intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 bcd7E.ngc bcd7E.ngd
+-intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 bcd7E.ngc
+bcd7E.ngd
 
 Reading NGO file "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file "pins.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 Done...
@@ -25,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 391516 kilobytes
+Total memory usage is 391476 kilobytes
 
 Writing NGD file "bcd7E.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
+Total REAL time to NGDBUILD completion:  1 sec
 Total CPU time to NGDBUILD completion:   1 sec
 
 Writing NGDBUILD log file "bcd7E.bld"...

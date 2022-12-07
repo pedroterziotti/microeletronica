@@ -37,7 +37,7 @@ Port ( D3 : in  STD_LOGIC;
            D0 : in  STD_LOGIC;
 			  ENABLE : in  STD_LOGIC;
 
-           ANODO : out  STD_LOGIC;
+           ANODO : out  STD_LOGIC_vector(3 downto 0);
 			  
            A : out  STD_LOGIC;
            B : out  STD_LOGIC;
@@ -55,7 +55,7 @@ end bcd7E;
 architecture Behavioral of bcd7E is
 
 begin
-ANODO <='0';
+ANODO <="1110";
 		A<=(((NOT D3) AND (NOT D2) AND (NOT D1) AND D0) OR ((NOT D3) AND D2 AND (NOT D1) AND (NOT D0))) and ENABLE;
 		B<=(((NOT D3) AND (D2) AND (NOT D1) AND D0) OR ((NOT D3) AND D2 AND D1 AND (NOT D0))) and Enable;
 		C<=(((NOT D3) AND (NOT D2) AND D1 AND (NOT D0))) and Enable;

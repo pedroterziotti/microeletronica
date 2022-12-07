@@ -1,4 +1,23 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Nov 29 17:04:20 2022
+// Written by: Map P.20131013 on Wed Dec 07 14:18:27 2022
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "ENABLE" LOCATE = SITE "L14" LEVEL 1;
+COMP "D" LOCATE = SITE "D16" LEVEL 1;
+COMP "A" LOCATE = SITE "L18" LEVEL 1;
+COMP "B" LOCATE = SITE "F18" LEVEL 1;
+COMP "C" LOCATE = SITE "D17" LEVEL 1;
+COMP "E" LOCATE = SITE "G14" LEVEL 1;
+COMP "F" LOCATE = SITE "J17" LEVEL 1;
+COMP "G" LOCATE = SITE "H14" LEVEL 1;
+COMP "ANODO<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "D0" LOCATE = SITE "G18" LEVEL 1;
+COMP "ANODO<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "D1" LOCATE = SITE "H18" LEVEL 1;
+COMP "D2" LOCATE = SITE "K18" LEVEL 1;
+COMP "ANODO<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "D3" LOCATE = SITE "K17" LEVEL 1;
+COMP "ANODO<3>" LOCATE = SITE "F15" LEVEL 1;
+SCHEMATIC END;
 

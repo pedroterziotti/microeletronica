@@ -3,7 +3,8 @@ Release 14.7 Trace  (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
-3 -s 5 -n 3 -fastpaths -xml bcd7E.twx bcd7E.ncd -o bcd7E.twr bcd7E.pcf
+3 -s 5 -n 3 -fastpaths -xml bcd7E.twx bcd7E.ncd -o bcd7E.twr bcd7E.pcf -ucf
+pins.ucf
 
 Design file:              bcd7E.ncd
 Physical constraint file: bcd7E.pcf
@@ -43,45 +44,45 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-D0             |A              |    5.264|
-D0             |B              |    5.283|
-D0             |C              |    5.851|
-D0             |D              |    5.471|
-D0             |E              |    5.967|
-D0             |F              |    5.254|
-D0             |G              |    5.471|
-D1             |A              |    5.781|
-D1             |B              |    5.449|
-D1             |C              |    5.455|
-D1             |D              |    6.015|
-D1             |E              |    5.942|
-D1             |F              |    5.447|
-D1             |G              |    6.015|
-D2             |A              |    5.723|
-D2             |B              |    5.462|
-D2             |C              |    5.475|
-D2             |D              |    5.907|
-D2             |E              |    5.962|
-D2             |F              |    5.483|
-D2             |G              |    5.907|
-D3             |A              |    6.925|
-D3             |B              |    6.719|
-D3             |C              |    6.278|
-D3             |D              |    7.165|
-D3             |E              |    6.436|
-D3             |F              |    6.684|
-D3             |G              |    7.165|
-ENABLE         |A              |    6.896|
-ENABLE         |B              |    6.690|
-ENABLE         |C              |    6.249|
-ENABLE         |D              |    7.136|
-ENABLE         |E              |    5.914|
-ENABLE         |F              |    6.655|
-ENABLE         |G              |    7.136|
+D0             |A              |    6.201|
+D0             |B              |    6.118|
+D0             |C              |    6.991|
+D0             |D              |    6.573|
+D0             |E              |    6.342|
+D0             |F              |    6.111|
+D0             |G              |    5.898|
+D1             |A              |    6.819|
+D1             |B              |    6.588|
+D1             |C              |    7.192|
+D1             |D              |    7.224|
+D1             |E              |    6.291|
+D1             |F              |    6.530|
+D1             |G              |    5.897|
+D2             |A              |    7.315|
+D2             |B              |    7.076|
+D2             |C              |    6.868|
+D2             |D              |    7.664|
+D2             |E              |    6.384|
+D2             |F              |    7.074|
+D2             |G              |    5.963|
+D3             |A              |    7.618|
+D3             |B              |    7.524|
+D3             |C              |    7.799|
+D3             |D              |    8.017|
+D3             |E              |    6.740|
+D3             |F              |    7.488|
+D3             |G              |    7.126|
+ENABLE         |A              |    8.565|
+ENABLE         |B              |    8.471|
+ENABLE         |C              |    8.746|
+ENABLE         |D              |    8.964|
+ENABLE         |E              |    7.628|
+ENABLE         |F              |    8.435|
+ENABLE         |G              |    8.073|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Nov 29 17:04:30 2022 
+Analysis completed Wed Dec  7 14:18:36 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
