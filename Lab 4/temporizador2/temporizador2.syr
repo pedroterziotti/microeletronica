@@ -1,0 +1,456 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Reading design: temporizador2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "temporizador2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "temporizador2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : temporizador2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd" in Library work.
+Entity <temporizador2> compiled.
+Entity <temporizador2> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <temporizador2> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <temporizador2> in library <work> (Architecture <behavioral>).
+Entity <temporizador2> analyzed. Unit <temporizador2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <temporizador2>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd".
+    Found 16x7-bit ROM for signal <ssd>.
+    Found 4-bit register for signal <ANODO>.
+    Found 1-of-4 decoder for signal <ANODO$mux0001> created at line 75.
+    Found 4-bit up counter for signal <d0>.
+    Found 4-bit adder for signal <d0$add0000> created at line 52.
+    Found 4-bit comparator greater for signal <d0$cmp_gt0000> created at line 53.
+    Found 4-bit up counter for signal <d1>.
+    Found 4-bit adder for signal <d1$add0000> created at line 55.
+    Found 4-bit comparator greater for signal <d1$cmp_gt0000> created at line 56.
+    Found 4-bit comparator lessequal for signal <d1$cmp_le0000> created at line 53.
+    Found 4-bit up counter for signal <d2>.
+    Found 4-bit adder for signal <d2$add0000> created at line 58.
+    Found 4-bit comparator greater for signal <d2$cmp_gt0000> created at line 59.
+    Found 4-bit comparator lessequal for signal <d2$cmp_le0000> created at line 56.
+    Found 4-bit up counter for signal <d3>.
+    Found 4-bit comparator lessequal for signal <d3$cmp_le0000> created at line 59.
+    Found 2-bit up counter for signal <display>.
+    Found 1-bit register for signal <pause>.
+    Found 18-bit adder for signal <pause$addsub0000> created at line 30.
+    Found 18-bit comparator less for signal <pause$cmp_lt0000> created at line 32.
+    Found 18-bit up counter for signal <ticks>.
+    Found 4-bit register for signal <valor>.
+    Found 2-bit adder for signal <valor$add0000> created at line 74.
+    Found 4-bit 4-to-1 multiplexer for signal <valor$mux0001> created at line 75.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   6 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <temporizador2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 3
+# Counters                                             : 6
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 2
+# Comparators                                          : 7
+ 18-bit comparator less                                : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <temporizador2>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_ssd> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <temporizador2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 5
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 3
+# Counters                                             : 6
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 7
+ 18-bit comparator less                                : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <temporizador2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block temporizador2, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 45
+ Flip-Flops                                            : 45
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : temporizador2.ngr
+Top Level Output File Name         : temporizador2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 170
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 36
+#      LUT2                        : 8
+#      LUT3                        : 14
+#      LUT4                        : 23
+#      MUXCY                       : 42
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 45
+#      FD                          : 7
+#      FDCE                        : 16
+#      FDE                         : 1
+#      FDR                         : 18
+#      FDS                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       51  out of   4656     1%  
+ Number of Slice Flip Flops:             45  out of   9312     0%  
+ Number of 4 input LUTs:                 91  out of   9312     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 45    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+d0_or0000(d0_or000036:O)           | NONE(d0_0)             | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.233ns (Maximum Frequency: 138.256MHz)
+   Minimum input arrival time before clock: 3.801ns
+   Maximum output required time after clock: 5.406ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.233ns (frequency: 138.256MHz)
+  Total number of paths / destination ports: 534 / 65
+-------------------------------------------------------------------------
+Delay:               7.233ns (Levels of Logic = 20)
+  Source:            ticks_1 (FF)
+  Destination:       pause (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ticks_1 to pause
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  ticks_1 (ticks_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_pause_addsub0000_cy<1>_rt (Madd_pause_addsub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_pause_addsub0000_cy<1> (Madd_pause_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<2> (Madd_pause_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<3> (Madd_pause_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<4> (Madd_pause_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<5> (Madd_pause_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<6> (Madd_pause_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<7> (Madd_pause_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<8> (Madd_pause_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<9> (Madd_pause_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<10> (Madd_pause_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<11> (Madd_pause_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<12> (Madd_pause_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<13> (Madd_pause_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<14> (Madd_pause_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.699   0.509  Madd_pause_addsub0000_xor<15> (pause_addsub0000<15>)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_pause_cmp_lt0000_lut<6> (Mcompar_pause_cmp_lt0000_lut<6>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_pause_cmp_lt0000_cy<6> (Mcompar_pause_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.399   0.426  Mcompar_pause_cmp_lt0000_cy<7> (Mcompar_pause_cmp_lt0000_cy<7>)
+     LUT2:I1->O            1   0.612   0.357  pause_not00021 (pause_not0002)
+     FDE:CE                    0.483          pause
+    ----------------------------------------
+    Total                      7.233ns (5.409ns logic, 1.824ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              3.801ns (Levels of Logic = 2)
+  Source:            pauseBTN (PAD)
+  Destination:       ticks_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: pauseBTN to ticks_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  pauseBTN_IBUF (pauseBTN_IBUF)
+     INV:I->O             18   0.612   0.908  pauseBTN_inv1_INV_0 (pauseBTN_inv)
+     FDR:R                     0.795          ticks_0
+    ----------------------------------------
+    Total                      3.801ns (2.513ns logic, 1.288ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.406ns (Levels of Logic = 2)
+  Source:            valor_0 (FF)
+  Destination:       ssd<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: valor_0 to ssd<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.514   0.754  valor_0 (valor_0)
+     LUT4:I0->O            1   0.612   0.357  Mrom_ssd21 (ssd_2_OBUF)
+     OBUF:I->O                 3.169          ssd_2_OBUF (ssd<2>)
+    ----------------------------------------
+    Total                      5.406ns (4.295ns logic, 1.111ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.63 secs
+ 
+--> 
+
+
+Total memory usage is 515208 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

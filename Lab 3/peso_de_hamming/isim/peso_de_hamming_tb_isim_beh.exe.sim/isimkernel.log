@@ -1,0 +1,29 @@
+Command line:
+   peso_de_hamming_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47333
+
+Thu Jan 19 11:04:24 2023
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 229.466 Meg
+
+ Total Signals          : 22
+ Total Nets             : 32
+ Total Signal Drivers   : 22
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 22
+ Total Traceable Variables  : 17
+ Total Scalar Nets and Variables : 401
+Total Line Count : 15
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 304.968 Meg
+
+Thu Jan 19 11:04:50 2023
+

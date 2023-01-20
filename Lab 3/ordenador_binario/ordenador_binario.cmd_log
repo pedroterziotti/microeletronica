@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "ordenador_binario.ngc" ordenador_binario.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ordenador_binario_map.ncd ordenador_binario.ngd ordenador_binario.pcf 
+par -w -intstyle ise -ol high -t 1 ordenador_binario_map.ncd ordenador_binario.ncd ordenador_binario.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ordenador_binario.twx ordenador_binario.ncd -o ordenador_binario.twr ordenador_binario.pcf 

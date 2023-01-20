@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="circuito_aritimetico.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="circuito_aritimetico.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="circuito_aritimetico.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="circuito_aritimetico.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="circuito_aritimetico.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="circuito_aritimetico.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="circuito_aritimetico.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="circuito_aritimetico.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="circuito_aritimetico.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="circuito_aritimetico.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="circuito_aritimetico.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="circuito_aritimetico_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="circuito_aritimetico_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="circuito_aritimetico_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circuito_aritimetico_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="circuito_aritimetico_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="circuito_aritimetico_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circuito_aritimetico_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1674172092">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7037556250219659456" xil_pn:start_ts="1674172092">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="9085755360950027015" xil_pn:start_ts="1674172092">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1674172092">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2529190289047017090" xil_pn:start_ts="1674172092">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1674172092">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2870515752344373393" xil_pn:start_ts="1674172092">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172627" xil_pn:in_ck="-2033724269160105237" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2426166321818384152" xil_pn:start_ts="1674172624">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="circuito_aritimetico.lso"/>
+      <outfile xil_pn:name="circuito_aritimetico.ngc"/>
+      <outfile xil_pn:name="circuito_aritimetico.ngr"/>
+      <outfile xil_pn:name="circuito_aritimetico.prj"/>
+      <outfile xil_pn:name="circuito_aritimetico.syr"/>
+      <outfile xil_pn:name="circuito_aritimetico.xst"/>
+      <outfile xil_pn:name="circuito_aritimetico_vhdl.prj"/>
+      <outfile xil_pn:name="circuito_aritimetico_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172097" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-634917714357352461" xil_pn:start_ts="1674172097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172100" xil_pn:in_ck="-2033724269160113983" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1105839105906237972" xil_pn:start_ts="1674172097">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="circuito_aritimetico.bld"/>
+      <outfile xil_pn:name="circuito_aritimetico.ngd"/>
+      <outfile xil_pn:name="circuito_aritimetico_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1674172102" xil_pn:in_ck="-2033724269160113982" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674172100">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="circuito_aritimetico_map.map"/>
+      <outfile xil_pn:name="circuito_aritimetico_map.mrp"/>
+    </transform>
+  </transforms>
+
+</generated_project>

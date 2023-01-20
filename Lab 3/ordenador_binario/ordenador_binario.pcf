@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jan 19 13:12:03 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "vector_in_0_BUFGP/IBUFG" BEL "vector_in_0_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "vector_in_5_BUFGP/IBUFG" BEL "vector_in_5_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "vector_in_1_BUFGP/IBUFG" BEL "vector_in_1_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "vector_in_6_BUFGP/IBUFG" BEL "vector_in_6_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "vector_in_2_BUFGP/IBUFG" BEL "vector_in_2_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "vector_in_7_BUFGP/IBUFG" BEL "vector_in_7_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "vector_in_3_BUFGP/IBUFG" BEL "vector_in_3_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "vector_in_4_BUFGP/IBUFG" BEL "vector_in_4_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+
