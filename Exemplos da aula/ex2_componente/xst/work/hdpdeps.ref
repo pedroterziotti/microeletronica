@@ -1,0 +1,15 @@
+V3 7
+FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somador_complexo.vhd" 2023/01/20.14:37:58 P.20131013
+EN work/somador_complexo 1674236885 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somador_complexo.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/somador_complexo/Behavioral 1674236886 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somador_complexo.vhd" \
+      EN work/somador_complexo 1674236885
+FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somado_paralelo.vhd" 2023/01/20.14:48:00 P.20131013
+EN work/somado_paralelo 1674236887 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somado_paralelo.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/somado_paralelo/Behavioral 1674236888 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somado_paralelo.vhd" \
+      EN work/somado_paralelo 1674236887 CP somador_complexo

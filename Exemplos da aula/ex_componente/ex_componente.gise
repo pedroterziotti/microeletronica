@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ex_componente.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="circular_shift.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="circular_shift.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="circular_shift.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="circular_shift.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="circular_shift.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="circular_shift.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="circular_shift.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="circular_shift.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="circular_shift.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="circular_shift.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="circular_shift.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="circular_shift.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="circular_shift.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="circular_shift.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="circular_shift.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="circular_shift.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="circular_shift.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="circular_shift.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="circular_shift.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="circular_shift_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="circular_shift_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="circular_shift_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="circular_shift_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="circular_shift_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circular_shift_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circular_shift_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="circular_shift_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="circular_shift_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circular_shift_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="circular_shift_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="circular_shift_usage.xml"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="circular_shift_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circular_shift_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mux.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mux.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mux.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mux.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mux.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="mux.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mux.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="mux.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="mux.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="mux.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mux.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="mux.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mux.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mux.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="mux.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="mux.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="mux.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="mux.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mux.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mux_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mux_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mux_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mux_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="mux_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="mux_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="mux_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mux_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mux_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mux_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mux_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1674234842" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1674234842">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235612" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3083831361599555753" xil_pn:start_ts="1674235612">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235612" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-1982522494029482050" xil_pn:start_ts="1674235612">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674234842" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1674234842">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235612" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6302138931885159659" xil_pn:start_ts="1674235612">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674234842" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1674234842">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235612" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6563898611660546616" xil_pn:start_ts="1674235612">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235808" xil_pn:in_ck="8993261149595604472" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5381350104642923025" xil_pn:start_ts="1674235799">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="circular_shift.lso"/>
+      <outfile xil_pn:name="circular_shift.ngc"/>
+      <outfile xil_pn:name="circular_shift.ngr"/>
+      <outfile xil_pn:name="circular_shift.prj"/>
+      <outfile xil_pn:name="circular_shift.stx"/>
+      <outfile xil_pn:name="circular_shift.syr"/>
+      <outfile xil_pn:name="circular_shift.xst"/>
+      <outfile xil_pn:name="circular_shift_xst.xrpt"/>
+      <outfile xil_pn:name="mux.ngr"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235617" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5546076017659739562" xil_pn:start_ts="1674235616">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235814" xil_pn:in_ck="-7359126171648716392" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4772298841938940437" xil_pn:start_ts="1674235808">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="circular_shift.bld"/>
+      <outfile xil_pn:name="circular_shift.ngd"/>
+      <outfile xil_pn:name="circular_shift_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235819" xil_pn:in_ck="-7359126171648716391" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674235814">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="circular_shift.pcf"/>
+      <outfile xil_pn:name="circular_shift_map.map"/>
+      <outfile xil_pn:name="circular_shift_map.mrp"/>
+      <outfile xil_pn:name="circular_shift_map.ncd"/>
+      <outfile xil_pn:name="circular_shift_map.ngm"/>
+      <outfile xil_pn:name="circular_shift_map.xrpt"/>
+      <outfile xil_pn:name="circular_shift_summary.xml"/>
+      <outfile xil_pn:name="circular_shift_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235831" xil_pn:in_ck="-3179893004632652494" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1674235819">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="circular_shift.ncd"/>
+      <outfile xil_pn:name="circular_shift.pad"/>
+      <outfile xil_pn:name="circular_shift.par"/>
+      <outfile xil_pn:name="circular_shift.ptwx"/>
+      <outfile xil_pn:name="circular_shift.unroutes"/>
+      <outfile xil_pn:name="circular_shift.xpi"/>
+      <outfile xil_pn:name="circular_shift_pad.csv"/>
+      <outfile xil_pn:name="circular_shift_pad.txt"/>
+      <outfile xil_pn:name="circular_shift_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1674235831" xil_pn:in_ck="-7359126171648716523" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1674235828">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="circular_shift.twr"/>
+      <outfile xil_pn:name="circular_shift.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

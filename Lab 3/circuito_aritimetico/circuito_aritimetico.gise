@@ -33,7 +33,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="circuito_aritimetico.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="circuito_aritimetico.ngr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="circuito_aritimetico.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="circuito_aritimetico.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="circuito_aritimetico.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="circuito_aritimetico.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="circuito_aritimetico.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="circuito_aritimetico_envsettings.html"/>
@@ -51,6 +51,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1674172092">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7037556250219659456" xil_pn:start_ts="1674172092">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -76,8 +77,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674172627" xil_pn:in_ck="-2033724269160105237" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="2426166321818384152" xil_pn:start_ts="1674172624">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1674232093" xil_pn:in_ck="-2033724269160105237" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6727293680767165916" xil_pn:start_ts="1674232089">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="InputChanged"/>
@@ -86,9 +88,9 @@
       <outfile xil_pn:name="circuito_aritimetico.ngc"/>
       <outfile xil_pn:name="circuito_aritimetico.ngr"/>
       <outfile xil_pn:name="circuito_aritimetico.prj"/>
+      <outfile xil_pn:name="circuito_aritimetico.stx"/>
       <outfile xil_pn:name="circuito_aritimetico.syr"/>
       <outfile xil_pn:name="circuito_aritimetico.xst"/>
-      <outfile xil_pn:name="circuito_aritimetico_vhdl.prj"/>
       <outfile xil_pn:name="circuito_aritimetico_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -97,8 +99,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674172100" xil_pn:in_ck="-2033724269160113983" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1105839105906237972" xil_pn:start_ts="1674172097">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1674232097" xil_pn:in_ck="-2033724269160113983" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1105839105906237972" xil_pn:start_ts="1674232093">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -108,7 +110,7 @@
       <outfile xil_pn:name="circuito_aritimetico.ngd"/>
       <outfile xil_pn:name="circuito_aritimetico_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1674172102" xil_pn:in_ck="-2033724269160113982" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674172100">
+    <transform xil_pn:end_ts="1674232099" xil_pn:in_ck="-2033724269160113982" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674232097">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>

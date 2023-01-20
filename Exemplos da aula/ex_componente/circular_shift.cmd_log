@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "circular_shift.ngc" circular_shift.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o circular_shift_map.ncd circular_shift.ngd circular_shift.pcf 
+par -w -intstyle ise -ol high -t 1 circular_shift_map.ncd circular_shift.ncd circular_shift.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml circular_shift.twx circular_shift.ncd -o circular_shift.twr circular_shift.pcf 

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somado_paralelo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somado_paralelo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "somado_paralelo.ngc" somado_paralelo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o somado_paralelo_map.ncd somado_paralelo.ngd somado_paralelo.pcf 
+par -w -intstyle ise -ol high -t 1 somado_paralelo_map.ncd somado_paralelo.ncd somado_paralelo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml somado_paralelo.twx somado_paralelo.ncd -o somado_paralelo.twr somado_paralelo.pcf 

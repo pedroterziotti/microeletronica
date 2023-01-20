@@ -1,0 +1,2 @@
+vhdl work "somador_complexo.vhd"
+vhdl work "somado_paralelo.vhd"

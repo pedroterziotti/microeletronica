@@ -5,7 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="3014" delta="new" >&quot;<arg fmt="%s" index="1">/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.vhd</arg>&quot; Line <arg fmt="%d" index="2">5</arg>. Library unit <arg fmt="%s" index="3">std_logic_arith</arg> is not available in library <arg fmt="%s" index="4">work</arg>.
+<msg type="warning" file="Xst" num="1306" delta="new" >Output &lt;<arg fmt="%s" index="1">cout</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="1306" delta="new" >Output &lt;<arg fmt="%s" index="1">y</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">UN_Y</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">SN_Y</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 </messages>
