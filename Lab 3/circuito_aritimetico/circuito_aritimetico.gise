@@ -25,30 +25,120 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="circuito_aritimetico.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="circuito_aritimetico.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="circuito_aritimetico.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="circuito_aritimetico.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="circuito_aritimetico.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="circuito_aritimetico.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="circuito_aritimetico.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="circuito_aritimetico.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="circuito_aritimetico.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="circuito_aritimetico.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="circuito_aritimetico.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="circuito_aritimetico.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="circuito_aritimetico.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="circuito_aritimetico.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="circuito_aritimetico.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="circuito_aritimetico.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="circuito_aritimetico.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="circuito_aritimetico.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="circuito_aritimetico.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="circuito_aritimetico_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="circuito_aritimetico_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="circuito_aritimetico_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="circuito_aritimetico_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="circuito_aritimetico_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="circuito_aritimetico_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circuito_aritimetico_map.xrpt"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circuito_aritimetico_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="circuito_aritimetico_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="circuito_aritimetico_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circuito_aritimetico_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="circuito_aritimetico_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="circuito_aritimetico_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="circuito_aritimetico_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="circuito_aritimetico_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="circuito_aritimetico_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mini_ula_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mini_ula_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="mini_ula_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1674396191" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1674396191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396548" xil_pn:in_ck="7779650472485765118" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1674396548">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="circuito_aritimetico.vhd"/>
+      <outfile xil_pn:name="mini_ula_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396497" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4773449545902131399" xil_pn:start_ts="1674396497">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396497" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4548780183085864581" xil_pn:start_ts="1674396497">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396191" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="9085755360950027015" xil_pn:start_ts="1674396191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396548" xil_pn:in_ck="7779650472485765118" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1674396548">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="circuito_aritimetico.vhd"/>
+      <outfile xil_pn:name="mini_ula_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396550" xil_pn:in_ck="7779650472485765118" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7377241077288362540" xil_pn:start_ts="1674396548">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mini_ula_tb_beh.prj"/>
+      <outfile xil_pn:name="mini_ula_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396550" xil_pn:in_ck="7529666094970271410" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9206222366709686815" xil_pn:start_ts="1674396550">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="mini_ula_tb_isim_beh.wdb"/>
+    </transform>
     <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1674172092">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -77,12 +167,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674232093" xil_pn:in_ck="-2033724269160105237" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6727293680767165916" xil_pn:start_ts="1674232089">
+    <transform xil_pn:end_ts="1674396445" xil_pn:in_ck="-2033724269160105237" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6727293680767165916" xil_pn:start_ts="1674396439">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="circuito_aritimetico.lso"/>
       <outfile xil_pn:name="circuito_aritimetico.ngc"/>
@@ -98,25 +188,69 @@
     <transform xil_pn:end_ts="1674172097" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-634917714357352461" xil_pn:start_ts="1674172097">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1674232097" xil_pn:in_ck="-2033724269160113983" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1105839105906237972" xil_pn:start_ts="1674232093">
+    <transform xil_pn:end_ts="1674396448" xil_pn:in_ck="-2033724269160113983" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1105839105906237972" xil_pn:start_ts="1674396445">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="circuito_aritimetico.bld"/>
       <outfile xil_pn:name="circuito_aritimetico.ngd"/>
       <outfile xil_pn:name="circuito_aritimetico_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1674232099" xil_pn:in_ck="-2033724269160113982" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674232097">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1674396451" xil_pn:in_ck="-2033724269160113982" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674396448">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="circuito_aritimetico.pcf"/>
       <outfile xil_pn:name="circuito_aritimetico_map.map"/>
       <outfile xil_pn:name="circuito_aritimetico_map.mrp"/>
+      <outfile xil_pn:name="circuito_aritimetico_map.ncd"/>
+      <outfile xil_pn:name="circuito_aritimetico_map.ngm"/>
+      <outfile xil_pn:name="circuito_aritimetico_map.xrpt"/>
+      <outfile xil_pn:name="circuito_aritimetico_summary.xml"/>
+      <outfile xil_pn:name="circuito_aritimetico_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396458" xil_pn:in_ck="1681656684295370971" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1674396451">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="circuito_aritimetico.ncd"/>
+      <outfile xil_pn:name="circuito_aritimetico.pad"/>
+      <outfile xil_pn:name="circuito_aritimetico.par"/>
+      <outfile xil_pn:name="circuito_aritimetico.ptwx"/>
+      <outfile xil_pn:name="circuito_aritimetico.unroutes"/>
+      <outfile xil_pn:name="circuito_aritimetico.xpi"/>
+      <outfile xil_pn:name="circuito_aritimetico_pad.csv"/>
+      <outfile xil_pn:name="circuito_aritimetico_pad.txt"/>
+      <outfile xil_pn:name="circuito_aritimetico_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1674396458" xil_pn:in_ck="-2033724269160114114" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1674396456">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="circuito_aritimetico.twr"/>
+      <outfile xil_pn:name="circuito_aritimetico.twx"/>
     </transform>
   </transforms>
 

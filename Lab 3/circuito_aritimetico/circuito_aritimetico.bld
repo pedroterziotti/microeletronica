@@ -7,9 +7,6 @@ circuito_aritimetico.ngc circuito_aritimetico.ngd
 
 Reading NGO file "/home/pedrot/Desktop/microeletronica/Lab
 3/circuito_aritimetico/circuito_aritimetico.ngc" ...
-Loading design module "/home/pedrot/Desktop/microeletronica/Lab
-3/circuito_aritimetico/circuito_aritimetico.ngc"...
-WARNING:NgdBuild:578 - Design contains no instances.
 Gathering constraint information from source properties...
 Done.
 
@@ -28,9 +25,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:   0
 
-Total memory usage is 391624 kilobytes
+Total memory usage is 391652 kilobytes
 
 Writing NGD file "circuito_aritimetico.ngd" ...
 Total REAL time to NGDBUILD completion:  1 sec

@@ -23,17 +23,24 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="hamming_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="hamming_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="hamming_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="peso_de_hamming.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="peso_de_hamming.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="peso_de_hamming.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="peso_de_hamming.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="peso_de_hamming.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="peso_de_hamming.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="peso_de_hamming.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="peso_de_hamming.ngc"/>
@@ -49,6 +56,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="peso_de_hamming.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="peso_de_hamming.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="peso_de_hamming.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="peso_de_hamming.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="peso_de_hamming.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="peso_de_hamming.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="peso_de_hamming_envsettings.html"/>
@@ -70,6 +78,8 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="peso_de_hamming_usage.xml"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="peso_de_hamming_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="peso_de_hamming_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -81,57 +91,52 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674170754" xil_pn:in_ck="844098835979871599" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1674170754">
+    <transform xil_pn:end_ts="1674393323" xil_pn:in_ck="-2096167843649273530" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1674393323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="hamming.vhd"/>
+      <outfile xil_pn:name="hamming_tb.vhd"/>
       <outfile xil_pn:name="peso_de_hamming.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1674136473" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4772989365485287594" xil_pn:start_ts="1674136473">
+    <transform xil_pn:end_ts="1674393284" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9047713989904364788" xil_pn:start_ts="1674393284">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674136473" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="435131977982070060" xil_pn:start_ts="1674136473">
+    <transform xil_pn:end_ts="1674393284" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8622623021105398798" xil_pn:start_ts="1674393284">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674136360" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="500894500754179051" xil_pn:start_ts="1674136360">
+    <transform xil_pn:end_ts="1674392728" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3445064658053425767" xil_pn:start_ts="1674392728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674137061" xil_pn:in_ck="-7398759214341373517" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1674137061">
+    <transform xil_pn:end_ts="1674393323" xil_pn:in_ck="-2096167843649273530" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1674393323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="hamming.vhd"/>
+      <outfile xil_pn:name="hamming_tb.vhd"/>
+      <outfile xil_pn:name="peso_de_hamming.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1674393324" xil_pn:in_ck="-2096167843649273530" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6760296495845381254" xil_pn:start_ts="1674393323">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="hamming_tb_beh.prj"/>
+      <outfile xil_pn:name="hamming_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1674137063" xil_pn:in_ck="-7398759214341373517" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3573635315110195722" xil_pn:start_ts="1674137061">
+    <transform xil_pn:end_ts="1674393324" xil_pn:in_ck="383652247744819272" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8954854579328165831" xil_pn:start_ts="1674393324">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1674137063" xil_pn:in_ck="5373876126492635235" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7457308667136165245" xil_pn:start_ts="1674137063">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="hamming_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1674131132" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1674131132">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -141,7 +146,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674131132" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="500894500754179051" xil_pn:start_ts="1674131132">
+    <transform xil_pn:end_ts="1674241481" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3445064658053425767" xil_pn:start_ts="1674241481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -153,19 +158,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674131132" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1674131132">
+    <transform xil_pn:end_ts="1674241481" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-5485052969259075108" xil_pn:start_ts="1674241481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674131132" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3110564791394538699" xil_pn:start_ts="1674131132">
+    <transform xil_pn:end_ts="1674241481" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6503987217005749795" xil_pn:start_ts="1674241481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674170705" xil_pn:in_ck="844098835979871599" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4882825477162039992" xil_pn:start_ts="1674170698">
+    <transform xil_pn:end_ts="1674334190" xil_pn:in_ck="844098835979871599" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-4624689880565553930" xil_pn:start_ts="1674334182">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="peso_de_hamming.lso"/>
       <outfile xil_pn:name="peso_de_hamming.ngc"/>
@@ -179,22 +185,32 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1674131136" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7238575659883383145" xil_pn:start_ts="1674131136">
+    <transform xil_pn:end_ts="1674241630" xil_pn:in_ck="4913312808198" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7238575659883383145" xil_pn:start_ts="1674241630">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1674170709" xil_pn:in_ck="844098835979862853" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-839964472957167464" xil_pn:start_ts="1674170705">
+    <transform xil_pn:end_ts="1674241851" xil_pn:in_ck="1995978401143829835" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5916824993333082618" xil_pn:start_ts="1674241847">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="peso_de_hamming.bld"/>
       <outfile xil_pn:name="peso_de_hamming.ngd"/>
       <outfile xil_pn:name="peso_de_hamming_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1674170714" xil_pn:in_ck="844098835979862854" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674170709">
+    <transform xil_pn:end_ts="1674241856" xil_pn:in_ck="1995979807552448076" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="7728334167582700538" xil_pn:start_ts="1674241851">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="peso_de_hamming.pcf"/>
       <outfile xil_pn:name="peso_de_hamming_map.map"/>
@@ -205,9 +221,12 @@
       <outfile xil_pn:name="peso_de_hamming_summary.xml"/>
       <outfile xil_pn:name="peso_de_hamming_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1674170723" xil_pn:in_ck="3521762239201117535" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1674170714">
+    <transform xil_pn:end_ts="1674241864" xil_pn:in_ck="8076093762039591269" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="6268780068511726196" xil_pn:start_ts="1674241856">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="peso_de_hamming.ncd"/>
       <outfile xil_pn:name="peso_de_hamming.pad"/>
@@ -219,9 +238,27 @@
       <outfile xil_pn:name="peso_de_hamming_pad.txt"/>
       <outfile xil_pn:name="peso_de_hamming_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1674170723" xil_pn:in_ck="844098835979862722" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1674170721">
+    <transform xil_pn:end_ts="1674241880" xil_pn:in_ck="844098835979862722" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1674241875">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="peso_de_hamming.bgn"/>
+      <outfile xil_pn:name="peso_de_hamming.bit"/>
+      <outfile xil_pn:name="peso_de_hamming.drc"/>
+      <outfile xil_pn:name="peso_de_hamming.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1674241864" xil_pn:in_ck="1995794161614840264" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1674241862">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="peso_de_hamming.twr"/>
       <outfile xil_pn:name="peso_de_hamming.twx"/>

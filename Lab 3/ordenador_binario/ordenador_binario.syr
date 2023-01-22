@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: ordenador_binario.prj
@@ -45,7 +45,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "ordenador_binario"
 Output Format                      : NGC
-Target Device                      : xc3s500e-5-fg320
+Target Device                      : xc3s1200e-5-fg320
 
 ---- Source Options
 Top Module Name                    : ordenador_binario
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -135,46 +135,25 @@ Performing bidirectional port resolution...
 Synthesizing Unit <ordenador_binario>.
     Related source file is "/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.vhd".
 WARNING:Xst:653 - Signal <soma<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000000000000000000.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 31-bit latch for signal <soma_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 31-bit adder for signal <soma_1$add0000> created at line 23.
-    Found 31-bit adder for signal <soma_2$add0000> created at line 23.
-    Found 31-bit adder for signal <soma_3$add0000> created at line 23.
-    Found 31-bit adder for signal <soma_4$add0000> created at line 23.
-    Found 31-bit adder for signal <soma_5$add0000> created at line 23.
-    Found 31-bit adder for signal <soma_6$add0000> created at line 23.
-    Found 31-bit adder for signal <soma_7$add0000> created at line 23.
-    Found 31-bit adder for signal <soma_8$add0000> created at line 23.
-    Found 32-bit comparator greater for signal <vector_out_0$cmp_gt0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_1$addsub0000> created at line 27.
-    Found 32-bit comparator greater for signal <vector_out_1$cmp_gt0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_1$sub0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_2$addsub0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_2$addsub0001> created at line 27.
-    Found 32-bit comparator greater for signal <vector_out_2$cmp_gt0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_3$addsub0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_3$addsub0001> created at line 27.
-    Found 32-bit comparator greater for signal <vector_out_3$cmp_gt0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_4$addsub0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_4$addsub0001> created at line 27.
-    Found 32-bit comparator greater for signal <vector_out_4$cmp_gt0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_5$addsub0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_5$addsub0001> created at line 27.
-    Found 32-bit comparator greater for signal <vector_out_5$cmp_gt0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_6$addsub0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_6$addsub0001> created at line 27.
-    Found 32-bit comparator greater for signal <vector_out_6$cmp_gt0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_7$addsub0000> created at line 27.
-    Found 32-bit subtractor for signal <vector_out_7$addsub0001> created at line 27.
-    Found 32-bit comparator greater for signal <vector_out_7$cmp_gt0000> created at line 27.
+    Found 31-bit adder for signal <soma_1$addsub0000> created at line 21.
+    Found 31-bit adder for signal <soma_2$addsub0000> created at line 21.
+    Found 31-bit adder for signal <soma_3$addsub0000> created at line 21.
+    Found 31-bit adder for signal <soma_4$addsub0000> created at line 21.
+    Found 31-bit adder for signal <soma_5$addsub0000> created at line 21.
+    Found 31-bit adder for signal <soma_6$addsub0000> created at line 21.
+    Found 31-bit adder for signal <soma_7$addsub0000> created at line 21.
+    Found 31-bit adder for signal <soma_8$addsub0000> created at line 21.
+    Found 32-bit comparator lessequal for signal <vector_out_0$cmp_le0000> created at line 25.
+    Found 32-bit comparator lessequal for signal <vector_out_1$cmp_le0000> created at line 25.
+    Found 32-bit adder for signal <vector_out_1$sub0000> created at line 25.
+    Found 32-bit comparator lessequal for signal <vector_out_2$cmp_le0000> created at line 25.
+    Found 32-bit comparator lessequal for signal <vector_out_3$cmp_le0000> created at line 25.
+    Found 32-bit comparator lessequal for signal <vector_out_4$cmp_le0000> created at line 25.
+    Found 32-bit comparator lessequal for signal <vector_out_5$cmp_le0000> created at line 25.
+    Found 32-bit comparator lessequal for signal <vector_out_6$cmp_le0000> created at line 25.
+    Found 32-bit comparator lessequal for signal <vector_out_7$cmp_le0000> created at line 25.
     Summary:
-	inferred  22 Adder/Subtractor(s).
+	inferred   9 Adder/Subtractor(s).
 	inferred   8 Comparator(s).
 Unit <ordenador_binario> synthesized.
 
@@ -183,13 +162,11 @@ Unit <ordenador_binario> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 22
+# Adders/Subtractors                                   : 9
  31-bit adder                                          : 8
- 32-bit subtractor                                     : 14
-# Latches                                              : 8
- 31-bit latch                                          : 8
+ 32-bit adder                                          : 1
 # Comparators                                          : 8
- 32-bit comparator greater                             : 8
+ 32-bit comparator lessequal                           : 8
 
 =========================================================================
 
@@ -202,240 +179,23 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 16
+# Adders/Subtractors                                   : 9
  31-bit adder                                          : 8
- 32-bit subtractor                                     : 2
- 32-bit subtractor borrow in                           : 6
-# Latches                                              : 8
- 31-bit latch                                          : 8
+ 32-bit adder                                          : 1
 # Comparators                                          : 8
- 32-bit comparator greater                             : 8
+ 32-bit comparator lessequal                           : 8
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch soma_1_0 hinder the constant cleaning in the block ordenador_binario.
-   You should achieve better results by setting this init to 1.
-WARNING:Xst:1293 - FF/Latch <soma_1_1> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_2> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_3> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_4> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_5> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_6> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_7> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_1_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_7> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_6> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_5> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_4> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_3> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_2> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_2_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_7> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_6> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_5> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_4> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_3> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_3_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_7> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_6> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_5> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_4_4> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_7> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_6> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_5> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_5_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_7> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_6> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_6_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_7> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_7_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_18> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_17> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_16> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_15> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_14> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_13> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_12> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_11> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_10> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_9> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_8> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_19> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_20> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_21> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_22> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_23> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_24> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_25> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_26> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_27> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_28> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_29> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <soma_8_30> has a constant value of 0 in block <ordenador_binario>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <ordenador_binario> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ordenador_binario, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block ordenador_binario, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -470,34 +230,30 @@ Design Statistics
 # IOs                              : 16
 
 Cell Usage :
-# BELS                             : 819
+# BELS                             : 337
 #      GND                         : 1
-#      INV                         : 98
-#      LUT1                        : 28
-#      LUT3                        : 8
-#      LUT4                        : 56
-#      MUXCY                       : 342
+#      INV                         : 14
+#      LUT1                        : 3
+#      LUT2                        : 10
+#      LUT3                        : 39
+#      LUT4                        : 67
+#      MUXCY                       : 135
 #      VCC                         : 1
-#      XORCY                       : 285
-# FlipFlops/Latches                : 36
-#      LD                          : 36
-# Clock Buffers                    : 8
-#      BUFGP                       : 8
-# IO Buffers                       : 8
+#      XORCY                       : 67
+# IO Buffers                       : 16
+#      IBUF                        : 8
 #      OBUF                        : 8
 =========================================================================
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s500efg320-5 
+Selected Device : 3s1200efg320-5 
 
- Number of Slices:                      186  out of   4656     3%  
- Number of Slice Flip Flops:             36  out of   9312     0%  
- Number of 4 input LUTs:                190  out of   9312     2%  
+ Number of Slices:                       87  out of   8672     1%  
+ Number of 4 input LUTs:                133  out of  17344     0%  
  Number of IOs:                          16
- Number of bonded IOBs:                  16  out of    232     6%  
- Number of GCLKs:                         8  out of     24    33%  
+ Number of bonded IOBs:                  16  out of    250     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -517,18 +273,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-vector_in<7>                       | BUFGP                  | 8     |
-vector_in<6>                       | BUFGP                  | 7     |
-vector_in<5>                       | BUFGP                  | 6     |
-vector_in<4>                       | BUFGP                  | 5     |
-vector_in<3>                       | BUFGP                  | 4     |
-vector_in<2>                       | BUFGP                  | 3     |
-vector_in<1>                       | BUFGP                  | 2     |
-vector_in<0>                       | BUFGP                  | 1     |
------------------------------------+------------------------+-------+
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -540,80 +285,91 @@ Speed Grade: -5
 
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 12.910ns
-   Maximum combinational path delay: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 25.573ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'vector_in<7>'
-  Total number of paths / destination ports: 5076 / 8
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 9293759 / 8
 -------------------------------------------------------------------------
-Offset:              12.910ns (Levels of Logic = 37)
-  Source:            soma_8_0 (LATCH)
+Delay:               25.573ns (Levels of Logic = 50)
+  Source:            vector_in<0> (PAD)
   Destination:       vector_out<1> (PAD)
-  Source Clock:      vector_in<7> falling
 
-  Data Path: soma_8_0 to vector_out<1>
+  Data Path: vector_in<0> to vector_out<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               7   0.588   0.754  soma_8_0 (soma_8_0)
-     LUT1:I0->O            1   0.612   0.000  Msub_vector_out_1_sub0000_cy<0>_rt (Msub_vector_out_1_sub0000_cy<0>_rt)
-     MUXCY:S->O            1   0.404   0.000  Msub_vector_out_1_sub0000_cy<0> (Msub_vector_out_1_sub0000_cy<0>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<1> (Msub_vector_out_1_sub0000_cy<1>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<2> (Msub_vector_out_1_sub0000_cy<2>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<3> (Msub_vector_out_1_sub0000_cy<3>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<4> (Msub_vector_out_1_sub0000_cy<4>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<5> (Msub_vector_out_1_sub0000_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<6> (Msub_vector_out_1_sub0000_cy<6>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<7> (Msub_vector_out_1_sub0000_cy<7>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<8> (Msub_vector_out_1_sub0000_cy<8>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<9> (Msub_vector_out_1_sub0000_cy<9>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<10> (Msub_vector_out_1_sub0000_cy<10>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<11> (Msub_vector_out_1_sub0000_cy<11>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<12> (Msub_vector_out_1_sub0000_cy<12>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<13> (Msub_vector_out_1_sub0000_cy<13>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<14> (Msub_vector_out_1_sub0000_cy<14>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<15> (Msub_vector_out_1_sub0000_cy<15>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<16> (Msub_vector_out_1_sub0000_cy<16>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<17> (Msub_vector_out_1_sub0000_cy<17>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<18> (Msub_vector_out_1_sub0000_cy<18>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<19> (Msub_vector_out_1_sub0000_cy<19>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<20> (Msub_vector_out_1_sub0000_cy<20>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<21> (Msub_vector_out_1_sub0000_cy<21>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<22> (Msub_vector_out_1_sub0000_cy<22>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<23> (Msub_vector_out_1_sub0000_cy<23>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<24> (Msub_vector_out_1_sub0000_cy<24>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<25> (Msub_vector_out_1_sub0000_cy<25>)
-     MUXCY:CI->O           1   0.052   0.000  Msub_vector_out_1_sub0000_cy<26> (Msub_vector_out_1_sub0000_cy<26>)
-     XORCY:CI->O           2   0.699   0.380  Msub_vector_out_1_sub0000_xor<27> (vector_out_1_sub0000<27>)
-     INV:I->O              1   0.612   0.000  Msub_vector_out_1_addsub0000_lut<27>_INV_0 (Msub_vector_out_1_addsub0000_lut<27>)
-     MUXCY:S->O            1   0.404   0.000  Msub_vector_out_1_addsub0000_cy<27> (Msub_vector_out_1_addsub0000_cy<27>)
-     XORCY:CI->O           1   0.699   0.509  Msub_vector_out_1_addsub0000_xor<28> (vector_out_1_addsub0000<28>)
-     LUT3:I0->O            1   0.612   0.000  Mcompar_vector_out_1_cmp_gt0000_lut<7> (Mcompar_vector_out_1_cmp_gt0000_lut<7>)
-     MUXCY:S->O            1   0.404   0.000  Mcompar_vector_out_1_cmp_gt0000_cy<7> (Mcompar_vector_out_1_cmp_gt0000_cy<7>)
-     MUXCY:CI->O           1   0.399   0.357  Mcompar_vector_out_1_cmp_gt0000_cy<8> (Mcompar_vector_out_1_cmp_gt0000_cy<8>)
-     INV:I->O              1   0.612   0.357  Mcompar_vector_out_1_cmp_gt0000_cy<8>_inv_INV_0 (vector_out_1_OBUF)
+     IBUF:I->O             3   1.106   0.451  vector_in_0_IBUF (soma<1><0>)
+     INV:I->O              1   0.612   0.000  Madd_soma_2_addsub0000_lut<0>_INV_0 (Madd_soma_2_addsub0000_lut<0>)
+     MUXCY:S->O            0   0.404   0.000  Madd_soma_2_addsub0000_cy<0> (Madd_soma_2_addsub0000_cy<0>)
+     XORCY:CI->O           3   0.699   0.520  Madd_soma_2_addsub0000_xor<1> (soma_2_addsub0000<1>)
+     LUT2:I1->O            1   0.612   0.000  soma_2_mux0000<1>11 (soma_2_mux0000<1>1)
+     MUXCY:S->O            0   0.404   0.000  Madd_soma_3_addsub0000_cy<1> (Madd_soma_3_addsub0000_cy<1>)
+     XORCY:CI->O           3   0.699   0.520  Madd_soma_3_addsub0000_xor<2> (soma_3_addsub0000<2>)
+     LUT2:I1->O            1   0.612   0.000  soma_3_mux0000<2>11 (soma_3_mux0000<2>1)
+     MUXCY:S->O            0   0.404   0.000  Madd_soma_4_addsub0000_cy<2> (Madd_soma_4_addsub0000_cy<2>)
+     XORCY:CI->O           3   0.699   0.520  Madd_soma_4_addsub0000_xor<3> (soma_4_addsub0000<3>)
+     LUT2:I1->O            1   0.612   0.000  soma_4_mux0000<3>11 (soma_4_mux0000<3>1)
+     MUXCY:S->O            0   0.404   0.000  Madd_soma_5_addsub0000_cy<3> (Madd_soma_5_addsub0000_cy<3>)
+     XORCY:CI->O           3   0.699   0.520  Madd_soma_5_addsub0000_xor<4> (soma_5_addsub0000<4>)
+     LUT2:I1->O            1   0.612   0.000  soma_5_mux0000<4>11 (soma_5_mux0000<4>1)
+     MUXCY:S->O            0   0.404   0.000  Madd_soma_6_addsub0000_cy<4> (Madd_soma_6_addsub0000_cy<4>)
+     XORCY:CI->O           3   0.699   0.520  Madd_soma_6_addsub0000_xor<5> (soma_6_addsub0000<5>)
+     LUT2:I1->O            1   0.612   0.000  soma_6_mux0000<5>11 (soma_6_mux0000<5>1)
+     MUXCY:S->O            0   0.404   0.000  Madd_soma_7_addsub0000_cy<5> (Madd_soma_7_addsub0000_cy<5>)
+     XORCY:CI->O           2   0.699   0.449  Madd_soma_7_addsub0000_xor<6> (soma_7_addsub0000<6>)
+     LUT2:I1->O            1   0.612   0.000  soma_7_mux0000<6>11 (soma_7_mux0000<6>1)
+     MUXCY:S->O            0   0.404   0.000  Madd_soma_8_addsub0000_cy<6> (Madd_soma_8_addsub0000_cy<6>)
+     XORCY:CI->O           1   0.699   0.426  Madd_soma_8_addsub0000_xor<7> (soma_8_addsub0000<7>)
+     LUT2:I1->O            1   0.612   0.000  vector_out_1_not0000<7>1 (vector_out_1_not0000<7>)
+     MUXCY:S->O            1   0.404   0.000  Madd_vector_out_1_sub0000_cy<7> (Madd_vector_out_1_sub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<8> (Madd_vector_out_1_sub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<9> (Madd_vector_out_1_sub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<10> (Madd_vector_out_1_sub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<11> (Madd_vector_out_1_sub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<12> (Madd_vector_out_1_sub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<13> (Madd_vector_out_1_sub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<14> (Madd_vector_out_1_sub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<15> (Madd_vector_out_1_sub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<16> (Madd_vector_out_1_sub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<17> (Madd_vector_out_1_sub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<18> (Madd_vector_out_1_sub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<19> (Madd_vector_out_1_sub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<20> (Madd_vector_out_1_sub0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<21> (Madd_vector_out_1_sub0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<22> (Madd_vector_out_1_sub0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<23> (Madd_vector_out_1_sub0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<24> (Madd_vector_out_1_sub0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<25> (Madd_vector_out_1_sub0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<26> (Madd_vector_out_1_sub0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<27> (Madd_vector_out_1_sub0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_vector_out_1_sub0000_cy<28> (Madd_vector_out_1_sub0000_cy<28>)
+     XORCY:CI->O           8   0.699   0.795  Madd_vector_out_1_sub0000_xor<29> (vector_out_1_sub0000<29>)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_vector_out_1_cmp_le0000_lut<7> (Mcompar_vector_out_1_cmp_le0000_lut<7>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_vector_out_1_cmp_le0000_cy<7> (Mcompar_vector_out_1_cmp_le0000_cy<7>)
+     MUXCY:CI->O           1   0.399   0.357  Mcompar_vector_out_1_cmp_le0000_cy<8> (vector_out_1_OBUF)
      OBUF:I->O                 3.169          vector_out_1_OBUF (vector_out<1>)
     ----------------------------------------
-    Total                     12.910ns (10.553ns logic, 2.357ns route)
-                                       (81.7% logic, 18.3% route)
+    Total                     25.573ns (20.492ns logic, 5.080ns route)
+                                       (80.1% logic, 19.9% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.82 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.76 secs
  
 --> 
 
 
-Total memory usage is 544648 kilobytes
+Total memory usage is 517848 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  222 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,8 +1,8 @@
 V3 3
-FL "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.vhd" 2023/01/20.13:28:09 P.20131013
-EN work/circuito_aritimetico 1674232091 \
+FL "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.vhd" 2023/01/22.11:07:19 P.20131013
+EN work/circuito_aritimetico 1674396442 \
       FL "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/circuito_aritimetico/Behavioral 1674232092 \
+AR work/circuito_aritimetico/Behavioral 1674396443 \
       FL "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.vhd" \
-      EN work/circuito_aritimetico 1674232091
+      EN work/circuito_aritimetico 1674396442

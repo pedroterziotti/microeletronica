@@ -4,11 +4,11 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
 3 -s 5 -n 3 -fastpaths -xml peso_de_hamming.twx peso_de_hamming.ncd -o
-peso_de_hamming.twr peso_de_hamming.pcf
+peso_de_hamming.twr peso_de_hamming.pcf -ucf pins.ucf
 
 Design file:              peso_de_hamming.ncd
 Physical constraint file: peso_de_hamming.pcf
-Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -44,73 +44,73 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-vector_in<0>   |ssd<0>         |   19.862|
-vector_in<0>   |ssd<1>         |   19.062|
-vector_in<0>   |ssd<2>         |   20.744|
-vector_in<0>   |ssd<3>         |   20.538|
-vector_in<0>   |ssd<4>         |   18.503|
-vector_in<0>   |ssd<5>         |   19.084|
-vector_in<0>   |ssd<6>         |   19.908|
-vector_in<1>   |ssd<0>         |   19.730|
-vector_in<1>   |ssd<1>         |   18.930|
-vector_in<1>   |ssd<2>         |   20.612|
-vector_in<1>   |ssd<3>         |   20.406|
-vector_in<1>   |ssd<4>         |   18.371|
-vector_in<1>   |ssd<5>         |   18.952|
-vector_in<1>   |ssd<6>         |   19.776|
-vector_in<2>   |ssd<0>         |   18.323|
-vector_in<2>   |ssd<1>         |   17.523|
-vector_in<2>   |ssd<2>         |   19.205|
-vector_in<2>   |ssd<3>         |   18.999|
-vector_in<2>   |ssd<4>         |   16.964|
-vector_in<2>   |ssd<5>         |   17.545|
-vector_in<2>   |ssd<6>         |   18.369|
-vector_in<3>   |ssd<0>         |   16.745|
-vector_in<3>   |ssd<1>         |   15.945|
-vector_in<3>   |ssd<2>         |   17.627|
-vector_in<3>   |ssd<3>         |   17.421|
-vector_in<3>   |ssd<4>         |   15.386|
-vector_in<3>   |ssd<5>         |   15.967|
-vector_in<3>   |ssd<6>         |   16.791|
-vector_in<4>   |ssd<0>         |   14.957|
-vector_in<4>   |ssd<1>         |   14.157|
-vector_in<4>   |ssd<2>         |   15.839|
-vector_in<4>   |ssd<3>         |   15.633|
-vector_in<4>   |ssd<4>         |   13.598|
-vector_in<4>   |ssd<5>         |   14.179|
-vector_in<4>   |ssd<6>         |   15.003|
-vector_in<5>   |ssd<0>         |   13.132|
-vector_in<5>   |ssd<1>         |   12.332|
-vector_in<5>   |ssd<2>         |   14.014|
-vector_in<5>   |ssd<3>         |   13.808|
-vector_in<5>   |ssd<4>         |   11.773|
-vector_in<5>   |ssd<5>         |   12.354|
-vector_in<5>   |ssd<6>         |   13.178|
-vector_in<6>   |ssd<0>         |   11.362|
-vector_in<6>   |ssd<1>         |   11.009|
-vector_in<6>   |ssd<2>         |   12.244|
-vector_in<6>   |ssd<3>         |   12.038|
-vector_in<6>   |ssd<4>         |   10.254|
-vector_in<6>   |ssd<5>         |   10.656|
-vector_in<6>   |ssd<6>         |   11.862|
-vector_in<7>   |ssd<0>         |    8.448|
-vector_in<7>   |ssd<1>         |    8.914|
-vector_in<7>   |ssd<2>         |    9.192|
-vector_in<7>   |ssd<3>         |    8.986|
-vector_in<7>   |ssd<4>         |    8.166|
-vector_in<7>   |ssd<5>         |    8.466|
-vector_in<7>   |ssd<6>         |    9.709|
+vector_in<0>   |ssd<0>         |   21.406|
+vector_in<0>   |ssd<1>         |   20.548|
+vector_in<0>   |ssd<2>         |   22.344|
+vector_in<0>   |ssd<3>         |   22.711|
+vector_in<0>   |ssd<4>         |   22.255|
+vector_in<0>   |ssd<5>         |   21.684|
+vector_in<0>   |ssd<6>         |   20.884|
+vector_in<1>   |ssd<0>         |   21.017|
+vector_in<1>   |ssd<1>         |   20.159|
+vector_in<1>   |ssd<2>         |   21.955|
+vector_in<1>   |ssd<3>         |   22.322|
+vector_in<1>   |ssd<4>         |   21.866|
+vector_in<1>   |ssd<5>         |   21.295|
+vector_in<1>   |ssd<6>         |   20.495|
+vector_in<2>   |ssd<0>         |   19.289|
+vector_in<2>   |ssd<1>         |   18.431|
+vector_in<2>   |ssd<2>         |   20.227|
+vector_in<2>   |ssd<3>         |   20.594|
+vector_in<2>   |ssd<4>         |   20.138|
+vector_in<2>   |ssd<5>         |   19.567|
+vector_in<2>   |ssd<6>         |   18.767|
+vector_in<3>   |ssd<0>         |   17.582|
+vector_in<3>   |ssd<1>         |   16.724|
+vector_in<3>   |ssd<2>         |   18.520|
+vector_in<3>   |ssd<3>         |   18.887|
+vector_in<3>   |ssd<4>         |   18.431|
+vector_in<3>   |ssd<5>         |   17.860|
+vector_in<3>   |ssd<6>         |   17.060|
+vector_in<4>   |ssd<0>         |   16.914|
+vector_in<4>   |ssd<1>         |   16.056|
+vector_in<4>   |ssd<2>         |   17.852|
+vector_in<4>   |ssd<3>         |   18.219|
+vector_in<4>   |ssd<4>         |   17.763|
+vector_in<4>   |ssd<5>         |   17.192|
+vector_in<4>   |ssd<6>         |   16.392|
+vector_in<5>   |ssd<0>         |   13.922|
+vector_in<5>   |ssd<1>         |   13.064|
+vector_in<5>   |ssd<2>         |   14.860|
+vector_in<5>   |ssd<3>         |   15.227|
+vector_in<5>   |ssd<4>         |   14.771|
+vector_in<5>   |ssd<5>         |   14.200|
+vector_in<5>   |ssd<6>         |   13.400|
+vector_in<6>   |ssd<0>         |   12.323|
+vector_in<6>   |ssd<1>         |   11.465|
+vector_in<6>   |ssd<2>         |   13.261|
+vector_in<6>   |ssd<3>         |   13.628|
+vector_in<6>   |ssd<4>         |   13.172|
+vector_in<6>   |ssd<5>         |   12.601|
+vector_in<6>   |ssd<6>         |   11.801|
+vector_in<7>   |ssd<0>         |    9.993|
+vector_in<7>   |ssd<1>         |    9.135|
+vector_in<7>   |ssd<2>         |   10.931|
+vector_in<7>   |ssd<3>         |   11.298|
+vector_in<7>   |ssd<4>         |   10.842|
+vector_in<7>   |ssd<5>         |   10.271|
+vector_in<7>   |ssd<6>         |    9.471|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Jan 19 20:25:23 2023 
+Analysis completed Fri Jan 20 16:11:04 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 348 MB
+Peak Memory Usage: 360 MB
 
 
 

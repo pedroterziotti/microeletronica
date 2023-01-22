@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   22:21:45 01/19/2023
+-- Create Date:   11:40:44 01/22/2023
 -- Design Name:   
 -- Module Name:   /home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1_tb.vhd
 -- Project Name:  temporizador1
@@ -43,7 +43,8 @@ ARCHITECTURE behavior OF temporizador1_tb IS
     PORT(
          clk : IN  std_logic;
          rst : IN  std_logic;
-         pause : IN  std_logic;
+         pauseBTN : IN  std_logic;
+         ANODO : OUT  std_logic_vector(3 downto 0);
          ssd : OUT  std_logic_vector(6 downto 0)
         );
     END COMPONENT;
@@ -52,9 +53,10 @@ ARCHITECTURE behavior OF temporizador1_tb IS
    --Inputs
    signal clk : std_logic := '0';
    signal rst : std_logic := '0';
-   signal pause : std_logic := '0';
+   signal pauseBTN : std_logic := '0';
 
  	--Outputs
+   signal ANODO : std_logic_vector(3 downto 0);
    signal ssd : std_logic_vector(6 downto 0);
 
    -- Clock period definitions
@@ -66,7 +68,8 @@ BEGIN
    uut: temporizador1 PORT MAP (
           clk => clk,
           rst => rst,
-          pause => pause,
+          pauseBTN => pauseBTN,
+          ANODO => ANODO,
           ssd => ssd
         );
 
@@ -84,12 +87,9 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      wait for clk_period*10;
-
-      -- insert stimulus here 
-      wait;
+		ANODO <= "1110";
+		rst<='0';
+		WAIT;
    end process;
 
 END;

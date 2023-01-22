@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/mini_ula_tb_isim_beh.exe" -prj "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/mini_ula_tb_beh.prj" "work.mini_ula_tb" 

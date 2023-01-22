@@ -121,3 +121,28 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "peso_de_ha
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o peso_de_hamming_map.ncd peso_de_hamming.ngd peso_de_hamming.pcf 
 par -w -intstyle ise -ol high -t 1 peso_de_hamming_map.ncd peso_de_hamming.ncd peso_de_hamming.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml peso_de_hamming.twx peso_de_hamming.ncd -o peso_de_hamming.twr peso_de_hamming.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "peso_de_hamming.ngc" peso_de_hamming.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o peso_de_hamming_map.ncd peso_de_hamming.ngd peso_de_hamming.pcf 
+par -w -intstyle ise -ol high -t 1 peso_de_hamming_map.ncd peso_de_hamming.ncd peso_de_hamming.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml peso_de_hamming.twx peso_de_hamming.ncd -o peso_de_hamming.twr peso_de_hamming.pcf 
+bitgen -intstyle ise -f peso_de_hamming.ut peso_de_hamming.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "peso_de_hamming.ngc" peso_de_hamming.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o peso_de_hamming_map.ncd peso_de_hamming.ngd peso_de_hamming.pcf 
+par -w -intstyle ise -ol high -t 1 peso_de_hamming_map.ncd peso_de_hamming.ncd peso_de_hamming.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml peso_de_hamming.twx peso_de_hamming.ncd -o peso_de_hamming.twr peso_de_hamming.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f peso_de_hamming.ut peso_de_hamming.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "peso_de_hamming.ngc" peso_de_hamming.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o peso_de_hamming_map.ncd peso_de_hamming.ngd peso_de_hamming.pcf 
+par -w -intstyle ise -ol high -t 1 peso_de_hamming_map.ncd peso_de_hamming.ncd peso_de_hamming.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml peso_de_hamming.twx peso_de_hamming.ncd -o peso_de_hamming.twr peso_de_hamming.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f peso_de_hamming.ut peso_de_hamming.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "peso_de_hamming.ngc" peso_de_hamming.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o peso_de_hamming_map.ncd peso_de_hamming.ngd peso_de_hamming.pcf 
+par -w -intstyle ise -ol high -t 1 peso_de_hamming_map.ncd peso_de_hamming.ncd peso_de_hamming.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml peso_de_hamming.twx peso_de_hamming.ncd -o peso_de_hamming.twr peso_de_hamming.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f peso_de_hamming.ut peso_de_hamming.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.syr" 

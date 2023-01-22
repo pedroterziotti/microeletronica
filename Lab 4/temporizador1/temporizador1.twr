@@ -4,11 +4,11 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o
-temporizador1.twr temporizador1.pcf
+temporizador1.twr temporizador1.pcf -ucf pins.ucf
 
 Design file:              temporizador1.ncd
 Physical constraint file: temporizador1.pcf
-Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -45,7 +45,7 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-pauseBTN    |    1.582(R)|    1.003(R)|clk_BUFGP         |   0.000|
+pauseBTN    |    2.017(R)|    0.644(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -53,13 +53,13 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-ssd<0>      |    8.997(R)|clk_BUFGP         |   0.000|
-ssd<1>      |    8.493(R)|clk_BUFGP         |   0.000|
-ssd<2>      |    8.978(R)|clk_BUFGP         |   0.000|
-ssd<3>      |    8.030(R)|clk_BUFGP         |   0.000|
-ssd<4>      |    8.029(R)|clk_BUFGP         |   0.000|
-ssd<5>      |    9.141(R)|clk_BUFGP         |   0.000|
-ssd<6>      |    9.154(R)|clk_BUFGP         |   0.000|
+ssd<0>      |    9.226(R)|clk_BUFGP         |   0.000|
+ssd<1>      |    9.536(R)|clk_BUFGP         |   0.000|
+ssd<2>      |    8.931(R)|clk_BUFGP         |   0.000|
+ssd<3>      |    9.501(R)|clk_BUFGP         |   0.000|
+ssd<4>      |    8.592(R)|clk_BUFGP         |   0.000|
+ssd<5>      |    8.679(R)|clk_BUFGP         |   0.000|
+ssd<6>      |    9.863(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -67,18 +67,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   10.375|         |         |         |
+clk            |   10.519|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Jan 20 09:30:01 2023 
+Analysis completed Sun Jan 22 13:52:12 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 349 MB
+Peak Memory Usage: 361 MB
 
 
 

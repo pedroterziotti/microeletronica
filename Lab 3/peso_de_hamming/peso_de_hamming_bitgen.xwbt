@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.ncd
+OUTFILE=/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/peso_de_hamming.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming
+LICENSE=WebPack
+USER_INFO=212588854_0_0_637

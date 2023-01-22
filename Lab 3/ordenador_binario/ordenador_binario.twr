@@ -4,11 +4,11 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
 3 -s 5 -n 3 -fastpaths -xml ordenador_binario.twx ordenador_binario.ncd -o
-ordenador_binario.twr ordenador_binario.pcf
+ordenador_binario.twr ordenador_binario.pcf -ucf pins.ucf
 
 Design file:              ordenador_binario.ncd
 Physical constraint file: ordenador_binario.pcf
-Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -40,78 +40,85 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock vector_in<7> to Pad
--------------+------------+------------------+--------+
-             | clk (edge) |                  | Clock  |
-Destination  |   to PAD   |Internal Clock(s) | Phase  |
--------------+------------+------------------+--------+
-vector_out<0>|   14.091(F)|vector_in_7_BUFGP |   0.000|
-vector_out<1>|   15.381(F)|vector_in_7_BUFGP |   0.000|
-vector_out<2>|   13.483(F)|vector_in_7_BUFGP |   0.000|
-vector_out<3>|   13.387(F)|vector_in_7_BUFGP |   0.000|
-vector_out<4>|   13.465(F)|vector_in_7_BUFGP |   0.000|
-vector_out<5>|   13.287(F)|vector_in_7_BUFGP |   0.000|
-vector_out<6>|   13.430(F)|vector_in_7_BUFGP |   0.000|
-vector_out<7>|   13.804(F)|vector_in_7_BUFGP |   0.000|
--------------+------------+------------------+--------+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+vector_in<0>   |vector_out<0>  |   25.578|
+vector_in<0>   |vector_out<1>  |   25.232|
+vector_in<0>   |vector_out<2>  |   25.590|
+vector_in<0>   |vector_out<3>  |   24.620|
+vector_in<0>   |vector_out<4>  |   26.207|
+vector_in<0>   |vector_out<5>  |   24.595|
+vector_in<0>   |vector_out<6>  |   27.421|
+vector_in<0>   |vector_out<7>  |   26.896|
+vector_in<1>   |vector_out<0>  |   24.276|
+vector_in<1>   |vector_out<1>  |   23.930|
+vector_in<1>   |vector_out<2>  |   24.288|
+vector_in<1>   |vector_out<3>  |   23.318|
+vector_in<1>   |vector_out<4>  |   24.905|
+vector_in<1>   |vector_out<5>  |   23.293|
+vector_in<1>   |vector_out<6>  |   26.119|
+vector_in<1>   |vector_out<7>  |   25.594|
+vector_in<2>   |vector_out<0>  |   22.883|
+vector_in<2>   |vector_out<1>  |   22.537|
+vector_in<2>   |vector_out<2>  |   22.895|
+vector_in<2>   |vector_out<3>  |   21.925|
+vector_in<2>   |vector_out<4>  |   23.512|
+vector_in<2>   |vector_out<5>  |   21.900|
+vector_in<2>   |vector_out<6>  |   24.726|
+vector_in<2>   |vector_out<7>  |   24.201|
+vector_in<3>   |vector_out<0>  |   21.084|
+vector_in<3>   |vector_out<1>  |   20.738|
+vector_in<3>   |vector_out<2>  |   21.096|
+vector_in<3>   |vector_out<3>  |   20.126|
+vector_in<3>   |vector_out<4>  |   21.713|
+vector_in<3>   |vector_out<5>  |   20.101|
+vector_in<3>   |vector_out<6>  |   22.927|
+vector_in<3>   |vector_out<7>  |   22.402|
+vector_in<4>   |vector_out<0>  |   19.417|
+vector_in<4>   |vector_out<1>  |   19.071|
+vector_in<4>   |vector_out<2>  |   19.429|
+vector_in<4>   |vector_out<3>  |   18.459|
+vector_in<4>   |vector_out<4>  |   20.046|
+vector_in<4>   |vector_out<5>  |   18.434|
+vector_in<4>   |vector_out<6>  |   21.260|
+vector_in<4>   |vector_out<7>  |   20.735|
+vector_in<5>   |vector_out<0>  |   17.142|
+vector_in<5>   |vector_out<1>  |   16.796|
+vector_in<5>   |vector_out<2>  |   17.154|
+vector_in<5>   |vector_out<3>  |   16.184|
+vector_in<5>   |vector_out<4>  |   17.771|
+vector_in<5>   |vector_out<5>  |   16.159|
+vector_in<5>   |vector_out<6>  |   18.985|
+vector_in<5>   |vector_out<7>  |   18.460|
+vector_in<6>   |vector_out<0>  |   15.283|
+vector_in<6>   |vector_out<1>  |   14.937|
+vector_in<6>   |vector_out<2>  |   15.295|
+vector_in<6>   |vector_out<3>  |   14.325|
+vector_in<6>   |vector_out<4>  |   15.912|
+vector_in<6>   |vector_out<5>  |   14.300|
+vector_in<6>   |vector_out<6>  |   17.126|
+vector_in<6>   |vector_out<7>  |   16.601|
+vector_in<7>   |vector_out<0>  |   13.601|
+vector_in<7>   |vector_out<1>  |   13.255|
+vector_in<7>   |vector_out<2>  |   13.613|
+vector_in<7>   |vector_out<3>  |   12.643|
+vector_in<7>   |vector_out<4>  |   14.230|
+vector_in<7>   |vector_out<5>  |   12.618|
+vector_in<7>   |vector_out<6>  |   15.444|
+vector_in<7>   |vector_out<7>  |   14.919|
+---------------+---------------+---------+
 
-Clock to Setup on destination clock vector_in<2>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-vector_in<1>   |         |         |         |    2.817|
----------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock vector_in<3>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-vector_in<2>   |         |         |         |    2.994|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock vector_in<4>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-vector_in<3>   |         |         |         |    3.335|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock vector_in<5>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-vector_in<4>   |         |         |         |    3.260|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock vector_in<6>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-vector_in<5>   |         |         |         |    2.911|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock vector_in<7>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-vector_in<6>   |         |         |         |    3.294|
----------------+---------+---------+---------+---------+
-
-
-Analysis completed Thu Jan 19 13:12:12 2023 
+Analysis completed Sun Jan 22 10:33:51 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 352 MB
+Peak Memory Usage: 361 MB
 
 
 

@@ -5,7 +5,7 @@ run
 -ifmt mixed
 -ofn peso_de_hamming
 -ofmt NGC
--p xc3s500e-5-fg320
+-p xc3s1200e-5-fg320
 -top peso_de_hamming
 -opt_mode Speed
 -opt_level 1

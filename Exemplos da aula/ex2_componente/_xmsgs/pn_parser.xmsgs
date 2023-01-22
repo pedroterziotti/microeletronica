@@ -11,5 +11,8 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somado_paralelo.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somador_complexo.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

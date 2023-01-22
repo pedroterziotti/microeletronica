@@ -45,7 +45,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "temporizador1"
 Output Format                      : NGC
-Target Device                      : xc3s500e-5-fg320
+Target Device                      : xc3s1200e-5-fg320
 
 ---- Source Options
 Top Module Name                    : temporizador1
@@ -134,16 +134,16 @@ Synthesizing Unit <temporizador1>.
     Related source file is "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.vhd".
     Found 16x7-bit ROM for signal <ssd>.
     Found 4-bit up counter for signal <display>.
-    Found 32-bit adder for signal <display$add0000> created at line 55.
-    Found 4-bit adder for signal <display$addsub0000> created at line 58.
-    Found 4-bit comparator greater for signal <display$cmp_gt0000> created at line 59.
-    Found 32-bit comparator less for signal <display$cmp_lt0000> created at line 56.
+    Found 32-bit adder for signal <display$add0000> created at line 54.
+    Found 4-bit adder for signal <display$addsub0000> created at line 57.
+    Found 4-bit comparator greater for signal <display$cmp_gt0000> created at line 58.
+    Found 32-bit comparator less for signal <display$cmp_lt0000> created at line 55.
     Found 1-bit register for signal <pause>.
-    Found 18-bit adder for signal <pause$addsub0000> created at line 31.
-    Found 18-bit comparator less for signal <pause$cmp_lt0000> created at line 33.
+    Found 18-bit adder for signal <pause$addsub0000> created at line 30.
+    Found 18-bit comparator less for signal <pause$cmp_lt0000> created at line 32.
     Found 18-bit up counter for signal <ticks>.
     Found 32-bit up counter for signal <ticks0>.
-    Found 32-bit comparator greatequal for signal <ticks0$cmp_ge0000> created at line 56.
+    Found 32-bit comparator greatequal for signal <ticks0$cmp_ge0000> created at line 55.
     Summary:
 	inferred   1 ROM(s).
 	inferred   3 Counter(s).
@@ -214,7 +214,7 @@ Optimizing unit <temporizador1> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block temporizador1, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block temporizador1, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -252,16 +252,16 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 344
+# BELS                             : 346
 #      GND                         : 1
-#      INV                         : 14
-#      LUT1                        : 71
-#      LUT2                        : 4
+#      INV                         : 11
+#      LUT1                        : 68
+#      LUT2                        : 6
 #      LUT3                        : 33
-#      LUT4                        : 15
-#      MUXCY                       : 117
+#      LUT4                        : 17
+#      MUXCY                       : 115
 #      VCC                         : 1
-#      XORCY                       : 88
+#      XORCY                       : 94
 # FlipFlops/Latches                : 55
 #      FDCE                        : 36
 #      FDE                         : 1
@@ -276,13 +276,13 @@ Cell Usage :
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s500efg320-5 
+Selected Device : 3s1200efg320-5 
 
- Number of Slices:                       75  out of   4656     1%  
- Number of Slice Flip Flops:             55  out of   9312     0%  
- Number of 4 input LUTs:                137  out of   9312     1%  
+ Number of Slices:                       74  out of   8672     0%  
+ Number of Slice Flip Flops:             55  out of  17344     0%  
+ Number of 4 input LUTs:                135  out of  17344     0%  
  Number of IOs:                          14
- Number of bonded IOBs:                  14  out of    232     6%  
+ Number of bonded IOBs:                  14  out of    250     5%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -333,7 +333,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 10.610ns (frequency: 94.252MHz)
-  Total number of paths / destination ports: 282907 / 92
+  Total number of paths / destination ports: 298135 / 92
 -------------------------------------------------------------------------
 Delay:               10.610ns (Levels of Logic = 67)
   Source:            ticks0_1 (FF)
@@ -376,10 +376,10 @@ Delay:               10.610ns (Levels of Logic = 67)
      MUXCY:CI->O           1   0.051   0.000  Madd_display_add0000_cy<27> (Madd_display_add0000_cy<27>)
      MUXCY:CI->O           1   0.051   0.000  Madd_display_add0000_cy<28> (Madd_display_add0000_cy<28>)
      XORCY:CI->O           1   0.699   0.360  Madd_display_add0000_xor<29> (display_add0000<29>)
-     LUT4:I3->O            1   0.612   0.000  Mcompar_ticks0_cmp_ge0000_lut<10> (Mcompar_ticks0_cmp_ge0000_lut<10>)
-     MUXCY:S->O            1   0.404   0.000  Mcompar_ticks0_cmp_ge0000_cy<10> (Mcompar_ticks0_cmp_ge0000_cy<10>)
-     MUXCY:CI->O           1   0.051   0.000  Mcompar_ticks0_cmp_ge0000_cy<11> (Mcompar_ticks0_cmp_ge0000_cy<11>)
-     MUXCY:CI->O          34   0.399   1.103  Mcompar_ticks0_cmp_ge0000_cy<12> (ticks0_cmp_ge0000)
+     LUT4:I3->O            1   0.612   0.000  Mcompar_ticks0_cmp_ge0000_lut<8> (Mcompar_ticks0_cmp_ge0000_lut<8>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_ticks0_cmp_ge0000_cy<8> (Mcompar_ticks0_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_ticks0_cmp_ge0000_cy<9> (Mcompar_ticks0_cmp_ge0000_cy<9>)
+     MUXCY:CI->O          34   0.399   1.103  Mcompar_ticks0_cmp_ge0000_cy<10> (ticks0_cmp_ge0000)
      LUT3:I2->O            1   0.612   0.000  Mcount_ticks0_lut<0> (Mcount_ticks0_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Mcount_ticks0_cy<0> (Mcount_ticks0_cy<0>)
      MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<1> (Mcount_ticks0_cy<1>)
@@ -462,12 +462,12 @@ Offset:              5.597ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.87 secs
+Total CPU time to Xst completion: 3.00 secs
  
 --> 
 
 
-Total memory usage is 515896 kilobytes
+Total memory usage is 515988 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

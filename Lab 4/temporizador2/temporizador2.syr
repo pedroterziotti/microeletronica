@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: temporizador2.prj
@@ -45,7 +45,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "temporizador2"
 Output Format                      : NGC
-Target Device                      : xc3s500e-5-fg320
+Target Device                      : xc3s1200e-5-fg320
 
 ---- Source Options
 Top Module Name                    : temporizador2
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -134,34 +134,43 @@ Synthesizing Unit <temporizador2>.
     Related source file is "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd".
     Found 16x7-bit ROM for signal <ssd>.
     Found 4-bit register for signal <ANODO>.
-    Found 1-of-4 decoder for signal <ANODO$mux0001> created at line 75.
+    Found 1-of-4 decoder for signal <ANODO$mux0001> created at line 86.
     Found 4-bit up counter for signal <d0>.
-    Found 4-bit adder for signal <d0$add0000> created at line 52.
-    Found 4-bit comparator greater for signal <d0$cmp_gt0000> created at line 53.
+    Found 4-bit adder for signal <d0$add0000> created at line 55.
+    Found 4-bit comparator greater for signal <d0$cmp_gt0000> created at line 56.
+    Found 32-bit comparator lessequal for signal <d0$cmp_le0000> created at line 53.
     Found 4-bit up counter for signal <d1>.
-    Found 4-bit adder for signal <d1$add0000> created at line 55.
-    Found 4-bit comparator greater for signal <d1$cmp_gt0000> created at line 56.
-    Found 4-bit comparator lessequal for signal <d1$cmp_le0000> created at line 53.
+    Found 4-bit adder for signal <d1$add0000> created at line 58.
+    Found 4-bit comparator greater for signal <d1$cmp_gt0000> created at line 59.
+    Found 4-bit comparator lessequal for signal <d1$cmp_le0000> created at line 56.
     Found 4-bit up counter for signal <d2>.
-    Found 4-bit adder for signal <d2$add0000> created at line 58.
-    Found 4-bit comparator greater for signal <d2$cmp_gt0000> created at line 59.
-    Found 4-bit comparator lessequal for signal <d2$cmp_le0000> created at line 56.
+    Found 4-bit adder for signal <d2$add0000> created at line 61.
+    Found 4-bit comparator greater for signal <d2$cmp_gt0000> created at line 62.
+    Found 4-bit comparator lessequal for signal <d2$cmp_le0000> created at line 59.
     Found 4-bit up counter for signal <d3>.
-    Found 4-bit comparator lessequal for signal <d3$cmp_le0000> created at line 59.
+    Found 4-bit adder for signal <d3$addsub0000> created at line 64.
+    Found 4-bit comparator greater for signal <d3$cmp_gt0000> created at line 65.
+    Found 4-bit comparator lessequal for signal <d3$cmp_le0000> created at line 62.
     Found 2-bit up counter for signal <display>.
     Found 1-bit register for signal <pause>.
-    Found 18-bit adder for signal <pause$addsub0000> created at line 30.
-    Found 18-bit comparator less for signal <pause$cmp_lt0000> created at line 32.
+    Found 18-bit adder for signal <pause$addsub0000> created at line 29.
+    Found 18-bit comparator less for signal <pause$cmp_lt0000> created at line 31.
+    Found 15-bit up counter for signal <tick_update>.
+    Found 15-bit adder for signal <tick_update$addsub0000> created at line 82.
+    Found 15-bit comparator greater for signal <tick_update$cmp_gt0000> created at line 83.
     Found 18-bit up counter for signal <ticks>.
+    Found 32-bit up counter for signal <ticks0>.
+    Found 32-bit adder for signal <ticks0$add0000> created at line 52.
+    Found 32-bit comparator greater for signal <ticks0$cmp_gt0000> created at line 53.
     Found 4-bit register for signal <valor>.
-    Found 2-bit adder for signal <valor$add0000> created at line 74.
-    Found 4-bit 4-to-1 multiplexer for signal <valor$mux0001> created at line 75.
+    Found 2-bit adder for signal <valor$add0000> created at line 85.
+    Found 4-bit 4-to-1 multiplexer for signal <valor$mux0001> created at line 86.
     Summary:
 	inferred   1 ROM(s).
-	inferred   6 Counter(s).
+	inferred   8 Counter(s).
 	inferred   9 D-type flip-flop(s).
-	inferred   5 Adder/Subtractor(s).
-	inferred   7 Comparator(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
 	inferred   4 Multiplexer(s).
 	inferred   1 Decoder(s).
 Unit <temporizador2> synthesized.
@@ -173,20 +182,27 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 5
+# Adders/Subtractors                                   : 8
+ 15-bit adder                                          : 1
  18-bit adder                                          : 1
  2-bit adder                                           : 1
- 4-bit adder                                           : 3
-# Counters                                             : 6
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 4
+# Counters                                             : 8
+ 15-bit up counter                                     : 1
  18-bit up counter                                     : 1
  2-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
  4-bit up counter                                      : 4
 # Registers                                            : 3
  1-bit register                                        : 1
  4-bit register                                        : 2
-# Comparators                                          : 7
+# Comparators                                          : 11
+ 15-bit comparator greater                             : 1
  18-bit comparator less                                : 1
- 4-bit comparator greater                              : 3
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 4
  4-bit comparator lessequal                            : 3
 # Multiplexers                                         : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -210,19 +226,26 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 5
+# Adders/Subtractors                                   : 8
+ 15-bit adder                                          : 1
  18-bit adder                                          : 1
  2-bit adder                                           : 1
- 4-bit adder                                           : 3
-# Counters                                             : 6
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 4
+# Counters                                             : 8
+ 15-bit up counter                                     : 1
  18-bit up counter                                     : 1
  2-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
  4-bit up counter                                      : 4
 # Registers                                            : 9
  Flip-Flops                                            : 9
-# Comparators                                          : 7
+# Comparators                                          : 11
+ 15-bit comparator greater                             : 1
  18-bit comparator less                                : 1
- 4-bit comparator greater                              : 3
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 4
  4-bit comparator lessequal                            : 3
 # Multiplexers                                         : 1
  4-bit 4-to-1 multiplexer                              : 1
@@ -247,8 +270,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 45
- Flip-Flops                                            : 45
+# Registers                                            : 92
+ Flip-Flops                                            : 92
 
 =========================================================================
 
@@ -277,23 +300,21 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 170
+# BELS                             : 496
 #      GND                         : 1
-#      INV                         : 10
-#      LUT1                        : 36
-#      LUT2                        : 8
-#      LUT3                        : 14
-#      LUT4                        : 23
-#      MUXCY                       : 42
+#      INV                         : 18
+#      LUT1                        : 101
+#      LUT2                        : 43
+#      LUT3                        : 18
+#      LUT4                        : 31
+#      MUXCY                       : 154
 #      MUXF5                       : 4
 #      VCC                         : 1
-#      XORCY                       : 31
-# FlipFlops/Latches                : 45
-#      FD                          : 7
-#      FDCE                        : 16
-#      FDE                         : 1
-#      FDR                         : 18
-#      FDS                         : 3
+#      XORCY                       : 125
+# FlipFlops/Latches                : 92
+#      FDCE                        : 48
+#      FDE                         : 11
+#      FDR                         : 33
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 13
@@ -304,13 +325,13 @@ Cell Usage :
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s500efg320-5 
+Selected Device : 3s1200efg320-5 
 
- Number of Slices:                       51  out of   4656     1%  
- Number of Slice Flip Flops:             45  out of   9312     0%  
- Number of 4 input LUTs:                 91  out of   9312     0%  
+ Number of Slices:                      120  out of   8672     1%  
+ Number of Slice Flip Flops:             92  out of  17344     0%  
+ Number of 4 input LUTs:                211  out of  17344     1%  
  Number of IOs:                          14
- Number of bonded IOBs:                  14  out of    232     6%  
+ Number of bonded IOBs:                  14  out of    250     5%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -334,7 +355,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 45    |
+clk                                | BUFGP                  | 92    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -342,14 +363,14 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-d0_or0000(d0_or000036:O)           | NONE(d0_0)             | 16    |
+ticks0_or0000(ticks0_or000036:O)   | NONE(d0_0)             | 48    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 7.233ns (Maximum Frequency: 138.256MHz)
+   Minimum period: 10.347ns (Maximum Frequency: 96.645MHz)
    Minimum input arrival time before clock: 3.801ns
    Maximum output required time after clock: 5.406ns
    Maximum combinational path delay: No path found
@@ -360,44 +381,89 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.233ns (frequency: 138.256MHz)
-  Total number of paths / destination ports: 534 / 65
+  Clock period: 10.347ns (frequency: 96.645MHz)
+  Total number of paths / destination ports: 326779 / 166
 -------------------------------------------------------------------------
-Delay:               7.233ns (Levels of Logic = 20)
-  Source:            ticks_1 (FF)
-  Destination:       pause (FF)
+Delay:               10.347ns (Levels of Logic = 65)
+  Source:            ticks0_1 (FF)
+  Destination:       ticks0_31 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: ticks_1 to pause
+  Data Path: ticks0_1 to ticks0_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.514   0.532  ticks_1 (ticks_1)
-     LUT1:I0->O            1   0.612   0.000  Madd_pause_addsub0000_cy<1>_rt (Madd_pause_addsub0000_cy<1>_rt)
-     MUXCY:S->O            1   0.404   0.000  Madd_pause_addsub0000_cy<1> (Madd_pause_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<2> (Madd_pause_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<3> (Madd_pause_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<4> (Madd_pause_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<5> (Madd_pause_addsub0000_cy<5>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<6> (Madd_pause_addsub0000_cy<6>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<7> (Madd_pause_addsub0000_cy<7>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<8> (Madd_pause_addsub0000_cy<8>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<9> (Madd_pause_addsub0000_cy<9>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<10> (Madd_pause_addsub0000_cy<10>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<11> (Madd_pause_addsub0000_cy<11>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<12> (Madd_pause_addsub0000_cy<12>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<13> (Madd_pause_addsub0000_cy<13>)
-     MUXCY:CI->O           1   0.051   0.000  Madd_pause_addsub0000_cy<14> (Madd_pause_addsub0000_cy<14>)
-     XORCY:CI->O           1   0.699   0.509  Madd_pause_addsub0000_xor<15> (pause_addsub0000<15>)
-     LUT2:I0->O            1   0.612   0.000  Mcompar_pause_cmp_lt0000_lut<6> (Mcompar_pause_cmp_lt0000_lut<6>)
-     MUXCY:S->O            1   0.404   0.000  Mcompar_pause_cmp_lt0000_cy<6> (Mcompar_pause_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           1   0.399   0.426  Mcompar_pause_cmp_lt0000_cy<7> (Mcompar_pause_cmp_lt0000_cy<7>)
-     LUT2:I1->O            1   0.612   0.357  pause_not00021 (pause_not0002)
-     FDE:CE                    0.483          pause
+     FDCE:C->Q             2   0.514   0.532  ticks0_1 (ticks0_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_ticks0_add0000_cy<1>_rt (Madd_ticks0_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_ticks0_add0000_cy<1> (Madd_ticks0_add0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<2> (Madd_ticks0_add0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<3> (Madd_ticks0_add0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<4> (Madd_ticks0_add0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<5> (Madd_ticks0_add0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<6> (Madd_ticks0_add0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<7> (Madd_ticks0_add0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<8> (Madd_ticks0_add0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<9> (Madd_ticks0_add0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<10> (Madd_ticks0_add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<11> (Madd_ticks0_add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<12> (Madd_ticks0_add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<13> (Madd_ticks0_add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<14> (Madd_ticks0_add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<15> (Madd_ticks0_add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<16> (Madd_ticks0_add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<17> (Madd_ticks0_add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<18> (Madd_ticks0_add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<19> (Madd_ticks0_add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<20> (Madd_ticks0_add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<21> (Madd_ticks0_add0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<22> (Madd_ticks0_add0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<23> (Madd_ticks0_add0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<24> (Madd_ticks0_add0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<25> (Madd_ticks0_add0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<26> (Madd_ticks0_add0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<27> (Madd_ticks0_add0000_cy<27>)
+     XORCY:CI->O           1   0.699   0.509  Madd_ticks0_add0000_xor<28> (ticks0_add0000<28>)
+     LUT3:I0->O            1   0.612   0.000  Mcompar_ticks0_cmp_gt0000_lut<13> (Mcompar_ticks0_cmp_gt0000_lut<13>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_ticks0_cmp_gt0000_cy<13> (Mcompar_ticks0_cmp_gt0000_cy<13>)
+     MUXCY:CI->O          35   0.051   1.143  Mcompar_ticks0_cmp_gt0000_cy<14> (Mcompar_ticks0_cmp_gt0000_cy<14>)
+     LUT2:I1->O            1   0.612   0.000  Mcount_ticks0_lut<0> (Mcount_ticks0_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcount_ticks0_cy<0> (Mcount_ticks0_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<1> (Mcount_ticks0_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<2> (Mcount_ticks0_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<3> (Mcount_ticks0_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<4> (Mcount_ticks0_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<5> (Mcount_ticks0_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<6> (Mcount_ticks0_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<7> (Mcount_ticks0_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<8> (Mcount_ticks0_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<9> (Mcount_ticks0_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<10> (Mcount_ticks0_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<11> (Mcount_ticks0_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<12> (Mcount_ticks0_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<13> (Mcount_ticks0_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<14> (Mcount_ticks0_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<15> (Mcount_ticks0_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<16> (Mcount_ticks0_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<17> (Mcount_ticks0_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<18> (Mcount_ticks0_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<19> (Mcount_ticks0_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<20> (Mcount_ticks0_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<21> (Mcount_ticks0_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<22> (Mcount_ticks0_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<23> (Mcount_ticks0_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<24> (Mcount_ticks0_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<25> (Mcount_ticks0_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<26> (Mcount_ticks0_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<27> (Mcount_ticks0_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<28> (Mcount_ticks0_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<29> (Mcount_ticks0_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Mcount_ticks0_cy<30> (Mcount_ticks0_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_ticks0_xor<31> (Mcount_ticks031)
+     FDCE:D                    0.268          ticks0_31
     ----------------------------------------
-    Total                      7.233ns (5.409ns logic, 1.824ns route)
-                                       (74.8% logic, 25.2% route)
+    Total                     10.347ns (8.164ns logic, 2.184ns route)
+                                       (78.9% logic, 21.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -432,9 +498,9 @@ Offset:              5.406ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               7   0.514   0.754  valor_0 (valor_0)
-     LUT4:I0->O            1   0.612   0.357  Mrom_ssd21 (ssd_2_OBUF)
-     OBUF:I->O                 3.169          ssd_2_OBUF (ssd<2>)
+     FDE:C->Q              7   0.514   0.754  valor_0 (valor_0)
+     LUT4:I0->O            1   0.612   0.357  Mrom_ssd111 (ssd_1_OBUF)
+     OBUF:I->O                 3.169          ssd_1_OBUF (ssd<1>)
     ----------------------------------------
     Total                      5.406ns (4.295ns logic, 1.111ns route)
                                        (79.5% logic, 20.5% route)
@@ -442,13 +508,13 @@ Offset:              5.406ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.63 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.28 secs
  
 --> 
 
 
-Total memory usage is 515208 kilobytes
+Total memory usage is 519232 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
