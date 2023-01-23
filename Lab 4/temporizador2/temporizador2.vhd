@@ -15,6 +15,7 @@ entity temporizador2 is
 
 end temporizador2;
 
+
 architecture Behavioral of temporizador2 is
 signal pause: std_logic:='0';
 shared variable d3,d2,d1,d0: integer range 0 to 9;

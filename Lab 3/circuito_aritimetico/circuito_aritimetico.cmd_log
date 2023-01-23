@@ -29,3 +29,10 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "circuito_a
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o circuito_aritimetico_map.ncd circuito_aritimetico.ngd circuito_aritimetico.pcf 
 par -w -intstyle ise -ol high -t 1 circuito_aritimetico_map.ncd circuito_aritimetico.ncd circuito_aritimetico.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml circuito_aritimetico.twx circuito_aritimetico.ncd -o circuito_aritimetico.twr circuito_aritimetico.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "circuito_aritimetico.ngc" circuito_aritimetico.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o circuito_aritimetico_map.ncd circuito_aritimetico.ngd circuito_aritimetico.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "circuito_aritimetico.ngc" circuito_aritimetico.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o circuito_aritimetico_map.ncd circuito_aritimetico.ngd circuito_aritimetico.pcf 
+par -w -intstyle ise -ol high -t 1 circuito_aritimetico_map.ncd circuito_aritimetico.ncd circuito_aritimetico.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml circuito_aritimetico.twx circuito_aritimetico.ncd -o circuito_aritimetico.twr circuito_aritimetico.pcf -ucf pins.ucf 

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-01-22T13:31:00</DateModified>
+  <DateModified>2023-01-22T17:50:46</DateModified>
   <ModuleName>temporizador1</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2023-01-22T17:43:46</SummaryTimeStamp>
   <SavedFilePath>/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/iseconfig/temporizador1.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/</ImplementationReportsDirectory>
   <DateInitialized>2023-01-19T14:12:21</DateInitialized>

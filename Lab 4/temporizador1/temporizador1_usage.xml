@@ -4,8 +4,8 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="18">
-<DesignStatistics TimeStamp="Sun Jan 22 13:51:59 2023"><group name="NetStatistics">
+<DeviceUsageSummary rev="19">
+<DesignStatistics TimeStamp="Sun Jan 22 18:14:34 2023"><group name="NetStatistics">
 <item name="NumNets_Active" rev="7">
 <attrib name="value" value="177"/></item>
 <item name="NumNets_Gnd" rev="7">
@@ -60,32 +60,32 @@
 <attrib name="value" value="32"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="18">
+<item name="AGG_BONDED_IO" rev="19">
 <attrib name="value" value="14"/></item>
-<item name="AGG_IO" rev="18">
+<item name="AGG_IO" rev="19">
 <attrib name="value" value="14"/></item>
-<item name="AGG_SLICE" rev="18">
-<attrib name="value" value="69"/></item>
-<item name="NUM_4_INPUT_LUT" rev="18">
-<attrib name="value" value="132"/></item>
-<item name="NUM_BONDED_IBUF" rev="18">
+<item name="AGG_SLICE" rev="19">
+<attrib name="value" value="70"/></item>
+<item name="NUM_4_INPUT_LUT" rev="19">
+<attrib name="value" value="134"/></item>
+<item name="NUM_BONDED_IBUF" rev="19">
 <attrib name="value" value="3"/></item>
-<item name="NUM_BONDED_IOB" rev="18">
+<item name="NUM_BONDED_IOB" rev="19">
 <attrib name="value" value="11"/></item>
-<item name="NUM_BUFGMUX" rev="18">
+<item name="NUM_BUFGMUX" rev="19">
 <attrib name="value" value="1"/></item>
-<item name="NUM_CARRY_SKIP" rev="18">
+<item name="NUM_CARRY_SKIP" rev="19">
 <attrib name="value" value="1"/></item>
-<item name="NUM_CYMUX" rev="18">
-<attrib name="value" value="116"/></item>
-<item name="NUM_LUT_RT" rev="18">
-<attrib name="value" value="68"/></item>
-<item name="NUM_SLICEL" rev="18">
-<attrib name="value" value="69"/></item>
-<item name="NUM_SLICE_FF" rev="18">
+<item name="NUM_CYMUX" rev="19">
+<attrib name="value" value="118"/></item>
+<item name="NUM_LUT_RT" rev="19">
+<attrib name="value" value="71"/></item>
+<item name="NUM_SLICEL" rev="19">
+<attrib name="value" value="70"/></item>
+<item name="NUM_SLICE_FF" rev="19">
 <attrib name="value" value="55"/></item>
-<item name="NUM_XOR" rev="18">
-<attrib name="value" value="94"/></item>
+<item name="NUM_XOR" rev="19">
+<attrib name="value" value="88"/></item>
 </group>
 </DesignStatistics>
 <ReportConfigData TimeStamp="Fri Jan 20 16:45:00 2023"><group name="SLICEL_CYMUXF">
@@ -279,6 +279,14 @@
 <item name="1" rev="7">
 <attrib name="value" value="8"/></item>
 </group>
+<group name="SLICEL_XORF">
+<item name="0" rev="7">
+<attrib name="value" value="43"/></item>
+<item name="1" rev="7">
+<attrib name="value" value="43"/></item>
+<item name="O" rev="7">
+<attrib name="value" value="43"/></item>
+</group>
 <group name="SLICEL_FFX">
 <item name="CE" rev="7">
 <attrib name="value" value="18"/></item>
@@ -290,14 +298,6 @@
 <attrib name="value" value="27"/></item>
 <item name="SR" rev="7">
 <attrib name="value" value="27"/></item>
-</group>
-<group name="SLICEL_XORF">
-<item name="0" rev="7">
-<attrib name="value" value="43"/></item>
-<item name="1" rev="7">
-<attrib name="value" value="43"/></item>
-<item name="O" rev="7">
-<attrib name="value" value="43"/></item>
 </group>
 <group name="SLICEL_FFY">
 <item name="CE" rev="7">

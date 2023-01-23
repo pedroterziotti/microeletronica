@@ -21,6 +21,7 @@ signal pause: std_logic:='0';
 
 begin
 	-- ligar o display
+	ANODO <= "1110";
 	
 	debounce: process(clk, pauseBTN)
 		variable ticks: integer range 0 to 200000:= 0;
@@ -41,16 +42,16 @@ begin
 	main: process(clk,rst,pause)
 	
 	variable ticks: integer;
-	variable display: integer range 0 to 9 :=0;
-	constant ticks_to_second: integer :=50;--- 50_000_000; -- 50_000_000 pra normal
+	variable display: integer range 0 to 9;
+	constant ticks_to_second: integer := 50_000_000;
 	
 	begin
+	
 	if(rst ='1') then
 		display :=0;
 		ticks:=0;
-	END IF;
-	
-	if (clk'EVENT and clk='1' and pause='0') then --borda de subida
+		
+	elsif (clk'EVENT and clk='1' and pause='0') then --borda de subida
 		ticks := ticks +1;
 		if(ticks >= ticks_to_second) then
 			ticks := 0;
@@ -78,4 +79,3 @@ begin
 	end process;
 
 end Behavioral;
-

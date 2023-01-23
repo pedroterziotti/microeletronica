@@ -45,7 +45,7 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-pauseBTN    |    2.017(R)|    0.644(R)|clk_BUFGP         |   0.000|
+pauseBTN    |    2.040(R)|    0.716(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -53,13 +53,13 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-ssd<0>      |    9.226(R)|clk_BUFGP         |   0.000|
-ssd<1>      |    9.536(R)|clk_BUFGP         |   0.000|
-ssd<2>      |    8.931(R)|clk_BUFGP         |   0.000|
-ssd<3>      |    9.501(R)|clk_BUFGP         |   0.000|
-ssd<4>      |    8.592(R)|clk_BUFGP         |   0.000|
-ssd<5>      |    8.679(R)|clk_BUFGP         |   0.000|
-ssd<6>      |    9.863(R)|clk_BUFGP         |   0.000|
+ssd<0>      |    9.291(R)|clk_BUFGP         |   0.000|
+ssd<1>      |    9.575(R)|clk_BUFGP         |   0.000|
+ssd<2>      |    8.826(R)|clk_BUFGP         |   0.000|
+ssd<3>      |    9.393(R)|clk_BUFGP         |   0.000|
+ssd<4>      |    9.954(R)|clk_BUFGP         |   0.000|
+ssd<5>      |    8.571(R)|clk_BUFGP         |   0.000|
+ssd<6>      |    9.872(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -67,11 +67,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   10.519|         |         |         |
+clk            |   10.469|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sun Jan 22 13:52:12 2023 
+Analysis completed Sun Jan 22 18:14:48 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:

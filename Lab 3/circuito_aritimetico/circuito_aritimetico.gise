@@ -102,6 +102,7 @@
     <transform xil_pn:end_ts="1674396191" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="9085755360950027015" xil_pn:start_ts="1674396191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1674396548" xil_pn:in_ck="7779650472485765118" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1674396548">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -147,7 +148,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="9085755360950027015" xil_pn:start_ts="1674172092">
+    <transform xil_pn:end_ts="1674420269" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6402512814428524917" xil_pn:start_ts="1674420269">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -159,15 +160,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1674172092">
+    <transform xil_pn:end_ts="1674420269" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-5485052969259075108" xil_pn:start_ts="1674420269">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674172092" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2870515752344373393" xil_pn:start_ts="1674172092">
+    <transform xil_pn:end_ts="1674420269" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4213790541247023167" xil_pn:start_ts="1674420269">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1674396445" xil_pn:in_ck="-2033724269160105237" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6727293680767165916" xil_pn:start_ts="1674396439">
+    <transform xil_pn:end_ts="1674420276" xil_pn:in_ck="-2033724269160105237" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1028040743712585362" xil_pn:start_ts="1674420269">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -185,34 +186,23 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1674172097" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-634917714357352461" xil_pn:start_ts="1674172097">
+    <transform xil_pn:end_ts="1674420250" xil_pn:in_ck="4913312808198" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-634917714357352461" xil_pn:start_ts="1674420250">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1674396448" xil_pn:in_ck="-2033724269160113983" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1105839105906237972" xil_pn:start_ts="1674396445">
+    <transform xil_pn:end_ts="1674420281" xil_pn:in_ck="-4893369284190026041" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6125256984915895362" xil_pn:start_ts="1674420276">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="circuito_aritimetico.bld"/>
       <outfile xil_pn:name="circuito_aritimetico.ngd"/>
       <outfile xil_pn:name="circuito_aritimetico_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1674396451" xil_pn:in_ck="-2033724269160113982" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1674396448">
+    <transform xil_pn:end_ts="1674420285" xil_pn:in_ck="-4893367877781407800" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="7728334167582700538" xil_pn:start_ts="1674420281">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="circuito_aritimetico.pcf"/>
       <outfile xil_pn:name="circuito_aritimetico_map.map"/>
@@ -223,13 +213,10 @@
       <outfile xil_pn:name="circuito_aritimetico_summary.xml"/>
       <outfile xil_pn:name="circuito_aritimetico_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1674396458" xil_pn:in_ck="1681656684295370971" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1674396451">
+    <transform xil_pn:end_ts="1674420297" xil_pn:in_ck="-3496046499567591199" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="6268780068511726196" xil_pn:start_ts="1674420285">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="circuito_aritimetico.ncd"/>
       <outfile xil_pn:name="circuito_aritimetico.pad"/>
@@ -241,13 +228,9 @@
       <outfile xil_pn:name="circuito_aritimetico_pad.txt"/>
       <outfile xil_pn:name="circuito_aritimetico_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1674396458" xil_pn:in_ck="-2033724269160114114" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1674396456">
+    <transform xil_pn:end_ts="1674420297" xil_pn:in_ck="-4893553523719015612" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1674420295">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="circuito_aritimetico.twr"/>
       <outfile xil_pn:name="circuito_aritimetico.twx"/>

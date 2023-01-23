@@ -1,0 +1,2 @@
+vhdl work "temporizador2.vhd"
+vhdl work "temporizador2_tb.vhd"

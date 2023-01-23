@@ -1,8 +1,8 @@
 V3 3
-FL "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd" 2023/01/20.17:28:13 P.20131013
-EN work/temporizador2 1674246496 \
+FL "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd" 2023/01/22.17:45:43 P.20131013
+EN work/temporizador2 1674420346 \
       FL "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/temporizador2/Behavioral 1674246497 \
+AR work/temporizador2/Behavioral 1674420347 \
       FL "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd" \
-      EN work/temporizador2 1674246496
+      EN work/temporizador2 1674420346
