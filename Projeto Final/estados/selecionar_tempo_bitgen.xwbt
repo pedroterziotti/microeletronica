@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.ncd
+OUTFILE=/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/pedrot/Desktop/microeletronica/Projeto Final/estados
+LICENSE=WebPack
+USER_INFO=212588854_0_0_637

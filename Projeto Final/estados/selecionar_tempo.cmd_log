@@ -1,0 +1,140 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/pins.ucf" -p xc3s500e-fg320-5 "selecionar_tempo.ngc" selecionar_tempo.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o selecionar_tempo_map.ncd selecionar_tempo.ngd selecionar_tempo.pcf 
+par -w -intstyle ise -ol high -t 1 selecionar_tempo_map.ncd selecionar_tempo.ncd selecionar_tempo.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml selecionar_tempo.twx selecionar_tempo.ncd -o selecionar_tempo.twr selecionar_tempo.pcf 
+bitgen -intstyle ise -f selecionar_tempo.ut selecionar_tempo.ncd 

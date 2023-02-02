@@ -1,0 +1,452 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: selecionar_tempo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "selecionar_tempo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "selecionar_tempo"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : selecionar_tempo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.vhd" in Library work.
+Entity <selecionar_tempo> compiled.
+Entity <selecionar_tempo> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <selecionar_tempo> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <selecionar_tempo> in library <work> (Architecture <behavioral>).
+Entity <selecionar_tempo> analyzed. Unit <selecionar_tempo> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <selecionar_tempo>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.vhd".
+    Found 16x7-bit ROM for signal <saida>.
+    Found 4-bit register for signal <ANODO>.
+    Found 1-of-4 decoder for signal <ANODO$mux0001> created at line 67.
+    Found 2-bit up counter for signal <display>.
+    Found 32-bit up counter for signal <numero>.
+    Found 32-bit adder for signal <numero$add0000> created at line 42.
+    Found 32-bit adder for signal <numero$addsub0000> created at line 44.
+    Found 32-bit comparator greater for signal <numero$cmp_gt0000> created at line 45.
+    Found 15-bit up counter for signal <tick_update>.
+    Found 15-bit adder for signal <tick_update$addsub0000> created at line 63.
+    Found 15-bit comparator greater for signal <tick_update$cmp_gt0000> created at line 64.
+    Found 32-bit up counter for signal <ticks>.
+    Found 4-bit register for signal <valor>.
+    Found 2-bit adder for signal <valor$add0000> created at line 66.
+    Found 4-bit 4-to-1 multiplexer for signal <valor$mux0001> created at line 67.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   4 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <selecionar_tempo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 15-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 2
+# Counters                                             : 4
+ 15-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 2
+ 4-bit register                                        : 2
+# Comparators                                          : 2
+ 15-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <selecionar_tempo>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_saida> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <selecionar_tempo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 4
+ 15-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 2
+# Counters                                             : 4
+ 15-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Comparators                                          : 2
+ 15-bit comparator greater                             : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <selecionar_tempo> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block selecionar_tempo, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 89
+ Flip-Flops                                            : 89
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : selecionar_tempo.ngr
+Top Level Output File Name         : selecionar_tempo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 541
+#      GND                         : 1
+#      INV                         : 12
+#      LUT1                        : 154
+#      LUT2                        : 8
+#      LUT3                        : 7
+#      LUT4                        : 23
+#      MUXCY                       : 177
+#      VCC                         : 1
+#      XORCY                       : 158
+# FlipFlops/Latches                : 89
+#      FDE                         : 10
+#      FDR                         : 47
+#      FDRE                        : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      135  out of   4656     2%  
+ Number of Slice Flip Flops:             89  out of   9312     0%  
+ Number of 4 input LUTs:                204  out of   9312     2%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 89    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 8.917ns (Maximum Frequency: 112.149MHz)
+   Minimum input arrival time before clock: 4.189ns
+   Maximum output required time after clock: 5.406ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.917ns (frequency: 112.149MHz)
+  Total number of paths / destination ports: 55911 / 178
+-------------------------------------------------------------------------
+Delay:               8.917ns (Levels of Logic = 35)
+  Source:            numero_1 (FF)
+  Destination:       numero_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: numero_1 to numero_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.514   0.603  numero_1 (numero_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_numero_addsub0000_cy<1>_rt (Madd_numero_addsub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_numero_addsub0000_cy<1> (Madd_numero_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<2> (Madd_numero_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<3> (Madd_numero_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<4> (Madd_numero_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<5> (Madd_numero_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<6> (Madd_numero_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<7> (Madd_numero_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<8> (Madd_numero_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<9> (Madd_numero_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<10> (Madd_numero_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<11> (Madd_numero_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<12> (Madd_numero_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<13> (Madd_numero_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<14> (Madd_numero_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<15> (Madd_numero_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<16> (Madd_numero_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<17> (Madd_numero_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<18> (Madd_numero_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<19> (Madd_numero_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<20> (Madd_numero_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<21> (Madd_numero_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<22> (Madd_numero_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<23> (Madd_numero_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<24> (Madd_numero_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<25> (Madd_numero_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<26> (Madd_numero_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<27> (Madd_numero_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<28> (Madd_numero_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_numero_addsub0000_cy<29> (Madd_numero_addsub0000_cy<29>)
+     XORCY:CI->O           1   0.699   0.360  Madd_numero_addsub0000_xor<30> (numero_addsub0000<30>)
+     LUT4:I3->O            1   0.612   0.000  Mcompar_numero_cmp_gt0000_lut<8> (Mcompar_numero_cmp_gt0000_lut<8>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_numero_cmp_gt0000_cy<8> (Mcompar_numero_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.399   0.387  Mcompar_numero_cmp_gt0000_cy<9> (Mcompar_numero_cmp_gt0000_cy<9>)
+     LUT3:I2->O           32   0.612   1.073  numero_and00001 (numero_and0000)
+     FDRE:R                    0.795          numero_0
+    ----------------------------------------
+    Total                      8.917ns (6.494ns logic, 2.423ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 96 / 96
+-------------------------------------------------------------------------
+Offset:              4.189ns (Levels of Logic = 2)
+  Source:            sel (PAD)
+  Destination:       numero_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sel to numero_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  sel_IBUF (sel_IBUF)
+     LUT3:I0->O           32   0.612   1.073  numero_and00001 (numero_and0000)
+     FDRE:R                    0.795          numero_0
+    ----------------------------------------
+    Total                      4.189ns (2.513ns logic, 1.676ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.406ns (Levels of Logic = 2)
+  Source:            valor_0 (FF)
+  Destination:       saida<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: valor_0 to saida<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.514   0.754  valor_0 (valor_0)
+     LUT4:I0->O            1   0.612   0.357  Mrom_saida111 (saida_1_OBUF)
+     OBUF:I->O                 3.169          saida_1_OBUF (saida<1>)
+    ----------------------------------------
+    Total                      5.406ns (4.295ns logic, 1.111ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.22 secs
+ 
+--> 
+
+
+Total memory usage is 517624 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
