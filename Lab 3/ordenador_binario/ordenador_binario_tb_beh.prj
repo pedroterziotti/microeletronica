@@ -1,0 +1,2 @@
+vhdl work "ordenador_binario.vhd"
+vhdl work "ordenador_binario_tb.vhd"

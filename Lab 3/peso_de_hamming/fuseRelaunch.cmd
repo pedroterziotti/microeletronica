@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/hamming_tb_isim_beh.exe" -prj "/home/pedrot/Desktop/microeletronica/Lab 3/peso_de_hamming/hamming_tb_beh.prj" "work.hamming_tb" 

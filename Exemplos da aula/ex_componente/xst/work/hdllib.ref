@@ -1,0 +1,6 @@
+AR mux behavioral "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/mux.vhd" sub00/vhpl01 1674235805
+AR circular_shift behavioral "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" sub00/vhpl05 1674235809
+EN circular_shift NULL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" sub00/vhpl04 1674235808
+EN flipflop NULL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/flipflop.vhd" sub00/vhpl02 1674235806
+EN mux NULL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/mux.vhd" sub00/vhpl00 1674235804
+AR flipflop behavioral "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/flipflop.vhd" sub00/vhpl03 1674235807

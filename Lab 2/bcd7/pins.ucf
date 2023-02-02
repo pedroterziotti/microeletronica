@@ -1,0 +1,20 @@
+net "ENABLE" loc="L14";
+
+net "D0" loc="G18";
+net "D1" loc="H18";
+net "D2" loc="K18";
+net "D3" loc="K17";
+
+net "ANODO(0)" loc="F17";
+net "ANODO(1)" loc="H17";
+net "ANODO(2)" loc="C18";
+net "ANODO(3)" loc="F15";
+
+
+net "A" loc="L18";
+net "B" loc="F18";
+net "C" loc="D17";
+net "D" loc="D16";
+net "E" loc="G14";
+net "F" loc="J17";
+net "G" loc="H14";

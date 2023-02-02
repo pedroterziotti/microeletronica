@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedrot/Desktop/Lab/demux/demux.ncd
+OUTFILE=/home/pedrot/Desktop/Lab/demux/demux.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/pedrot/Desktop/Lab/demux
+LICENSE=WebPack
+USER_INFO=212588854_0_0_637

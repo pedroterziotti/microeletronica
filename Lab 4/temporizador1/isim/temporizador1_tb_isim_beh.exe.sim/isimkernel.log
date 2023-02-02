@@ -1,0 +1,29 @@
+Command line:
+   temporizador1_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54045
+
+Sun Jan 22 13:43:21 2023
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 229.454 Meg
+
+ Total Signals          : 5
+ Total Nets             : 14
+ Total Signal Drivers   : 3
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 375
+Total Line Count : 7
+
+ Total Simulation Time: 0.14 sec
+
+ Current Memory Usage: 304.955 Meg
+
+Sun Jan 22 13:43:43 2023
+

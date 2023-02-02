@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "projeto.ngc" projeto.ngd  

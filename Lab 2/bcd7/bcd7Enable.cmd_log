@@ -1,0 +1,2 @@
+vhdtdtfi -lib work bcd7Enable.vhd -prj bcd7 -o bcd7Enable.spl -module bcd7Enable -template /home/pedrot/Desktop/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work bcd7Enable.vhd -prj bcd7 -o bcd7Enable.spl -module bcd7Enable -template /home/pedrot/Desktop/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

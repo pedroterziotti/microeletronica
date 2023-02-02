@@ -1,0 +1,22 @@
+V3 9
+FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto.vhd" 2023/02/01.10:38:09 P.20131013
+EN work/projeto 1675259043 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/projeto/Behavioral 1675259044 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto.vhd" \
+      EN work/projeto 1675259043
+FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.vhd" 2023/02/01.10:54:49 P.20131013
+EN work/projeto_final 1675259691 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/projeto_final/Behavioral 1675259692 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.vhd" \
+      EN work/projeto_final 1675259691
+FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD.vhd" 2023/02/01.10:44:00 P.20131013
+EN work/SSD 1675259106 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SSD/Behavioral 1675259107 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD.vhd" \
+      EN work/SSD 1675259106

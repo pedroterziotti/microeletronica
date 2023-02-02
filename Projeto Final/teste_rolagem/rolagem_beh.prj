@@ -1,0 +1,2 @@
+vhdl work "../projeto/SSD_COMPONENT.vhd"
+vhdl work "rolagem.vhd"

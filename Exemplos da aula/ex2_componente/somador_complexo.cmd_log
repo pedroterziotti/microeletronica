@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somador_complexo.xst" -ofn "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex2_componente/somador_complexo.syr" 

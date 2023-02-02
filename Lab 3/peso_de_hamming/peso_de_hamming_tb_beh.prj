@@ -1,0 +1,2 @@
+vhdl work "peso_de_hamming.vhd"
+vhdl work "peso_de_hamming_tb.vhd"

@@ -1,0 +1,27 @@
+vhdtdtfi -lib work bcd7E.vhd -prj bcd7 -o bcd7E.spl -module bcd7E -template /home/pedrot/Desktop/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work bcd7E.vhd -prj bcd7 -o bcd7E.spl -module bcd7E -template /home/pedrot/Desktop/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e bcd7E.spl /home/pedrot/Desktop/Lab/bcd7/bcd7E.sym 
+vhdtdtfi -prj bcd7 -o /home/pedrot/Desktop/Lab/bcd7/bcd7E.vhi -module bcd7E -template /home/pedrot/Desktop/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work bcd7E.vhd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "bcd7E.ngc" bcd7E.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o bcd7E_map.ncd bcd7E.ngd bcd7E.pcf 
+par -w -intstyle ise -ol high -t 1 bcd7E_map.ncd bcd7E.ncd bcd7E.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd7E.twx bcd7E.ncd -o bcd7E.twr bcd7E.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "bcd7E.ngc" bcd7E.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o bcd7E_map.ncd bcd7E.ngd bcd7E.pcf 
+par -w -intstyle ise -ol high -t 1 bcd7E_map.ncd bcd7E.ncd bcd7E.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd7E.twx bcd7E.ncd -o bcd7E.twr bcd7E.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f bcd7E.ut bcd7E.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "bcd7E.ngc" bcd7E.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o bcd7E_map.ncd bcd7E.ngd bcd7E.pcf 
+par -w -intstyle ise -ol high -t 1 bcd7E_map.ncd bcd7E.ncd bcd7E.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd7E.twx bcd7E.ncd -o bcd7E.twr bcd7E.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f bcd7E.ut bcd7E.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 2/bcd7/bcd7E.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "bcd7E.ngc" bcd7E.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o bcd7E_map.ncd bcd7E.ngd bcd7E.pcf 
+par -w -intstyle ise -ol high -t 1 bcd7E_map.ncd bcd7E.ncd bcd7E.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml bcd7E.twx bcd7E.ncd -o bcd7E.twr bcd7E.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f bcd7E.ut bcd7E.ncd 

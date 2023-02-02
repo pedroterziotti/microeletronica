@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.ncd
+OUTFILE=/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario/ordenador_binario.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=/home/pedrot/Desktop/microeletronica/Lab 3/ordenador_binario
+LICENSE=WebPack
+USER_INFO=212588854_0_0_637

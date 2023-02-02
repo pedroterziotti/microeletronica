@@ -1,0 +1,23 @@
+NET "A(0)" LOC = "G18";
+NET "A(1)" LOC = "H18";
+NET "A(2)" LOC = "K18";
+NET "A(3)" LOC = "K17";
+
+NET "B(0)" LOC ="l14";
+NET "B(0)" LOC ="l13";
+NET "B(0)" LOC ="n17";
+NET "B(0)" LOC ="R1";
+
+NET "Y(0)" LOC ="J14";
+NET "Y(0)" LOC ="J15";
+NET "Y(0)" LOC ="K15";
+NET "Y(0)" LOC ="K14";
+NET "Y(0)" LOC ="E16";
+NET "Y(0)" LOC ="P16";
+NET "Y(0)" LOC ="E4";
+
+NET "COUT" LOC = "P4";
+
+
+
+

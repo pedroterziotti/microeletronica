@@ -1,0 +1,382 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: circular_shift.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "circular_shift.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "circular_shift"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : circular_shift
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/mux.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/flipflop.vhd" in Library work.
+Architecture behavioral of Entity flipflop is up to date.
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" in Library work.
+Entity <circular_shift> compiled.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 39. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 39. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 40. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 40. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 41. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 41. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 42. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+WARNING:HDLParsers:3555 - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" Line 42. Warning for LRM section 1.1.1.2 violation about connectivity rules. Parameter q of mode buffer should not be associated with a formal port of mode out.
+Entity <circular_shift> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <circular_shift> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <flipflop> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <circular_shift> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1739 - HDL ADVISOR - "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd" line 11: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+Entity <circular_shift> analyzed. Unit <circular_shift> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <behavioral>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+Analyzing Entity <flipflop> in library <work> (Architecture <behavioral>).
+Entity <flipflop> analyzed. Unit <flipflop> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mux>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/mux.vhd".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <flipflop>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/flipflop.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <flipflop> synthesized.
+
+
+Synthesizing Unit <circular_shift>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_componente/circular_shift.vhd".
+Unit <circular_shift> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <circular_shift> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block circular_shift, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : circular_shift.ngr
+Top Level Output File Name         : circular_shift
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 4
+#      LUT3                        : 4
+# FlipFlops/Latches                : 4
+#      FD                          : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 5
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                        2  out of   4656     0%  
+ Number of Slice Flip Flops:              4  out of   9312     0%  
+ Number of 4 input LUTs:                  4  out of   9312     0%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 1.804ns (Maximum Frequency: 554.339MHz)
+   Minimum input arrival time before clock: 2.637ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.804ns (frequency: 554.339MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               1.804ns (Levels of Logic = 1)
+  Source:            dff1/q (FF)
+  Destination:       dff4/q (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: dff1/q to dff4/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.514   0.410  dff1/q (dff1/q)
+     LUT3:I2->O            1   0.612   0.000  mux4/x1 (i<3>)
+     FD:D                      0.268          dff4/q
+    ----------------------------------------
+    Total                      1.804ns (1.394ns logic, 0.410ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              2.637ns (Levels of Logic = 2)
+  Source:            load (PAD)
+  Destination:       dff4/q (FF)
+  Destination Clock: clk rising
+
+  Data Path: load to dff4/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.651  load_IBUF (load_IBUF)
+     LUT3:I0->O            1   0.612   0.000  mux4/x1 (i<3>)
+     FD:D                      0.268          dff4/q
+    ----------------------------------------
+    Total                      2.637ns (1.986ns logic, 0.651ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            dff4/q (FF)
+  Destination:       q<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: dff4/q to q<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.514   0.380  dff4/q (dff4/q)
+     OBUF:I->O                 3.169          q_3_OBUF (q<3>)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.68 secs
+ 
+--> 
+
+
+Total memory usage is 513000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,18 @@
+NET "vector_in(0)" LOC = "G18";
+NET "vector_in(1)" LOC = "H18";
+NET "vector_in(2)" LOC = "K18";
+NET "vector_in(3)" LOC = "K17";
+NET "vector_in(4)" LOC = "L14";
+NET "vector_in(5)" LOC = "L13";
+NET "vector_in(6)" LOC = "N17";
+NET "vector_in(7)" LOC = "R17";
+
+NET "vector_out(0)" loc="J14";
+NET "vector_out(1)" loc="J15";
+NET "vector_out(2)" loc="K15";
+NET "vector_out(3)" loc="K14";
+NET "vector_out(4)" loc="E16";
+NET "vector_out(5)" loc="P16";
+NET "vector_out(6)" loc="E4";
+NET "vector_out(7)" loc="P4";
+

@@ -1,0 +1,2 @@
+vhdl work "hamming.vhd"
+vhdl work "hamming_tb.vhd"

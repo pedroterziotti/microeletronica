@@ -1,0 +1,522 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: temporizador2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "temporizador2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "temporizador2"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-5-fg320
+
+---- Source Options
+Top Module Name                    : temporizador2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd" in Library work.
+Entity <temporizador2> compiled.
+Entity <temporizador2> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <temporizador2> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <temporizador2> in library <work> (Architecture <behavioral>).
+Entity <temporizador2> analyzed. Unit <temporizador2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <temporizador2>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador2/temporizador2.vhd".
+    Found 16x7-bit ROM for signal <ssd>.
+    Found 4-bit register for signal <ANODO>.
+    Found 1-of-4 decoder for signal <ANODO$mux0001> created at line 87.
+    Found 4-bit up counter for signal <d0>.
+    Found 4-bit adder for signal <d0$add0000> created at line 56.
+    Found 4-bit comparator greater for signal <d0$cmp_gt0000> created at line 57.
+    Found 32-bit comparator lessequal for signal <d0$cmp_le0000> created at line 54.
+    Found 4-bit up counter for signal <d1>.
+    Found 4-bit adder for signal <d1$add0000> created at line 59.
+    Found 4-bit comparator greater for signal <d1$cmp_gt0000> created at line 60.
+    Found 4-bit comparator lessequal for signal <d1$cmp_le0000> created at line 57.
+    Found 4-bit up counter for signal <d2>.
+    Found 4-bit adder for signal <d2$add0000> created at line 62.
+    Found 4-bit comparator greater for signal <d2$cmp_gt0000> created at line 63.
+    Found 4-bit comparator lessequal for signal <d2$cmp_le0000> created at line 60.
+    Found 4-bit up counter for signal <d3>.
+    Found 4-bit adder for signal <d3$addsub0000> created at line 65.
+    Found 4-bit comparator greater for signal <d3$cmp_gt0000> created at line 66.
+    Found 4-bit comparator lessequal for signal <d3$cmp_le0000> created at line 63.
+    Found 2-bit up counter for signal <display>.
+    Found 1-bit register for signal <pause>.
+    Found 18-bit adder for signal <pause$addsub0000> created at line 30.
+    Found 18-bit comparator less for signal <pause$cmp_lt0000> created at line 32.
+    Found 15-bit up counter for signal <tick_update>.
+    Found 15-bit adder for signal <tick_update$addsub0000> created at line 83.
+    Found 15-bit comparator greater for signal <tick_update$cmp_gt0000> created at line 84.
+    Found 18-bit up counter for signal <ticks>.
+    Found 32-bit up counter for signal <ticks0>.
+    Found 32-bit adder for signal <ticks0$add0000> created at line 53.
+    Found 32-bit comparator greater for signal <ticks0$cmp_gt0000> created at line 54.
+    Found 4-bit register for signal <valor>.
+    Found 2-bit adder for signal <valor$add0000> created at line 86.
+    Found 4-bit 4-to-1 multiplexer for signal <valor$mux0001> created at line 87.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  11 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <temporizador2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 8
+ 15-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 4
+# Counters                                             : 8
+ 15-bit up counter                                     : 1
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 2
+# Comparators                                          : 11
+ 15-bit comparator greater                             : 1
+ 18-bit comparator less                                : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 4
+ 4-bit comparator lessequal                            : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <temporizador2>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_ssd> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <temporizador2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 8
+ 15-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 4
+# Counters                                             : 8
+ 15-bit up counter                                     : 1
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 4
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Comparators                                          : 11
+ 15-bit comparator greater                             : 1
+ 18-bit comparator less                                : 1
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 4
+ 4-bit comparator lessequal                            : 3
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <temporizador2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block temporizador2, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 92
+ Flip-Flops                                            : 92
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : temporizador2.ngr
+Top Level Output File Name         : temporizador2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 496
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 101
+#      LUT2                        : 43
+#      LUT3                        : 18
+#      LUT4                        : 31
+#      MUXCY                       : 154
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 125
+# FlipFlops/Latches                : 92
+#      FDCE                        : 48
+#      FDE                         : 11
+#      FDR                         : 33
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-5 
+
+ Number of Slices:                      120  out of   8672     1%  
+ Number of Slice Flip Flops:             92  out of  17344     0%  
+ Number of 4 input LUTs:                211  out of  17344     1%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    250     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 92    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+ticks0_or0000(ticks0_or000036:O)   | NONE(d0_0)             | 48    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.347ns (Maximum Frequency: 96.645MHz)
+   Minimum input arrival time before clock: 3.801ns
+   Maximum output required time after clock: 5.406ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.347ns (frequency: 96.645MHz)
+  Total number of paths / destination ports: 326779 / 166
+-------------------------------------------------------------------------
+Delay:               10.347ns (Levels of Logic = 65)
+  Source:            ticks0_1 (FF)
+  Destination:       ticks0_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: ticks0_1 to ticks0_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.514   0.532  ticks0_1 (ticks0_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_ticks0_add0000_cy<1>_rt (Madd_ticks0_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_ticks0_add0000_cy<1> (Madd_ticks0_add0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<2> (Madd_ticks0_add0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<3> (Madd_ticks0_add0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<4> (Madd_ticks0_add0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<5> (Madd_ticks0_add0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_ticks0_add0000_cy<6> (Madd_ticks0_add0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<7> (Madd_ticks0_add0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<8> (Madd_ticks0_add0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<9> (Madd_ticks0_add0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<10> (Madd_ticks0_add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<11> (Madd_ticks0_add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<12> (Madd_ticks0_add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<13> (Madd_ticks0_add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<14> (Madd_ticks0_add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<15> (Madd_ticks0_add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<16> (Madd_ticks0_add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<17> (Madd_ticks0_add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<18> (Madd_ticks0_add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<19> (Madd_ticks0_add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<20> (Madd_ticks0_add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<21> (Madd_ticks0_add0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<22> (Madd_ticks0_add0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<23> (Madd_ticks0_add0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<24> (Madd_ticks0_add0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<25> (Madd_ticks0_add0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<26> (Madd_ticks0_add0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_ticks0_add0000_cy<27> (Madd_ticks0_add0000_cy<27>)
+     XORCY:CI->O           1   0.699   0.509  Madd_ticks0_add0000_xor<28> (ticks0_add0000<28>)
+     LUT3:I0->O            1   0.612   0.000  Mcompar_ticks0_cmp_gt0000_lut<13> (Mcompar_ticks0_cmp_gt0000_lut<13>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_ticks0_cmp_gt0000_cy<13> (Mcompar_ticks0_cmp_gt0000_cy<13>)
+     MUXCY:CI->O          35   0.051   1.143  Mcompar_ticks0_cmp_gt0000_cy<14> (Mcompar_ticks0_cmp_gt0000_cy<14>)
+     LUT2:I1->O            1   0.612   0.000  Mcount_ticks0_lut<0> (Mcount_ticks0_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcount_ticks0_cy<0> (Mcount_ticks0_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<1> (Mcount_ticks0_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<2> (Mcount_ticks0_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<3> (Mcount_ticks0_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<4> (Mcount_ticks0_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<5> (Mcount_ticks0_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<6> (Mcount_ticks0_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<7> (Mcount_ticks0_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<8> (Mcount_ticks0_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<9> (Mcount_ticks0_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_ticks0_cy<10> (Mcount_ticks0_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<11> (Mcount_ticks0_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<12> (Mcount_ticks0_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<13> (Mcount_ticks0_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<14> (Mcount_ticks0_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<15> (Mcount_ticks0_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<16> (Mcount_ticks0_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<17> (Mcount_ticks0_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<18> (Mcount_ticks0_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<19> (Mcount_ticks0_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<20> (Mcount_ticks0_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<21> (Mcount_ticks0_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<22> (Mcount_ticks0_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<23> (Mcount_ticks0_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<24> (Mcount_ticks0_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<25> (Mcount_ticks0_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<26> (Mcount_ticks0_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<27> (Mcount_ticks0_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<28> (Mcount_ticks0_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_ticks0_cy<29> (Mcount_ticks0_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Mcount_ticks0_cy<30> (Mcount_ticks0_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_ticks0_xor<31> (Mcount_ticks031)
+     FDCE:D                    0.268          ticks0_31
+    ----------------------------------------
+    Total                     10.347ns (8.164ns logic, 2.184ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              3.801ns (Levels of Logic = 2)
+  Source:            pauseBTN (PAD)
+  Destination:       ticks_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: pauseBTN to ticks_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.380  pauseBTN_IBUF (pauseBTN_IBUF)
+     INV:I->O             18   0.612   0.908  pauseBTN_inv1_INV_0 (pauseBTN_inv)
+     FDR:R                     0.795          ticks_0
+    ----------------------------------------
+    Total                      3.801ns (2.513ns logic, 1.288ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.406ns (Levels of Logic = 2)
+  Source:            valor_0 (FF)
+  Destination:       ssd<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: valor_0 to ssd<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.514   0.754  valor_0 (valor_0)
+     LUT4:I0->O            1   0.612   0.357  Mrom_ssd111 (ssd_1_OBUF)
+     OBUF:I->O                 3.169          ssd_1_OBUF (ssd<1>)
+    ----------------------------------------
+    Total                      5.406ns (4.295ns logic, 1.111ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.23 secs
+ 
+--> 
+
+
+Total memory usage is 519248 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,15 @@
+V3 6
+FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_subprogramas/ex_funcao.vhd" 2023/01/27.14:10:09 P.20131013
+EN work/ex_funcao 0 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_subprogramas/ex_funcao.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/meu_pacote 0
+AR work/ex_funcao/Behavioral 0 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_subprogramas/ex_funcao.vhd" \
+      EN work/ex_funcao 0
+FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_subprogramas/meu_pacote.vhd" 2023/01/27.14:25:41 P.20131013
+PH work/meu_pacote 0 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_subprogramas/meu_pacote.vhd" \
+      PB ieee/std_logic_1164 1381692176
+PB work/meu_pacote 0 \
+      FL "/home/pedrot/Desktop/microeletronica/Exemplos da aula/ex_subprogramas/meu_pacote.vhd" \
+      PH work/meu_pacote 0

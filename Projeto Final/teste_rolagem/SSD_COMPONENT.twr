@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
+3 -s 5 -n 3 -fastpaths -xml SSD_COMPONENT.twx SSD_COMPONENT.ncd -o
+SSD_COMPONENT.twr SSD_COMPONENT.pcf
+
+Design file:              SSD_COMPONENT.ncd
+Physical constraint file: SSD_COMPONENT.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+caracter<0>    |saida<0>       |    8.602|
+caracter<0>    |saida<1>       |    7.274|
+caracter<0>    |saida<2>       |    7.886|
+caracter<0>    |saida<3>       |    9.138|
+caracter<0>    |saida<4>       |    8.714|
+caracter<0>    |saida<5>       |    8.170|
+caracter<0>    |saida<6>       |    8.090|
+caracter<1>    |saida<0>       |    7.061|
+caracter<1>    |saida<1>       |    8.417|
+caracter<1>    |saida<2>       |    7.851|
+caracter<1>    |saida<3>       |    8.761|
+caracter<1>    |saida<4>       |    8.223|
+caracter<1>    |saida<5>       |    8.012|
+caracter<1>    |saida<6>       |    8.055|
+caracter<2>    |saida<0>       |    8.449|
+caracter<2>    |saida<1>       |    7.557|
+caracter<2>    |saida<2>       |    7.786|
+caracter<2>    |saida<3>       |    8.846|
+caracter<2>    |saida<4>       |    8.422|
+caracter<2>    |saida<5>       |    7.546|
+caracter<2>    |saida<6>       |    8.267|
+caracter<3>    |saida<0>       |    7.694|
+caracter<3>    |saida<1>       |    7.706|
+caracter<3>    |saida<2>       |    8.119|
+caracter<3>    |saida<3>       |    8.903|
+caracter<3>    |saida<4>       |    8.414|
+caracter<3>    |saida<5>       |    7.774|
+caracter<3>    |saida<6>       |    8.323|
+caracter<4>    |saida<0>       |    7.041|
+caracter<4>    |saida<1>       |    7.749|
+caracter<4>    |saida<2>       |    7.498|
+caracter<4>    |saida<3>       |    8.434|
+caracter<4>    |saida<4>       |    8.010|
+caracter<4>    |saida<5>       |    7.734|
+caracter<4>    |saida<6>       |    7.917|
+caracter<5>    |saida<0>       |    7.919|
+caracter<5>    |saida<1>       |    8.530|
+caracter<5>    |saida<2>       |    7.493|
+caracter<5>    |saida<3>       |    8.219|
+caracter<5>    |saida<4>       |    8.047|
+caracter<5>    |saida<5>       |    8.433|
+caracter<5>    |saida<6>       |    7.697|
+caracter<6>    |saida<0>       |    8.155|
+caracter<6>    |saida<1>       |    8.361|
+caracter<6>    |saida<2>       |    7.894|
+caracter<6>    |saida<3>       |    8.522|
+caracter<6>    |saida<4>       |    8.098|
+caracter<6>    |saida<5>       |    7.926|
+caracter<6>    |saida<6>       |    8.129|
+caracter<7>    |saida<0>       |    7.254|
+caracter<7>    |saida<1>       |    8.081|
+caracter<7>    |saida<2>       |    6.262|
+caracter<7>    |saida<3>       |    7.645|
+caracter<7>    |saida<4>       |    7.598|
+caracter<7>    |saida<5>       |    7.646|
+caracter<7>    |saida<6>       |    6.449|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Feb  1 16:46:48 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 347 MB
+
+
+

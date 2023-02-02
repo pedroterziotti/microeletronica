@@ -1,0 +1,221 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v
+3 -s 5 -n 3 -fastpaths -xml circuito_aritimetico.twx circuito_aritimetico.ncd
+-o circuito_aritimetico.twr circuito_aritimetico.pcf -ucf pins.ucf
+
+Design file:              circuito_aritimetico.ncd
+Physical constraint file: circuito_aritimetico.pcf
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock opcode<0>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+a<0>        |    5.379(F)|    1.008(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    4.839(F)|    1.949(F)|UN_Y_cmp_eq0000   |   0.000|
+a<1>        |    5.343(F)|    0.029(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    4.085(F)|    0.737(F)|UN_Y_cmp_eq0000   |   0.000|
+a<2>        |    4.723(F)|    0.206(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.465(F)|    0.974(F)|UN_Y_cmp_eq0000   |   0.000|
+a<3>        |    4.731(F)|   -0.358(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    4.965(F)|   -0.135(F)|UN_Y_cmp_eq0000   |   0.000|
+b<0>        |    6.329(F)|    0.753(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    5.446(F)|    2.066(F)|UN_Y_cmp_eq0000   |   0.000|
+b<1>        |    4.362(F)|    0.990(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.104(F)|    1.698(F)|UN_Y_cmp_eq0000   |   0.000|
+b<2>        |    4.240(F)|    0.458(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.218(F)|    1.405(F)|UN_Y_cmp_eq0000   |   0.000|
+b<3>        |    3.132(F)|    0.923(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.366(F)|    1.570(F)|UN_Y_cmp_eq0000   |   0.000|
+cin         |    2.056(F)|    2.081(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    1.760(F)|    3.567(F)|UN_Y_cmp_eq0000   |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock opcode<1>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+a<0>        |    5.456(F)|    0.911(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    5.210(F)|    1.486(F)|UN_Y_cmp_eq0000   |   0.000|
+a<1>        |    5.420(F)|   -0.068(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    4.456(F)|    0.274(F)|UN_Y_cmp_eq0000   |   0.000|
+a<2>        |    4.800(F)|    0.109(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.836(F)|    0.511(F)|UN_Y_cmp_eq0000   |   0.000|
+a<3>        |    4.808(F)|   -0.455(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    5.336(F)|   -0.598(F)|UN_Y_cmp_eq0000   |   0.000|
+b<0>        |    6.406(F)|    0.656(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    5.817(F)|    1.603(F)|UN_Y_cmp_eq0000   |   0.000|
+b<1>        |    4.439(F)|    0.893(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.475(F)|    1.235(F)|UN_Y_cmp_eq0000   |   0.000|
+b<2>        |    4.317(F)|    0.361(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.589(F)|    0.942(F)|UN_Y_cmp_eq0000   |   0.000|
+b<3>        |    3.209(F)|    0.826(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.737(F)|    1.107(F)|UN_Y_cmp_eq0000   |   0.000|
+cin         |    2.133(F)|    1.984(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    2.131(F)|    3.104(F)|UN_Y_cmp_eq0000   |   0.000|
+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock opcode<2>
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+a<0>        |    5.613(F)|    0.715(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    5.231(F)|    1.459(F)|UN_Y_cmp_eq0000   |   0.000|
+a<1>        |    5.577(F)|   -0.264(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    4.477(F)|    0.247(F)|UN_Y_cmp_eq0000   |   0.000|
+a<2>        |    4.957(F)|   -0.087(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.857(F)|    0.484(F)|UN_Y_cmp_eq0000   |   0.000|
+a<3>        |    4.965(F)|   -0.651(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    5.357(F)|   -0.625(F)|UN_Y_cmp_eq0000   |   0.000|
+b<0>        |    6.563(F)|    0.460(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    5.838(F)|    1.576(F)|UN_Y_cmp_eq0000   |   0.000|
+b<1>        |    4.596(F)|    0.697(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.496(F)|    1.208(F)|UN_Y_cmp_eq0000   |   0.000|
+b<2>        |    4.474(F)|    0.165(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.610(F)|    0.915(F)|UN_Y_cmp_eq0000   |   0.000|
+b<3>        |    3.366(F)|    0.630(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    3.758(F)|    1.080(F)|UN_Y_cmp_eq0000   |   0.000|
+cin         |    2.290(F)|    1.788(F)|SN_Y_cmp_eq0000   |   0.000|
+            |    2.152(F)|    3.077(F)|UN_Y_cmp_eq0000   |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock opcode<0> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+cout        |   12.030(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   13.004(F)|UN_Y_cmp_eq0000   |   0.000|
+y<0>        |   10.568(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.862(F)|UN_Y_cmp_eq0000   |   0.000|
+y<1>        |   10.634(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.826(F)|UN_Y_cmp_eq0000   |   0.000|
+y<2>        |    9.966(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.853(F)|UN_Y_cmp_eq0000   |   0.000|
+y<3>        |   10.912(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.874(F)|UN_Y_cmp_eq0000   |   0.000|
+------------+------------+------------------+--------+
+
+Clock opcode<1> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+cout        |   11.933(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   12.541(F)|UN_Y_cmp_eq0000   |   0.000|
+y<0>        |   10.471(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.399(F)|UN_Y_cmp_eq0000   |   0.000|
+y<1>        |   10.537(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.363(F)|UN_Y_cmp_eq0000   |   0.000|
+y<2>        |    9.869(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.390(F)|UN_Y_cmp_eq0000   |   0.000|
+y<3>        |   10.815(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.411(F)|UN_Y_cmp_eq0000   |   0.000|
+------------+------------+------------------+--------+
+
+Clock opcode<2> to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+cout        |   11.737(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   12.514(F)|UN_Y_cmp_eq0000   |   0.000|
+y<0>        |   10.275(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.372(F)|UN_Y_cmp_eq0000   |   0.000|
+y<1>        |   10.341(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.336(F)|UN_Y_cmp_eq0000   |   0.000|
+y<2>        |    9.673(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.363(F)|UN_Y_cmp_eq0000   |   0.000|
+y<3>        |   10.619(F)|SN_Y_cmp_eq0000   |   0.000|
+            |   11.384(F)|UN_Y_cmp_eq0000   |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock opcode<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+opcode<0>      |         |         |    5.849|    5.849|
+opcode<1>      |         |         |    5.420|    5.420|
+opcode<2>      |         |         |    5.529|    5.529|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock opcode<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+opcode<0>      |         |         |    6.084|    6.084|
+opcode<1>      |         |         |    5.497|    5.497|
+opcode<2>      |         |         |    5.900|    5.900|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock opcode<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+opcode<0>      |         |         |    6.105|    6.105|
+opcode<1>      |         |         |    5.654|    5.654|
+opcode<2>      |         |         |    5.921|    5.921|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+opcode<2>      |cout           |    9.035|
+opcode<2>      |y<0>           |    7.839|
+opcode<2>      |y<1>           |    7.757|
+opcode<2>      |y<2>           |    7.841|
+opcode<2>      |y<3>           |    7.991|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Jan 22 17:44:57 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 360 MB
+
+
+

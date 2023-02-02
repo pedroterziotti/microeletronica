@@ -1,0 +1,27 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/demux/demux.xst" -ofn "/home/pedrot/Desktop/Micro/demux/demux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 demux.ngc demux.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o demux_map.ncd demux.ngd demux.pcf 
+par -w -intstyle ise -ol high -t 1 demux_map.ncd demux.ncd demux.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml demux.twx demux.ncd -o demux.twr demux.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/demux/demux.xst" -ofn "/home/pedrot/Desktop/Micro/demux/demux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 demux.ngc demux.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o demux_map.ncd demux.ngd demux.pcf 
+par -w -intstyle ise -ol high -t 1 demux_map.ncd demux.ncd demux.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml demux.twx demux.ncd -o demux.twr demux.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 demux.ngc demux.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o demux_map.ncd demux.ngd demux.pcf 
+par -w -intstyle ise -ol high -t 1 demux_map.ncd demux.ncd demux.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml demux.twx demux.ncd -o demux.twr demux.pcf 
+bitgen -intstyle ise -f demux.ut demux.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Micro/demux/demux.xst" -ofn "/home/pedrot/Desktop/Micro/demux/demux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 demux.ngc demux.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o demux_map.ncd demux.ngd demux.pcf 
+par -w -intstyle ise -ol high -t 1 demux_map.ncd demux.ncd demux.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml demux.twx demux.ncd -o demux.twr demux.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f demux.ut demux.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/Lab/demux/demux.xst" -ofn "/home/pedrot/Desktop/Lab/demux/demux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 demux.ngc demux.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o demux_map.ncd demux.ngd demux.pcf 
+par -w -intstyle ise -ol high -t 1 demux_map.ncd demux.ncd demux.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml demux.twx demux.ncd -o demux.twr demux.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f demux.ut demux.ncd 

@@ -1,0 +1,536 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: sequential.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sequential.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "sequential"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : sequential
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.vhd" in Library work.
+Entity <sequential> compiled.
+Entity <sequential> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <sequential> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <sequential> in library <work> (Architecture <behavioral>).
+Entity <sequential> analyzed. Unit <sequential> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <sequential>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 24                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 19                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | current_state$not0000     (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | a                                              |
+    | Power Up State     | a                                              |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4x50-bit ROM for signal <vel$rom0000>.
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit comparator greater for signal <count$cmp_gt0000> created at line 37.
+    Found 32-bit adder for signal <current_state$add0000> created at line 36.
+    Found 32-bit comparator lessequal for signal <current_state$cmp_le0000> created at line 37.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <sequential> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x50-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <current_state/FSM> on signal <current_state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ a     | 0000
+ ab    | 0001
+ b     | 0010
+ bc    | 0011
+ c     | 0100
+ cd    | 0101
+ d     | 0110
+ de    | 0111
+ e     | 1000
+ ef    | 1001
+ f     | 1010
+ fa    | 1011
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 4x50-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <sequential> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block sequential, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 36
+ Flip-Flops                                            : 36
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : sequential.ngr
+Top Level Output File Name         : sequential
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 276
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 31
+#      LUT2                        : 37
+#      LUT3                        : 20
+#      LUT4                        : 27
+#      MULT_AND                    : 3
+#      MUXCY                       : 86
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 36
+#      FDCE                        : 4
+#      FDE                         : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 5
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       61  out of   4656     1%  
+ Number of Slice Flip Flops:             36  out of   9312     0%  
+ Number of 4 input LUTs:                119  out of   9312     1%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 36    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 4     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.301ns (Maximum Frequency: 97.079MHz)
+   Minimum input arrival time before clock: 10.132ns
+   Maximum output required time after clock: 5.796ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.301ns (frequency: 97.079MHz)
+  Total number of paths / destination ports: 335564 / 40
+-------------------------------------------------------------------------
+Delay:               10.301ns (Levels of Logic = 67)
+  Source:            count_1 (FF)
+  Destination:       count_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: count_1 to count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  count_1 (count_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_current_state_add0000_cy<1>_rt (Madd_current_state_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_current_state_add0000_cy<1> (Madd_current_state_add0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_current_state_add0000_cy<2> (Madd_current_state_add0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_current_state_add0000_cy<3> (Madd_current_state_add0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_current_state_add0000_cy<4> (Madd_current_state_add0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_current_state_add0000_cy<5> (Madd_current_state_add0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_current_state_add0000_cy<6> (Madd_current_state_add0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<7> (Madd_current_state_add0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<8> (Madd_current_state_add0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<9> (Madd_current_state_add0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<10> (Madd_current_state_add0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<11> (Madd_current_state_add0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<12> (Madd_current_state_add0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<13> (Madd_current_state_add0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<14> (Madd_current_state_add0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<15> (Madd_current_state_add0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<16> (Madd_current_state_add0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<17> (Madd_current_state_add0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<18> (Madd_current_state_add0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<19> (Madd_current_state_add0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<20> (Madd_current_state_add0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<21> (Madd_current_state_add0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<22> (Madd_current_state_add0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<23> (Madd_current_state_add0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<24> (Madd_current_state_add0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<25> (Madd_current_state_add0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<26> (Madd_current_state_add0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<27> (Madd_current_state_add0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_current_state_add0000_cy<28> (Madd_current_state_add0000_cy<28>)
+     XORCY:CI->O           1   0.699   0.360  Madd_current_state_add0000_xor<29> (current_state_add0000<29>)
+     LUT4:I3->O            1   0.612   0.000  Mcompar_count_cmp_gt0000_lut<21> (Mcompar_count_cmp_gt0000_lut<21>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_count_cmp_gt0000_cy<21> (Mcompar_count_cmp_gt0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<22> (Mcompar_count_cmp_gt0000_cy<22>)
+     MUXCY:CI->O          34   0.051   1.142  Mcompar_count_cmp_gt0000_cy<23> (Mcompar_count_cmp_gt0000_cy<23>)
+     LUT2:I1->O            1   0.612   0.000  Mcount_count_lut<0> (Mcount_count_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcount_count_cy<0> (Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<1> (Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<2> (Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<3> (Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<4> (Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<5> (Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<6> (Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<7> (Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<8> (Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<9> (Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<10> (Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<11> (Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<12> (Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<13> (Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<14> (Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<15> (Mcount_count_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<16> (Mcount_count_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<17> (Mcount_count_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<18> (Mcount_count_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<19> (Mcount_count_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<20> (Mcount_count_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<21> (Mcount_count_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<22> (Mcount_count_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<23> (Mcount_count_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<24> (Mcount_count_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<25> (Mcount_count_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<26> (Mcount_count_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<27> (Mcount_count_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<28> (Mcount_count_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<29> (Mcount_count_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Mcount_count_cy<30> (Mcount_count_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_count_xor<31> (Mcount_count31)
+     FDE:D                     0.268          count_31
+    ----------------------------------------
+    Total                     10.301ns (8.267ns logic, 2.034ns route)
+                                       (80.3% logic, 19.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 42938 / 71
+-------------------------------------------------------------------------
+Offset:              10.132ns (Levels of Logic = 51)
+  Source:            vel<0> (PAD)
+  Destination:       count_31 (FF)
+  Destination Clock: clk rising
+
+  Data Path: vel<0> to count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.106   1.225  vel_0_IBUF (Mrom_vel_rom000023)
+     LUT2:I0->O            2   0.612   0.380  Mrom_vel_rom0000141 (Mrom_vel_rom000014)
+     MULT_AND:I0->LO       0   0.645   0.000  ticks<14>_mand (ticks<14>_mand1)
+     MUXCY:DI->O           1   0.773   0.000  Mcompar_count_cmp_gt0000_cy<9> (Mcompar_count_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<10> (Mcompar_count_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<11> (Mcompar_count_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<12> (Mcompar_count_cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<13> (Mcompar_count_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<14> (Mcompar_count_cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<15> (Mcompar_count_cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<16> (Mcompar_count_cmp_gt0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<17> (Mcompar_count_cmp_gt0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<18> (Mcompar_count_cmp_gt0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<19> (Mcompar_count_cmp_gt0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<20> (Mcompar_count_cmp_gt0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<21> (Mcompar_count_cmp_gt0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_count_cmp_gt0000_cy<22> (Mcompar_count_cmp_gt0000_cy<22>)
+     MUXCY:CI->O          34   0.051   1.142  Mcompar_count_cmp_gt0000_cy<23> (Mcompar_count_cmp_gt0000_cy<23>)
+     LUT2:I1->O            1   0.612   0.000  Mcount_count_lut<0> (Mcount_count_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcount_count_cy<0> (Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<1> (Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<2> (Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<3> (Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<4> (Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<5> (Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<6> (Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<7> (Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<8> (Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<9> (Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcount_count_cy<10> (Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<11> (Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<12> (Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<13> (Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<14> (Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<15> (Mcount_count_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<16> (Mcount_count_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<17> (Mcount_count_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<18> (Mcount_count_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<19> (Mcount_count_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<20> (Mcount_count_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<21> (Mcount_count_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<22> (Mcount_count_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<23> (Mcount_count_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<24> (Mcount_count_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<25> (Mcount_count_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<26> (Mcount_count_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<27> (Mcount_count_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<28> (Mcount_count_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_count_cy<29> (Mcount_count_cy<29>)
+     MUXCY:CI->O           0   0.051   0.000  Mcount_count_cy<30> (Mcount_count_cy<30>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_count_xor<31> (Mcount_count31)
+     FDE:D                     0.268          count_31
+    ----------------------------------------
+    Total                     10.132ns (7.385ns logic, 2.747ns route)
+                                       (72.9% logic, 27.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 24 / 6
+-------------------------------------------------------------------------
+Offset:              5.796ns (Levels of Logic = 2)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       ssd<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd4 to ssd<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            39   0.514   1.144  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT4:I1->O            1   0.612   0.357  current_state_FSM_Out171 (ssd_1_OBUF)
+     OBUF:I->O                 3.169          ssd_1_OBUF (ssd<1>)
+    ----------------------------------------
+    Total                      5.796ns (4.295ns logic, 1.501ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.27 secs
+ 
+--> 
+
+
+Total memory usage is 524192 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

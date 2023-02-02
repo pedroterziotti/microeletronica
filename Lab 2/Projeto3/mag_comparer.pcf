@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 07 13:58:50 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "equals" LOCATE = SITE "J14" LEVEL 1;
+COMP "a_larger_b" LOCATE = SITE "J15" LEVEL 1;
+COMP "b_larger_a" LOCATE = SITE "K15" LEVEL 1;
+COMP "A0" LOCATE = SITE "K18" LEVEL 1;
+COMP "A1" LOCATE = SITE "K17" LEVEL 1;
+COMP "B0" LOCATE = SITE "G18" LEVEL 1;
+COMP "B1" LOCATE = SITE "H18" LEVEL 1;
+SCHEMATIC END;
+

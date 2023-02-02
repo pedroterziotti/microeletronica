@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.ncd
+OUTFILE=/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1
+LICENSE=WebPack
+USER_INFO=212588854_0_0_637

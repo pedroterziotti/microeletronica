@@ -1,0 +1,22 @@
+Running: /home/pedrot/Desktop/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb_isim_beh.exe -prj /home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb_beh.prj work.temp1_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb.vhd" Line 68: <temporizador1> remains a black-box since it has no binding entity.
+Completed static elaboration
+Fuse Memory Usage: 95868 KB
+Fuse CPU Usage: 920 ms
+WARNING:Simulator:648 - "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb.vhd" Line 68. Instance temporizador1 is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavior of entity temp1_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 VHDL Units
+Built simulation executable /home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb_isim_beh.exe
+Fuse Memory Usage: 661552 KB
+Fuse CPU Usage: 980 ms
+GCC CPU Usage: 140 ms

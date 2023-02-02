@@ -1,0 +1,6 @@
+AR ssd behavioral "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD.vhd" sub00/vhpl01 1675259107
+AR projeto behavioral "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto.vhd" sub00/vhpl03 1675259044
+AR projeto_final behavioral "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.vhd" sub00/vhpl05 1675259692
+EN ssd NULL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD.vhd" sub00/vhpl00 1675259106
+EN projeto_final NULL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.vhd" sub00/vhpl04 1675259691
+EN projeto NULL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto.vhd" sub00/vhpl02 1675259043

@@ -1,0 +1,2 @@
+vhdl work "reg_mux.vhd"
+vhdl work "reg_mux_tb.vhd"

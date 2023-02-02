@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/SSD_COMPONENT.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/SSD_COMPONENT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "SSD_COMPONENT.ngc" SSD_COMPONENT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o SSD_COMPONENT_map.ncd SSD_COMPONENT.ngd SSD_COMPONENT.pcf 
+par -w -intstyle ise -ol high -t 1 SSD_COMPONENT_map.ncd SSD_COMPONENT.ncd SSD_COMPONENT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SSD_COMPONENT.twx SSD_COMPONENT.ncd -o SSD_COMPONENT.twr SSD_COMPONENT.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/SSD_COMPONENT.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/SSD_COMPONENT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "SSD_COMPONENT.ngc" SSD_COMPONENT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o SSD_COMPONENT_map.ncd SSD_COMPONENT.ngd SSD_COMPONENT.pcf 
+par -w -intstyle ise -ol high -t 1 SSD_COMPONENT_map.ncd SSD_COMPONENT.ncd SSD_COMPONENT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml SSD_COMPONENT.twx SSD_COMPONENT.ncd -o SSD_COMPONENT.twr SSD_COMPONENT.pcf 

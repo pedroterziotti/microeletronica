@@ -1,0 +1,122 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 5/sequential/sequential.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-5 "sequential.ngc" sequential.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o sequential_map.ncd sequential.ngd sequential.pcf 
+par -w -intstyle ise -ol high -t 1 sequential_map.ncd sequential.ncd sequential.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml sequential.twx sequential.ncd -o sequential.twr sequential.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f sequential.ut sequential.ncd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem_tb_isim_beh.exe" -prj "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem_tb_beh.prj" "work.rolagem_tb" 

@@ -1,0 +1,15 @@
+V3 6
+FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD_COMPONENT.vhd" 2023/02/01.16:27:45 P.20131013
+EN work/SSD_COMPONENT 1675346130 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD_COMPONENT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/SSD_COMPONENT/Behavioral 1675346131 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/SSD_COMPONENT.vhd" \
+      EN work/SSD_COMPONENT 1675346130
+FL "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" 2023/02/02.17:58:14 P.20131013
+EN work/rolagem 1675371500 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/rolagem/Behavioral 1675371501 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" \
+      EN work/rolagem 1675371500

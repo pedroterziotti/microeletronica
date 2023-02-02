@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb_isim_beh.exe" -prj "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temp1_tb_beh.prj" "work.temp1_tb" 

@@ -1,0 +1,440 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: circuito_aritimetico.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "circuito_aritimetico.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "circuito_aritimetico"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-5-fg320
+
+---- Source Options
+Top Module Name                    : circuito_aritimetico
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.vhd" in Library work.
+Architecture behavioral of Entity circuito_aritimetico is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <circuito_aritimetico> in library <work> (architecture <behavioral>) with generics.
+	N = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <circuito_aritimetico> in library <work> (Architecture <behavioral>).
+	N = 4
+Entity <circuito_aritimetico> analyzed. Unit <circuito_aritimetico> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <circuito_aritimetico>.
+    Related source file is "/home/pedrot/Desktop/microeletronica/Lab 3/circuito_aritimetico/circuito_aritimetico.vhd".
+WARNING:Xst:737 - Found 5-bit latch for signal <UN_Y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 5-bit latch for signal <SN_Y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 5-bit adder for signal <mux0000$add0000> created at line 33.
+    Found 5-bit subtractor for signal <mux0000$addsub0000>.
+    Found 5-bit adder for signal <mux0001$add0000> created at line 38.
+    Found 5-bit subtractor for signal <mux0001$addsub0000>.
+    Found 5-bit adder for signal <SN_Y$addsub0000> created at line 38.
+    Found 5-bit adder for signal <UN_Y$addsub0000> created at line 33.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+Unit <circuito_aritimetico> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 2
+# Latches                                              : 2
+ 5-bit latch                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 5-bit adder                                           : 4
+ 5-bit subtractor                                      : 2
+# Latches                                              : 2
+ 5-bit latch                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <circuito_aritimetico> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block circuito_aritimetico, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : circuito_aritimetico.ngr
+Top Level Output File Name         : circuito_aritimetico
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 80
+#      LUT2                        : 6
+#      LUT3                        : 18
+#      LUT4                        : 54
+#      MUXF5                       : 2
+# FlipFlops/Latches                : 10
+#      LDCP                        : 10
+# IO Buffers                       : 17
+#      IBUF                        : 12
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-5 
+
+ Number of Slices:                       44  out of   8672     0%  
+ Number of Slice Flip Flops:             10  out of  17344     0%  
+ Number of 4 input LUTs:                 78  out of  17344     0%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    250     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SN_Y_cmp_eq0000(SN_Y_cmp_eq00001:O)| NONE(*)(SN_Y_0)        | 5     |
+UN_Y_cmp_eq0000(UN_Y_cmp_eq00001:O)| NONE(*)(UN_Y_0)        | 5     |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+SN_Y_0__and0000(SN_Y_0__and00001:O)| NONE(SN_Y_0)           | 1     |
+SN_Y_0__and0001(SN_Y_0__and00011:O)| NONE(SN_Y_0)           | 1     |
+SN_Y_1__and0000(SN_Y_1__and00001:O)| NONE(SN_Y_1)           | 1     |
+SN_Y_1__and0001(SN_Y_1__and00011:O)| NONE(SN_Y_1)           | 1     |
+SN_Y_2__and0000(SN_Y_2__and00001:O)| NONE(SN_Y_2)           | 1     |
+SN_Y_2__and0001(SN_Y_2__and00011:O)| NONE(SN_Y_2)           | 1     |
+SN_Y_3__and0000(SN_Y_3__and00001:O)| NONE(SN_Y_3)           | 1     |
+SN_Y_3__and0001(SN_Y_3__and00011:O)| NONE(SN_Y_3)           | 1     |
+SN_Y_4__and0000(SN_Y_4__and00001:O)| NONE(SN_Y_4)           | 1     |
+SN_Y_4__and0001(SN_Y_4__and00011:O)| NONE(SN_Y_4)           | 1     |
+UN_Y_0__and0000(UN_Y_0__and00001:O)| NONE(UN_Y_0)           | 1     |
+UN_Y_0__and0001(UN_Y_0__and00011:O)| NONE(UN_Y_0)           | 1     |
+UN_Y_1__and0000(UN_Y_1__and00001:O)| NONE(UN_Y_1)           | 1     |
+UN_Y_1__and0001(UN_Y_1__and00011:O)| NONE(UN_Y_1)           | 1     |
+UN_Y_2__and0000(UN_Y_2__and00001:O)| NONE(UN_Y_2)           | 1     |
+UN_Y_2__and0001(UN_Y_2__and00011:O)| NONE(UN_Y_2)           | 1     |
+UN_Y_3__and0000(UN_Y_3__and00001:O)| NONE(UN_Y_3)           | 1     |
+UN_Y_3__and0001(UN_Y_3__and00011:O)| NONE(UN_Y_3)           | 1     |
+UN_Y_4__and0000(UN_Y_4__and00001:O)| NONE(UN_Y_4)           | 1     |
+UN_Y_4__and0001(UN_Y_4__and00011:O)| NONE(UN_Y_4)           | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 9.858ns
+   Maximum output required time after clock: 5.152ns
+   Maximum combinational path delay: 6.470ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SN_Y_cmp_eq0000'
+  Total number of paths / destination ports: 220 / 5
+-------------------------------------------------------------------------
+Offset:              9.858ns (Levels of Logic = 9)
+  Source:            opcode<2> (PAD)
+  Destination:       SN_Y_4 (LATCH)
+  Destination Clock: SN_Y_cmp_eq0000 falling
+
+  Data Path: opcode<2> to SN_Y_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.106   1.226  opcode_2_IBUF (opcode_2_IBUF)
+     LUT3:I0->O            5   0.612   0.690  SN_Y_cmp_eq00011 (SN_Y_cmp_eq0001)
+     LUT3:I0->O            3   0.612   0.454  Msub_mux0001_addsub0000_cy<0>11 (Msub_mux0001_addsub0000_cy<0>)
+     LUT4:I3->O            1   0.612   0.360  Msub_mux0001_addsub0000_cy<2>11_SW0 (N37)
+     LUT4:I3->O            2   0.612   0.383  Msub_mux0001_addsub0000_cy<2>11 (Msub_mux0001_addsub0000_cy<2>)
+     LUT4:I3->O            1   0.612   0.426  SN_Y_mux0000<4>42_SW0 (N31)
+     LUT4:I1->O            2   0.612   0.383  SN_Y_mux0000<4>42 (SN_Y_mux0000<4>42)
+     LUT4:I3->O            1   0.612   0.000  SN_Y_mux0000<4>90_F (N39)
+     MUXF5:I0->O           3   0.278   0.000  SN_Y_mux0000<4>90 (SN_Y_mux0000<4>)
+     LDCP:D                    0.268          SN_Y_4
+    ----------------------------------------
+    Total                      9.858ns (5.936ns logic, 3.922ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UN_Y_cmp_eq0000'
+  Total number of paths / destination ports: 181 / 5
+-------------------------------------------------------------------------
+Offset:              9.705ns (Levels of Logic = 8)
+  Source:            opcode<0> (PAD)
+  Destination:       UN_Y_4 (LATCH)
+  Destination Clock: UN_Y_cmp_eq0000 falling
+
+  Data Path: opcode<0> to UN_Y_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            30   1.106   1.224  opcode_0_IBUF (opcode_0_IBUF)
+     LUT3:I0->O            5   0.612   0.690  UN_Y_cmp_eq00011 (UN_Y_cmp_eq0001)
+     LUT3:I0->O            3   0.612   0.454  Msub_mux0000_addsub0000_cy<0>11 (Msub_mux0000_addsub0000_cy<0>)
+     LUT4:I3->O            1   0.612   0.360  Msub_mux0000_addsub0000_cy<2>11_SW0 (N35)
+     LUT4:I3->O            2   0.612   0.383  Msub_mux0000_addsub0000_cy<2>11 (Msub_mux0000_addsub0000_cy<2>)
+     LUT4:I3->O            1   0.612   0.426  UN_Y_mux0000<4>26_SW0 (N33)
+     LUT4:I1->O            1   0.612   0.509  UN_Y_mux0000<4>26 (UN_Y_mux0000<4>26)
+     LUT2:I0->O            3   0.612   0.000  UN_Y_mux0000<4>58 (UN_Y_mux0000<4>)
+     LDCP:D                    0.268          UN_Y_4
+    ----------------------------------------
+    Total                      9.705ns (5.658ns logic, 4.047ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SN_Y_cmp_eq0000'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.152ns (Levels of Logic = 2)
+  Source:            SN_Y_4 (LATCH)
+  Destination:       cout (PAD)
+  Source Clock:      SN_Y_cmp_eq0000 falling
+
+  Data Path: SN_Y_4 to cout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.588   0.426  SN_Y_4 (SN_Y_4)
+     LUT3:I1->O            1   0.612   0.357  cout1 (cout_OBUF)
+     OBUF:I->O                 3.169          cout_OBUF (cout)
+    ----------------------------------------
+    Total                      5.152ns (4.369ns logic, 0.783ns route)
+                                       (84.8% logic, 15.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UN_Y_cmp_eq0000'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              5.113ns (Levels of Logic = 2)
+  Source:            UN_Y_4 (LATCH)
+  Destination:       cout (PAD)
+  Source Clock:      UN_Y_cmp_eq0000 falling
+
+  Data Path: UN_Y_4 to cout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.588   0.387  UN_Y_4 (UN_Y_4)
+     LUT3:I2->O            1   0.612   0.357  cout1 (cout_OBUF)
+     OBUF:I->O                 3.169          cout_OBUF (cout)
+    ----------------------------------------
+    Total                      5.113ns (4.369ns logic, 0.744ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               6.470ns (Levels of Logic = 3)
+  Source:            opcode<2> (PAD)
+  Destination:       cout (PAD)
+
+  Data Path: opcode<2> to cout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.106   1.226  opcode_2_IBUF (opcode_2_IBUF)
+     LUT3:I0->O            1   0.612   0.357  y<3>1 (y_3_OBUF)
+     OBUF:I->O                 3.169          y_3_OBUF (y<3>)
+    ----------------------------------------
+    Total                      6.470ns (4.887ns logic, 1.583ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.16 secs
+ 
+--> 
+
+
+Total memory usage is 514592 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

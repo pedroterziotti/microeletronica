@@ -1,0 +1,115 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f temporizador1.ut temporizador1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f temporizador1.ut temporizador1.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.xst" -ofn "/home/pedrot/Desktop/microeletronica/Lab 4/temporizador1/temporizador1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "temporizador1.ngc" temporizador1.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o temporizador1_map.ncd temporizador1.ngd temporizador1.pcf 
+par -w -intstyle ise -ol high -t 1 temporizador1_map.ncd temporizador1.ncd temporizador1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml temporizador1.twx temporizador1.ncd -o temporizador1.twr temporizador1.pcf -ucf pins.ucf 

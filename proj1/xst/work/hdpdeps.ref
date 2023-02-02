@@ -1,0 +1,6 @@
+V3 3
+FL /home/pedrot/Desktop/Micro/proj1/proj1.vhd 2022/11/17.13:48:19 P.20131013
+EN work/proj1 1668703703 FL /home/pedrot/Desktop/Micro/proj1/proj1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/proj1/Behavioral 1668703704 \
+      FL /home/pedrot/Desktop/Micro/proj1/proj1.vhd EN work/proj1 1668703703

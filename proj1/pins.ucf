@@ -1,0 +1,5 @@
+net "SW1" loc= "H10";
+net "SW2" loc = "K10";
+
+
+net "LD0" loc = "J14";
