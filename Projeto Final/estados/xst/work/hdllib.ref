@@ -1,2 +1,6 @@
+AR contagem behavioral "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/contagem.vhd" sub00/vhpl05 1675444912
+AR rolagem behavioral "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" sub00/vhpl03 1675445026
 AR selecionar_tempo behavioral "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.vhd" sub00/vhpl01 1675380327
 EN selecionar_tempo NULL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.vhd" sub00/vhpl00 1675380326
+EN rolagem NULL "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" sub00/vhpl02 1675445025
+EN contagem NULL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/contagem.vhd" sub00/vhpl04 1675444911

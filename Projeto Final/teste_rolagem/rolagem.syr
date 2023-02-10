@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: rolagem.prj
@@ -45,7 +45,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "rolagem"
 Output Format                      : NGC
-Target Device                      : xc3s500e-5-fg320
+Target Device                      : xc3s1200e-5-fg320
 
 ---- Source Options
 Top Module Name                    : rolagem
@@ -121,7 +121,7 @@ Analyzing hierarchy for entity <rolagem> in library <work> (architecture <behavi
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <rolagem> in library <work> (Architecture <behavioral>).
-WARNING:Xst:790 - "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" line 35: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" line 34: Index value(s) does not match array range, simulation mismatch.
 Entity <rolagem> analyzed. Unit <rolagem> generated.
 
 
@@ -134,27 +134,26 @@ Performing bidirectional port resolution...
 Synthesizing Unit <rolagem>.
     Related source file is "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd".
 WARNING:Xst:1781 - Signal <message_inicio> is used but never assigned. Tied to default value.
-WARNING:Xst:1780 - Signal <indexs> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found 37x8-bit ROM for signal <d2$mux0000> created at line 36.
+    Found 37x8-bit ROM for signal <d2$mux0000> created at line 35.
     Found 4-bit register for signal <ANODO>.
-    Found 1-of-4 decoder for signal <ANODO$mux0001> created at line 57.
+    Found 1-of-4 decoder for signal <ANODO$mux0001> created at line 56.
     Found 8-bit register for signal <d0>.
     Found 8-bit register for signal <d1>.
     Found 8-bit register for signal <d2>.
     Found 8-bit register for signal <d3>.
     Found 2-bit up counter for signal <display>.
     Found 32-bit register for signal <index>.
-    Found 32-bit adder for signal <index$add0000> created at line 39.
-    Found 32-bit adder for signal <index$addsub0000> created at line 29.
-    Found 32-bit comparator greater for signal <index$cmp_gt0000> created at line 30.
-    Found 32-bit comparator greater for signal <index$cmp_gt0001> created at line 32.
+    Found 32-bit adder for signal <index$add0000> created at line 38.
+    Found 32-bit adder for signal <index$addsub0000> created at line 28.
+    Found 32-bit comparator greater for signal <index$cmp_gt0000> created at line 29.
+    Found 32-bit comparator greater for signal <index$cmp_gt0001> created at line 31.
     Found 15-bit up counter for signal <tick_update>.
-    Found 15-bit adder for signal <tick_update$addsub0000> created at line 53.
-    Found 15-bit comparator greater for signal <tick_update$cmp_gt0000> created at line 54.
+    Found 15-bit adder for signal <tick_update$addsub0000> created at line 52.
+    Found 15-bit comparator greater for signal <tick_update$cmp_gt0000> created at line 53.
     Found 32-bit up counter for signal <ticks>.
     Found 8-bit register for signal <valor>.
-    Found 2-bit adder for signal <valor$add0000> created at line 56.
-    Found 8-bit 4-to-1 multiplexer for signal <valor$mux0001> created at line 57.
+    Found 2-bit adder for signal <valor$add0000> created at line 55.
+    Found 8-bit 4-to-1 multiplexer for signal <valor$mux0001> created at line 56.
     Summary:
 	inferred   1 ROM(s).
 	inferred   3 Counter(s).
@@ -245,7 +244,7 @@ Optimizing unit <rolagem> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block rolagem, actual ratio is 5.
+Found area constraint ratio of 100 (+ 5) on block rolagem, actual ratio is 2.
 FlipFlop index_1 has been replicated 1 time(s)
 FlipFlop index_2 has been replicated 1 time(s)
 FlipFlop index_3 has been replicated 1 time(s)
@@ -288,7 +287,7 @@ Design Statistics
 # IOs                              : 12
 
 Cell Usage :
-# BELS                             : 809
+# BELS                             : 808
 #      GND                         : 1
 #      INV                         : 15
 #      LUT1                        : 95
@@ -297,12 +296,12 @@ Cell Usage :
 #      LUT2_L                      : 1
 #      LUT3                        : 49
 #      LUT3_D                      : 8
-#      LUT3_L                      : 4
-#      LUT4                        : 184
-#      LUT4_D                      : 21
-#      LUT4_L                      : 25
+#      LUT3_L                      : 3
+#      LUT4                        : 187
+#      LUT4_D                      : 23
+#      LUT4_L                      : 22
 #      MUXCY                       : 167
-#      MUXF5                       : 37
+#      MUXF5                       : 35
 #      MUXF6                       : 7
 #      VCC                         : 1
 #      XORCY                       : 126
@@ -318,13 +317,13 @@ Cell Usage :
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s500efg320-5 
+Selected Device : 3s1200efg320-5 
 
- Number of Slices:                      245  out of   4656     5%  
- Number of Slice Flip Flops:            125  out of   9312     1%  
- Number of 4 input LUTs:                470  out of   9312     5%  
+ Number of Slices:                      246  out of   8672     2%  
+ Number of Slice Flip Flops:            125  out of  17344     0%  
+ Number of 4 input LUTs:                471  out of  17344     2%  
  Number of IOs:                          12
- Number of bonded IOBs:                  12  out of    232     5%  
+ Number of bonded IOBs:                  12  out of    250     4%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -359,9 +358,9 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 11.563ns (Maximum Frequency: 86.483MHz)
+   Minimum period: 11.585ns (Maximum Frequency: 86.316MHz)
    Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 9.826ns
+   Maximum output required time after clock: 9.178ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -370,10 +369,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 11.563ns (frequency: 86.483MHz)
-  Total number of paths / destination ports: 127610 / 250
+  Clock period: 11.585ns (frequency: 86.316MHz)
+  Total number of paths / destination ports: 128123 / 250
 -------------------------------------------------------------------------
-Delay:               11.563ns (Levels of Logic = 23)
+Delay:               11.585ns (Levels of Logic = 23)
   Source:            index_2_1 (FF)
   Destination:       d1_6 (FF)
   Source Clock:      clk rising
@@ -393,8 +392,8 @@ Delay:               11.563ns (Levels of Logic = 23)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_index_cmp_gt0001_cy<6> (Mcompar_index_cmp_gt0001_cy<6>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_index_cmp_gt0001_cy<7> (Mcompar_index_cmp_gt0001_cy<7>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_index_cmp_gt0001_cy<8> (Mcompar_index_cmp_gt0001_cy<8>)
-     MUXCY:CI->O           1   0.399   0.387  Mcompar_index_cmp_gt0001_cy<9> (Mcompar_index_cmp_gt0001_cy<9>)
-     LUT4_D:I2->O        113   0.612   1.125  Mcompar_index_cmp_gt0001_cy<11>1 (Mcompar_index_cmp_gt0001_cy<11>)
+     MUXCY:CI->O           2   0.399   0.410  Mcompar_index_cmp_gt0001_cy<9> (Mcompar_index_cmp_gt0001_cy<9>)
+     LUT4_D:I2->O        111   0.612   1.124  Mcompar_index_cmp_gt0001_cy<11>1 (Mcompar_index_cmp_gt0001_cy<11>)
      LUT3:I2->O            1   0.612   0.000  d0_cmp_eq00021_wg_lut<0> (d0_cmp_eq00021_wg_lut<0>)
      MUXCY:S->O            1   0.404   0.000  d0_cmp_eq00021_wg_cy<0> (d0_cmp_eq00021_wg_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  d0_cmp_eq00021_wg_cy<1> (d0_cmp_eq00021_wg_cy<1>)
@@ -409,46 +408,44 @@ Delay:               11.563ns (Levels of Logic = 23)
      LUT4:I3->O            1   0.612   0.000  d1_mux0000<6>35 (d1_mux0000<6>)
      FDE:D                     0.268          d1_6
     ----------------------------------------
-    Total                     11.563ns (7.291ns logic, 4.272ns route)
-                                       (63.1% logic, 36.9% route)
+    Total                     11.585ns (7.291ns logic, 4.294ns route)
+                                       (62.9% logic, 37.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 239 / 11
+  Total number of paths / destination ports: 205 / 11
 -------------------------------------------------------------------------
-Offset:              9.826ns (Levels of Logic = 7)
-  Source:            valor_4 (FF)
-  Destination:       saida<5> (PAD)
+Offset:              9.178ns (Levels of Logic = 5)
+  Source:            valor_3 (FF)
+  Destination:       saida<4> (PAD)
   Source Clock:      clk rising
 
-  Data Path: valor_4 to saida<5>
+  Data Path: valor_3 to saida<4>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             27   0.514   1.141  valor_4 (valor_4)
-     LUT4:I1->O            3   0.612   0.603  saida<6>211 (N121)
-     LUT4:I0->O            1   0.612   0.000  saida<6>22 (saida<6>21)
-     MUXF5:I0->O           4   0.278   0.651  saida<6>2_f5 (N9)
-     LUT4:I0->O            1   0.612   0.000  saida<5>59_F (N369)
-     MUXF5:I0->O           1   0.278   0.387  saida<5>59 (saida<5>59)
-     LUT4:I2->O            1   0.612   0.357  saida<5>150 (saida_5_OBUF)
-     OBUF:I->O                 3.169          saida_5_OBUF (saida<5>)
+     FDE:C->Q             25   0.514   1.223  valor_3 (valor_3)
+     LUT4:I0->O            1   0.612   0.426  saida<3>2_SW1 (N83)
+     LUT4:I1->O            2   0.612   0.532  saida<3>2 (N14)
+     LUT4:I0->O            1   0.612   0.509  saida<4>36 (saida<4>36)
+     LUT2:I0->O            1   0.612   0.357  saida<4>82 (saida_4_OBUF)
+     OBUF:I->O                 3.169          saida_4_OBUF (saida<4>)
     ----------------------------------------
-    Total                      9.826ns (6.687ns logic, 3.139ns route)
-                                       (68.1% logic, 31.9% route)
+    Total                      9.178ns (6.131ns logic, 3.047ns route)
+                                       (66.8% logic, 33.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.83 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 4.60 secs
  
 --> 
 
 
-Total memory usage is 526024 kilobytes
+Total memory usage is 525824 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   11 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

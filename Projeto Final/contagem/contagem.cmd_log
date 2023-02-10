@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf 
+bitgen -intstyle ise -f contagem.ut contagem.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f contagem.ut contagem.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f contagem.ut contagem.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f contagem.ut contagem.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f contagem.ut contagem.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/contagem/contagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "contagem.ngc" contagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o contagem_map.ncd contagem.ngd contagem.pcf 
+par -w -intstyle ise -ol high -t 1 contagem_map.ncd contagem.ncd contagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml contagem.twx contagem.ncd -o contagem.twr contagem.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f contagem.ut contagem.ncd 

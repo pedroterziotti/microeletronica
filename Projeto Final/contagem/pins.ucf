@@ -1,0 +1,14 @@
+NET "clk" loc ="B8";
+
+NET "ANODO(0)" loc ="F17";
+NET "ANODO(1)" loc ="H17";
+NET "ANODO(2)" loc ="C18";
+NET "ANODO(3)" loc ="F15";
+
+NET "ssd(6)" loc= "L18";
+NET "ssd(5)" loc= "F18";
+NET "ssd(4)" loc= "D17";
+NET "ssd(3)" loc= "D16";
+NET "ssd(2)" loc= "G14";
+NET "ssd(1)" loc= "J17";
+NET "ssd(0)" loc= "H14";

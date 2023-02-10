@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.ncd
+OUTFILE=/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-5fg320
+WORKINGDIR=/home/pedrot/Desktop/microeletronica/Projeto Final/projeto
+LICENSE=WebPack
+USER_INFO=212588854_0_0_637

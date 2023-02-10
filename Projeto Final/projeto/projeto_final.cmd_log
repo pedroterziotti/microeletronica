@@ -1,3 +1,163 @@
 xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/projeto/projeto_final.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s1200e-fg320-5 "projeto_final.ngc" projeto_final.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o projeto_final_map.ncd projeto_final.ngd projeto_final.pcf 
+par -w -intstyle ise -ol high -t 1 projeto_final_map.ncd projeto_final.ncd projeto_final.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml projeto_final.twx projeto_final.ncd -o projeto_final.twr projeto_final.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f projeto_final.ut projeto_final.ncd 

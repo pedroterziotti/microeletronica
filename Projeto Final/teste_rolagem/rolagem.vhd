@@ -16,7 +16,6 @@ end rolagem;
 architecture Behavioral of rolagem is
 
 	shared variable d3,d2,d1,d0: character;
-	signal indexs: integer:=0;
 begin
 
 	process(clk)
@@ -73,39 +72,39 @@ begin
 		
 		case valor is
 		
-			when '0' => saida <= "0000001";
-			when '1' => saida <= "1001111";
-			when '2' => saida <= "0010010";
-			when '3' => saida <= "0000110";
-			when '4' => saida <= "1001100";
-			when '5' => saida <= "0100100";
-			when '6' => saida <= "0100000";
-			when '7' => saida <= "0001111";
-			when '8' => saida <= "0000000";
-			when '9' => saida<= "0000100";
+			when '0' => ssd <= "0000001";
+			when '1' => ssd<= "1001111";
+			when '2' => ssd<= "0010010";
+			when '3' => ssd<= "0000110";
+			when '4' => ssd<= "1001100";
+			when '5' => ssd<= "0100100";
+			when '6' => ssd<= "0100000";
+			when '7' => ssd<= "0001111";
+			when '8' => ssd<= "0000000";
+			when '9' => ssd<= "0000100";
 			
-			when 'A' => saida<= "0001000";
-			when 'L' => saida<= "1110001";
-			when 'O' => saida<= "0000001";
-			when ' ' => saida<= "1111111";
+			when 'A' => ssd<= "0001000";
+			when 'L' => ssd<= "1110001";
+			when 'O' => ssd<= "0000001";
+			when ' ' => ssd<= "1111111";
 			
-			when 'R' => saida<= "0010000";
-			when 'V' => saida<= "1000101";
-			when 'N' => saida<= "0001001";
-			when 'G' => saida<= "0100001";
+			when 'R' => ssd<= "0010000";
+			when 'V' => ssd<= "1000101";
+			when 'N' => ssd<= "0001001";
+			when 'G' => ssd<= "0100001";
 			
-			when 'E' => saida<= "0110000";
-			when 'P' => saida<= "0011000";
-			when 'C' => saida<= "0110001";
-			when 'T' => saida<= "0111001";
+			when 'E' => ssd<= "0110000";
+			when 'P' => ssd<= "0011000";
+			when 'C' => ssd<= "0110001";
+			when 'T' => ssd<= "0111001";
 			
 			
-			when 'M' => saida<= "0010101";
-			when 'D' => saida<= "0000011";
-			when 'S' => saida<= "0100100";
-			when 'I' => saida<= NOT "0000110";
+			when 'M' => ssd<= "0010101";
+			when 'D' => ssd<= "0000011";
+			when 'S' => ssd<= "0100100";
+			when 'I' => ssd<= NOT "0000110";
 			
-			when others => saida <="1111111";
+			when others => ssd <="1111111";
 		
 		end case;
 

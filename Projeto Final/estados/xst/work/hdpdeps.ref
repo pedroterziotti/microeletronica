@@ -1,4 +1,11 @@
-V3 3
+V3 9
+FL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/contagem.vhd" 2023/02/03.14:18:45 P.20131013
+EN work/contagem 1675444911 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/contagem.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/contagem/Behavioral 1675444912 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/contagem.vhd" \
+      EN work/contagem 1675444911
 FL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.vhd" 2023/02/02.20:25:23 P.20131013
 EN work/selecionar_tempo 1675380326 \
       FL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.vhd" \
@@ -6,3 +13,10 @@ EN work/selecionar_tempo 1675380326 \
 AR work/selecionar_tempo/Behavioral 1675380327 \
       FL "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/selecionar_tempo.vhd" \
       EN work/selecionar_tempo 1675380326
+FL "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" 2023/02/02.18:00:47 P.20131013
+EN work/rolagem 1675445025 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/rolagem/Behavioral 1675445026 \
+      FL "/home/pedrot/Desktop/microeletronica/Projeto Final/teste_rolagem/rolagem.vhd" \
+      EN work/rolagem 1675445025

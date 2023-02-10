@@ -1,5 +1,4 @@
 NET "clk" loc ="B8";
-NET "sel" LOC ="H13";
 
 NET "ANODO(0)" loc ="F17";
 NET "ANODO(1)" loc ="H17";

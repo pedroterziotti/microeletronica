@@ -8,7 +8,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Design file:              rolagem.ncd
 Physical constraint file: rolagem.pcf
-Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Device,package,speed:     xc3s1200e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -45,17 +45,17 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-ANODO<0>    |    7.169(R)|clk_BUFGP         |   0.000|
-ANODO<1>    |    6.923(R)|clk_BUFGP         |   0.000|
-ANODO<2>    |    7.234(R)|clk_BUFGP         |   0.000|
-ANODO<3>    |    6.483(R)|clk_BUFGP         |   0.000|
-saida<0>    |   12.220(R)|clk_BUFGP         |   0.000|
-saida<1>    |   12.158(R)|clk_BUFGP         |   0.000|
-saida<2>    |   12.816(R)|clk_BUFGP         |   0.000|
-saida<3>    |   11.595(R)|clk_BUFGP         |   0.000|
-saida<4>    |   12.733(R)|clk_BUFGP         |   0.000|
-saida<5>    |   13.046(R)|clk_BUFGP         |   0.000|
-saida<6>    |   11.586(R)|clk_BUFGP         |   0.000|
+ANODO<0>    |    7.050(R)|clk_BUFGP         |   0.000|
+ANODO<1>    |    7.053(R)|clk_BUFGP         |   0.000|
+ANODO<2>    |    7.529(R)|clk_BUFGP         |   0.000|
+ANODO<3>    |    6.647(R)|clk_BUFGP         |   0.000|
+saida<0>    |   12.261(R)|clk_BUFGP         |   0.000|
+saida<1>    |   11.828(R)|clk_BUFGP         |   0.000|
+saida<2>    |   12.227(R)|clk_BUFGP         |   0.000|
+saida<3>    |   12.088(R)|clk_BUFGP         |   0.000|
+saida<4>    |   12.140(R)|clk_BUFGP         |   0.000|
+saida<5>    |   12.465(R)|clk_BUFGP         |   0.000|
+saida<6>    |   11.755(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -63,18 +63,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   10.232|         |         |         |
+clk            |   10.293|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Feb  2 17:59:08 2023 
+Analysis completed Fri Feb  3 17:10:43 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 352 MB
+Peak Memory Usage: 364 MB
 
 
 

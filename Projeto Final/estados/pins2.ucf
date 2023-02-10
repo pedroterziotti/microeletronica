@@ -1,0 +1,15 @@
+NET "clk" loc ="B8";
+NET "sel" LOC ="H13";
+
+NET "ANODO(0)" loc ="F17";
+NET "ANODO(1)" loc ="H17";
+NET "ANODO(2)" loc ="C18";
+NET "ANODO(3)" loc ="F15";
+
+NET "saida(6)" loc= "L18";
+NET "saida(5)" loc= "F18";
+NET "saida(4)" loc= "D17";
+NET "saida(3)" loc= "D16";
+NET "saida(2)" loc= "G14";
+NET "saida(1)" loc= "J17";
+NET "saida(0)" loc= "H14";

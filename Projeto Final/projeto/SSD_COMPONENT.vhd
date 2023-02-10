@@ -18,7 +18,6 @@ begin
 
 process(caracter)
 	begin
-		
 		case caracter is
 		
 			when '0' => saida <= "0000001";

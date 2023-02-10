@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/rolagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/rolagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "rolagem.ngc" rolagem.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o rolagem_map.ncd rolagem.ngd rolagem.pcf 
+par -w -intstyle ise -ol high -t 1 rolagem_map.ncd rolagem.ncd rolagem.pcf 
+xst -intstyle ise -ifn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/rolagem.xst" -ofn "/home/pedrot/Desktop/microeletronica/Projeto Final/estados/rolagem.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-5 "rolagem.ngc" rolagem.ngd  
+map -intstyle ise -p xc3s1200e-fg320-5 -cm area -ir off -pr off -c 100 -o rolagem_map.ncd rolagem.ngd rolagem.pcf 
+par -w -intstyle ise -ol high -t 1 rolagem_map.ncd rolagem.ncd rolagem.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml rolagem.twx rolagem.ncd -o rolagem.twr rolagem.pcf 
+bitgen -intstyle ise -f rolagem.ut rolagem.ncd 
